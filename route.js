@@ -5,5 +5,6 @@ Router.route('/', {
 });
 
 Router.route('/login');
-Router.route('/admin');
+Router.route('/admin_overall');
+Router.route('/admin_student');
 Router.route('/student');

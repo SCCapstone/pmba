@@ -1,13 +1,16 @@
 login = new Mongo.Collection('login');
- 
+studentInfo = new Mongo.Collection('studentInfo'); 
+
  if (Meteor.isServer) {
-  Meteor.publish("login", function () {
+  Meteor.publish("login", "studentInfo", function () {
 	  var lastAdded = Users.find({login: userID}, {sort: {$natural : 1}, limit: N });
-		
+	  return studentInfo.find({});
   });
+  
 }
 if (Meteor.isClient) {
   Meteor.subscribe("login");
+  Meteor.subscribe("studentInfo");
 	Template.addStudent.events({
 		'submit form' : function(event){
 			event.preventDefault();
@@ -15,7 +18,11 @@ if (Meteor.isClient) {
 				UserID : inputEmail.value,
 				IDType : "S",
 				Password : inputEmail.value,
-				TempPassword : "Y"});		
+				TempPassword : "Y"});
+			
+			studentInfo.insert({
+				UserID: inputEmail.value,
+				Email: inputEmail.value});
 				location.reload();
 				alert(inputEmail.value + " added.")
 		}

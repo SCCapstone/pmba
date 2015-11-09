@@ -9,6 +9,7 @@ if (Meteor.isClient) {
   Meteor.subscribe("studentInfo");
 	Template.updateStudentInfo.events({
 		'submit form' : function(event){
+			event.preventDefault();
 			
 			Users.insert({
 				UserID : inputEmail.value,
@@ -19,7 +20,6 @@ if (Meteor.isClient) {
 				WorkNumber : workNumber.value,
 				HomeNumber : homeNumber.value,
 				Picture : "Upic1"});
-				alert("Your information has been updated!");
 		}
 	});
 }

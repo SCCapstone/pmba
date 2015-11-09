@@ -5,6 +5,7 @@ Router.route('/', {
 });
 
 Router.route('/login');
+Router.route('/changePassword');
 Router.route('/admin_overall');
 Router.route('/updateStudentInfo');
 Router.route('/admin_student');

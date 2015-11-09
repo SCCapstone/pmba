@@ -1,0 +1,40 @@
+<template name="help">
+    <div class = "page-header" id="header">
+        <h1>
+            <img src="img/logo.svg" class="img-responsive">
+            <small style="color:#000000">Help</small>
+        </h1>
+    </div>
+
+
+
+    <div class="btn-group">
+        <a class="btn btn-primary" href="#"><i class="icon-user icon-white"></i> Student </a>
+        <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="student"><i class="icon-home icon-white"></i> Home</a></li>
+            <li><a href="#"><i class="icon-edit"></i> Settings</a></li>
+            <li class="active"><a href="#"><i class="icon-book"></i> Help</a></li>
+            <li><a href="login"><i class="i"></i> Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="row-fluid">
+        <div class=" col-md-6 col-md-offset-1 panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Live Help Available X:00 - Y:00</h3>
+            </div>
+            <div class="panel-body">
+                <ul>
+                    <li>Send Message</li>
+                    <textarea rows="3"></textarea>
+                    <p>
+                        <button class="btn btn-large btn-primary" type="button">Send</button>
+                    </p>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</template>

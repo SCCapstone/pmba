@@ -1,0 +1,48 @@
+<head>
+    <title>PMBA</title>
+</head>
+
+<template name="addStudent">
+    <div class = "page-header" id="header">
+        <h1>
+            <img src="img/logo.svg" class="img-responsive">
+            <small style="color:#000000">Administrator Page</small>
+        </h1>
+    </div>
+
+    <div class="btn-group">
+        <a class="btn btn-primary" href="#"><i class="icon-user icon-white"></i> Administrator </a>
+        <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li class="active"><a href="admin_Overall"><i class="icon-home icon-white"></i> Home</a></li>
+            <li><a href="#"><i class="icon-pencil"></i> Notifications</a></li>
+            <li><a href="#"><i class="icon-book"></i> Settings</a></li>
+            <li><a href="statistics"><i class="icon-book"></i> Statistics</a></li>
+            <li><a href="login"><i class="icon-book"></i> Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-10">
+        </div>
+    </div>
+	</div>
+	
+	<form id="addStudent" class="form-horizontal">
+        <div class="row-fluid col-md-6 col-md-offset-4">
+                <div class="email">
+                    <label class="email" for="inputEmail">Email:</label><span class="tabEmail"> </span>
+                        <input type="text" id="inputEmail" placeholder="Email">
+                </div>
+				<br>
+                <div class="updateButton">
+                    <div class="controls">
+                        <span class="tabButton"></span><button type="submit">AddStudent</button>
+                    </div>
+                </div>
+        </div>
+    </form>
+	
+
+    </template>

@@ -22,3 +22,5 @@ twbs:bootstrap
 iron:router
 accounts-password
 accounts-ui
+msavin:mongol
+aldeed:collection2

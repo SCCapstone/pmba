@@ -1,10 +1,8 @@
-
-
-<template name="student">
+<template name="infoPage">
     <div class = "page-header" id="header">
         <h1>
             <img src="img/logo.svg" class="img-responsive">
-            <small style="color:#000000">Student Page</small>
+            <small style="color:#000000">Additional Information</small>
         </h1>
     </div>
 
@@ -12,36 +10,39 @@
         <a class="btn btn-primary" href="#"><i class="icon-user icon-white"></i> Student </a>
         <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
         <ul class="dropdown-menu">
-            <li class="active"><a href="student"><i class="icon-home icon-white"></i> Home</a></li>
-            <li><a href="#"><i class="icon-pencil"></i> Settings</a></li>
+            <li><a href="student"><i class="icon-home icon-white"></i> Home</a></li>
+            <li><a href="#"><i class="icon-edit"></i> Settings</a></li>
             <li><a href="help"><i class="icon-book"></i> Help</a></li>
-            <li><a href="login"><i class="icon-logout"></i> Logout</a></li>
+            <li><a href="login"><i class="i"></i> Logout</a></li>
         </ul>
     </div>
-	
-	
-	<div class="row-fluid row-offcanvas row-offcanvas-left">
+
+    <div class="row-fluid row-offcanvas row-offcanvas-left">
         <div class="col-sm-3 col-md-2 sidebar-offcanvas" id="sidebar" role="navigation">
             <div class="well sidebar-nav">
                 <ul class="nav nav-sidebar">
-				<a href="updateStudentInfo">Update Personal Information</a>
-				</ul>
-          </div>
-      </div>
-    </div>
-	
-    <div class="row-fluid">
-        <div class=" col-md-6 col-md-offset-1 panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title">Form Status</h3>
-            </div>
-            <div class="panel-body">
-                <ul>
-                    <li><a href="infoPage"> Form 1 </a></li>
-                    <li>Form2</li>
-                    <li>Form3</li>
+                    <img src="..." class="img-polaroid">
+                    <li>Due Date:  <strong>X/XX/XX</strong></li>
                 </ul>
             </div>
         </div>
     </div>
+
+    <div class="row-fluid">
+        <div class=" col-md-6 col-md-offset-1 panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Description</h3>
+            </div>
+            <div class="panel-body">
+                <ul>
+                    <li>A paragraph with general information about Form X.
+                        This information may be helpful to answer some of
+                        the users questions about Form X. Further information
+                        can be found at: http://www.information.gov</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
 </template>

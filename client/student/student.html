@@ -22,7 +22,7 @@
         <div class="col-sm-3 col-md-2 sidebar-offcanvas" id="sidebar" role="navigation">
             <div class="well sidebar-nav">
                 <ul class="nav nav-sidebar">
-				<a href="updateStudentInfo">Update Personal Information</a>
+				<a href="#" onclick="updateInfo()">Update Personal Information</a>
 				</ul>
           </div>
       </div>
@@ -72,4 +72,11 @@
             </div>
         </div>
     </div>
+	<script type="text/javascript">
+	
+function updateInfo(){
+	var id = window.location.hash.substring(1);		
+	window.location.href = "/updateStudentInfo"+ "#" + id;
+	}
+</script>
 </template>

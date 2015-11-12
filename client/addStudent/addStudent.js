@@ -23,9 +23,9 @@ if (Meteor.isClient) {
 			studentInfo.insert({
 				UserID: inputEmail.value,
 				Email: inputEmail.value,
-				Form1: "N",
-				Form2: "N",
-				Form3: "N"});
+				Form1: false,
+				Form2: false,
+				Form3: false});
 				location.reload();
 				alert(inputEmail.value + " added.")
 		}

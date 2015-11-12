@@ -1,4 +1,5 @@
 forms = new Mongo.Collection("forms");
+
 if (Meteor.isClient) {
 	Meteor.subscribe("forms", "studentInfo");
 

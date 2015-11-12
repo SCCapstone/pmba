@@ -31,21 +31,21 @@
     <div class="row-fluid row-offcanvas row-offcanvas-left">
         <div class="col-sm-3 col-md-2 sidebar-offcanvas" id="sidebar" role="navigation">
             <div class="well sidebar-nav">
+			<a href="addStudent">+Add New Student</a><br><br>
                 <ul class="nav nav-sidebar">
                     <li><strong>Student list</strong></li>
-                    <li><a href="admin_student"> Student 1 </a>
-                        <div class="progress progress-striped active">
-                            <div class="bar" style="width: 40%;"></div>
-                        </div>
-                    </li>
-                    <li>Student2</li>
-                    <li>Student3</li>
-                    <li>Student3</li>
-                    <li>Student3</li>
-                    <li>Student3</li>
-                    <li>Student3</li>
-                    <li>Student3</li>
-                    <li>Student3</li>
+                    <div class="panel-body">
+                    <ul>
+                        {{#each studentInfo}}
+                            <li>
+                               <a href="admin_student"> {{UserID}} </a>
+                                <div class="progress progress-striped active">
+                                    <div class="bar" style="width: 40%;"></div>
+                                </div>
+                            </li>
+                        {{/each}}
+                    </ul>
+                    </div>
                 </ul>
           </div>
       </div>

@@ -35,11 +35,13 @@
                     <ul class="nav nav-sidebar">
                         <img src="..." class="img-polaroid">
                         <li><strong>Student Info</strong></li>
-                        <li>Name</li>
-                        <li>Student ID</li>
+                        {{#each studentInfo}}
+                        <li>{{FirstName}} {{LastName}}</li>
+                        <li>{{UserID}}</li>
                         <li>Address</li>
-                        <li>Phone</li>
-                        <li>Email</li>
+                        <li>{{CellNumber}}</li>
+                        <li>{{Email}}</li>
+                        {{/each}}
                     </ul>
                 </div>
             </div>
@@ -55,6 +57,16 @@
                     </h3>
                 </div>
                 <div class="panel-body">
+                    <ul>
+                        {{#each forms}}
+                            <li class="{{#if checked}}checked{{/if}}">
+                                <label class ="checkbox">
+                                    <input type="checkbox" checked="{{checked}}" class="toggle-checked">
+                                    <a href="infoPage"> {{Name}} </a>
+                                </label>
+                            </li>
+                        {{/each}}
+                    </ul>
                     <ul>
 
                         <li>Form1</li>

@@ -1,25 +1,29 @@
 if (Meteor.isServer) {
 	Meteor.publish("forms", function () {
-		var c = forms.find().count();
-		alert(c);
-		return forms.find({});
+		return Users.find({});
 	});
 
 }
 if (Meteor.isClient) {
 	Meteor.subscribe("forms");
+	Template.student.events({
+		/*'click .toggle-checked' : function(event){
+			forms.update(this._id, {
+				$set: {Done: ! this.Done}
+			});
+
+		},*/
+		'click .btn' : function(event){
+			event.preventDefault();
+
+		}
+	});
 	Template.student.helpers({
 		forms: function () {
-			var c =forms.find({}).count();
-			alert(c);
+
 			return forms.find({});
 
 		}
 	});
-	Template.student.events({
-		'click .toggle-checked' : function(event){
-			event.preventDefault();
 
-		}
-	})
 }

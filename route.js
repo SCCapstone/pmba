@@ -14,4 +14,12 @@ Router.route('/student');
 Router.route('/statistics');
 Router.route('/help');
 Router.route('/infoPage');
-Router.route('/addforms');
+
+/*
+Router.route('/student', function () {
+    this.render('student');
+});
+
+Router.route('/admin_overall', function () {
+    this.render('admin_overall');
+})*/

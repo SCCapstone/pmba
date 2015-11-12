@@ -1,3 +1,4 @@
+/*
 if (Meteor.isServer) {
     Meteor.publish("forms", function () {
         return forms.find({});
@@ -23,4 +24,4 @@ if (Meteor.isClient) {
             alert("Your information has been updated!");
         }
     });
-}
+}*/

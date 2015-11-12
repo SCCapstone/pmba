@@ -22,7 +22,7 @@
         </ul>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid">1
     <div class="row">
         <div class="col-md-10">
         </div>
@@ -57,11 +57,41 @@
                 <h3 class="panel-title">Form Status</h3>
             </div>
             <div class="panel-body">
-               <ul>
-                   <li>Form1</li>
-                  <li>Form2</li>
-                  <li>Form3</li>
-              </ul>
+                <ul>
+                    {{#each forms}}
+                        <li class="{{#if checked}}checked{{/if}}">
+                            <label class ="checkbox">
+                                <input type="checkbox" checked="{{checked}}" class="toggle-checked">
+                                <a href="infoPage"> {{Name}} </a>
+                            </label>
+                        </li>
+                    {{/each}}
+                </ul>
+                <ul>
+
+                    <li>
+                        <label class ="checkbox">
+                            <input type="checkbox" checked="{{checked}}" class="toggle-checked">
+                            <a href="infoPage"> PMBA Locator Form </a>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input type="checkbox" checked="{{checked}}" class="toggle-checked">
+                            <a href="infoPage"> USC Student Immunization Form </a>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input type="checkbox" checked="{{checked}}" class="toggle-checked">
+                            <a href="infoPage"> Citizenship Verification Form </a>
+                        </label>
+                    </li>
+                </ul>
+
+                <label class="hide-completed">
+                    <button type="submit" class="btn">Hide</button>
+                </label>
            </div>
      </div>
     </div>

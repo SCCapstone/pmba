@@ -1,19 +1,9 @@
-if (Meteor.isServer) {
-	Meteor.publish("forms", "studentInfo",function () {
-		var c = forms.find().count();
-		alert(c);
-		return forms.find({});
-	});
-
-}
-
+forms = new Mongo.Collection("forms");
 if (Meteor.isClient) {
 	Meteor.subscribe("forms", "studentInfo");
 
 	Template.student.helpers({
 		forms: function () {
-			var c =forms.find({}).count();
-			alert(c);
 			return forms.find({});
 
 		}

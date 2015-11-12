@@ -1,26 +1,26 @@
 if (Meteor.isServer) {
-    Meteor.publish("studentInfo", function () {
+    Meteor.publish("studentInfo", "forms", function () {
         return Users.find({});
     });
 
 }
 if (Meteor.isClient) {
     Meteor.subscribe("studentInfo");
-    Meteor.subscribe("users");
+    Meteor.subscribe("forms");
     Template.student.helpers({
         studentInfo: function () {
-            return studentInfo.find({});
+            return forms.find({});
 
         }
 
     });
     Template.student.events({
-		'click .toggle-checked' : function(event){
-			/*var fromNum = "form";
+		/*'click .toggle-checked' : function(event){
+			var fromNum = "form";
 
 			studentInfo.update(this._id, {
 				$set: {Done: ! this.Done}
-			});*/
+			});
             var completed = event.target.checked;
             document.getElementById('Name').style = ".muted";
             //var t = document.getElementsByClassName('toggle-checked').textContent;
@@ -31,7 +31,7 @@ if (Meteor.isClient) {
                 //alert(studentInfo.find({UserID: "ID3"}).count());
             }
 
-		},
+		},*/
 		'click .btn' : function(event){
 			event.preventDefault();
 
@@ -45,4 +45,10 @@ if (Meteor.isClient) {
 		}
 	});
 
+}
+function updateInfoPage() {
+    var id = window.location.hash.substring(1);
+    var user = studentInfo.find({_id: id})
+
+    window.location.href = "/updateInfo"+ "#" + id;
 }

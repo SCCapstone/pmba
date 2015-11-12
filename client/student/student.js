@@ -1,28 +1,47 @@
 if (Meteor.isServer) {
-	Meteor.publish("forms", function () {
-		return Users.find({});
-	});
+    Meteor.publish("studentInfo", function () {
+        return Users.find({});
+    });
 
 }
 if (Meteor.isClient) {
-	Meteor.subscribe("forms");
-	Template.student.events({
-		/*'click .toggle-checked' : function(event){
-			forms.update(this._id, {
-				$set: {Done: ! this.Done}
-			});
+    Meteor.subscribe("studentInfo");
+    Meteor.subscribe("users");
+    Template.student.helpers({
+        studentInfo: function () {
+            return studentInfo.find({});
 
-		},*/
+        }
+
+    });
+    Template.student.events({
+		'click .toggle-checked' : function(event){
+			/*var fromNum = "form";
+
+			studentInfo.update(this._id, {
+				$set: {Done: ! this.Done}
+			});*/
+            var completed = event.target.checked;
+            document.getElementById('Name').style = ".muted";
+            //var t = document.getElementsByClassName('toggle-checked').textContent;
+            //alert(t);
+            if(completed === true) {
+                //alert(studentInfo.find({Form1: "False"}).count());
+                studentInfo.update({UserID: "ID3"}, {$set: {Form1: "true"}});
+                //alert(studentInfo.find({UserID: "ID3"}).count());
+            }
+
+		},
 		'click .btn' : function(event){
 			event.preventDefault();
 
-		}
-	});
-	Template.student.helpers({
-		forms: function () {
-
-			return forms.find({});
-
+			var text = document.getElementById('hide').textContent;
+			if (text === "Hide"){
+				document.getElementById('hide').textContent = "Show";
+			}
+			else {
+				document.getElementById('hide').textContent = "Hide";
+			}
 		}
 	});
 

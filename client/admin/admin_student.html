@@ -11,7 +11,7 @@
     </div>
 
     <div class="btn-group">
-        <a class="btn btn-primary" href="#"><i class="icon-user icon-white"></i> Administrator </a>
+        <a class="btn btn-primary" href="admin_Overall"><i class="icon-user icon-white"></i> Administrator </a>
         <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
         <ul class="dropdown-menu">
             <li><a href="admin_overall"><i class="icon-home icon-white"></i> Home</a></li>
@@ -38,7 +38,6 @@
                         {{#each studentInfo}}
                         <li>{{FirstName}} {{LastName}}</li>
                         <li>{{UserID}}</li>
-                        <li>Address</li>
                         <li>{{CellNumber}}</li>
                         <li>{{Email}}</li>
                         {{/each}}
@@ -59,11 +58,8 @@
                 <div class="panel-body">
                     <ul>
                         {{#each forms}}
-                            <li class="{{#if checked}}checked{{/if}}">
-                                <label class ="checkbox">
-                                    <input type="checkbox" checked="{{checked}}" class="toggle-checked">
-                                    <a href="infoPage"> {{Name}} </a>
-                                </label>
+                            <li>
+                                <a href="infoPage"> {{Name}} </a>
                             </li>
                         {{/each}}
                     </ul>

@@ -11,7 +11,7 @@
     </div>
 
     <div class="btn-group">
-        <a class="btn btn-primary" href="#"><i class="icon-user icon-white"></i> Administrator </a>
+        <a class="btn btn-primary" href="admin_Overall"><i class="icon-user icon-white"></i> Administrator </a>
         <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
         <ul class="dropdown-menu">
             <li class="active"><a href="admin_Overall"><i class="icon-home icon-white"></i> Home</a></li>
@@ -37,7 +37,7 @@
                     <div class="panel-body">
                     <ul>
                         {{#each studentInfo}}
-                            <li>
+                            <li id="formNumber" value = "0">
                                <a href="admin_student"> {{FirstName}} {{LastName}} </a>
                                 <div class="progress progress-striped active">
                                     <div class="bar" style="width: 40%;"></div>

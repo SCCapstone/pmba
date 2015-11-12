@@ -35,11 +35,11 @@
             </div>
             <div class="panel-body">
                 <ul>
-                    {{#each forms}}
+                    {{#each studentInfo}}
                         <li class="{{#if checked}}checked{{/if}}">
-                            <label class ="checkbox">
-                                <input type="checkbox" checked="{{checked}}" class="toggle-checked">
-                                <a href="infoPage"> {{Name}} </a>
+                            <label class="checkbox">
+                                <input type="checkbox" class="toggle-checked">
+                                <a href="infoPage" id = "Name"> {{UserID}} </a>
                             </label>
                         </li>
                     {{/each}}
@@ -48,26 +48,26 @@
 
                     <li>
                     <label class ="checkbox">
-				        <input type="checkbox" checked="{{checked}}" class="toggle-checked">
+				        <input type="checkbox" checked="{{Done}}" class="toggle-checked">
 						<a href="infoPage"> PMBA Locator Form </a>
                     </label>
 					</li>
 					<li>
 					  <label class="checkbox">
-					    <input type="checkbox" checked="{{checked}}" class="toggle-checked">
+					    <input type="checkbox" checked="{{Done}}" class="toggle-checked">
 						<a href="infoPage"> USC Student Immunization Form </a>
 				      </label>
 					</li>
 					<li>
 					  <label class="checkbox">
-				        <input type="checkbox" checked="{{checked}}" class="toggle-checked">
+				        <input type="checkbox" checked="{{Done}}" class="toggle-checked">
 						<a href="infoPage"> Citizenship Verification Form </a>
 				      </label>
 					</li>
                 </ul>
 
 				<label class="hide-completed">
-                    <button type="submit" class="btn">Hide</button>
+                    <button id="hide" type="submit" class="btn">Hide</button>
 				</label>
             </div>
         </div>

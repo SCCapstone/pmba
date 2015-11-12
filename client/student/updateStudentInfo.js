@@ -11,10 +11,8 @@ if (Meteor.isClient) {
 			event.preventDefault();
 			var id = window.location.hash.substring(1);//selects current user from url
 			studentInfo.update({_id: id},{$set:{
-												UserID : inputEmail.value,
 												FirstName : firstName.value,
 												LastName : lastName.value,
-												Email : inputEmail.value,
 												CellNumber : cellNumber.value,
 												WorkNumber : workNumber.value,
 												HomeNumber : homeNumber.value,

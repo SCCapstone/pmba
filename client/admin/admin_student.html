@@ -11,7 +11,7 @@
     </div>
 
     <div class="btn-group">
-        <a class="btn btn-primary" href="#"><i class="icon-user icon-white"></i> Administrator </a>
+        <a class="btn btn-primary" href="admin_Overall"><i class="icon-user icon-white"></i> Administrator </a>
         <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
         <ul class="dropdown-menu">
             <li><a href="admin_overall"><i class="icon-home icon-white"></i> Home</a></li>
@@ -36,11 +36,12 @@
                     <ul class="nav nav-sidebar">
                         <img src="..." class="img-polaroid">
                         <li><strong>Student Info</strong></li>
-                        <li>Name</li>
-                        <li>Student ID</li>
-                        <li>Address</li>
-                        <li>Phone</li>
-                        <li>Email</li>
+                        {{#each studentInfo}}
+                        <li>{{FirstName}} {{LastName}}</li>
+                        <li>{{UserID}}</li>
+                        <li>{{CellNumber}}</li>
+                        <li>{{Email}}</li>
+                        {{/each}}
                     </ul>
                 </div>
             </div>
@@ -56,6 +57,13 @@
                     </h3>
                 </div>
                 <div class="panel-body">
+                    <ul>
+                        {{#each forms}}
+                            <li>
+                                <a href="infoPage"> {{Name}} </a>
+                            </li>
+                        {{/each}}
+                    </ul>
                     <ul>
 
                         <li>Form1</li>

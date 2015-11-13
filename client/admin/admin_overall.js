@@ -1,6 +1,6 @@
 if (Meteor.isServer) {
     Meteor.publish("studentInfo", function () {
-        return studentInfo.find({});
+        return Users.find({});
     });
 
 }
@@ -8,19 +8,24 @@ if (Meteor.isClient) {
     Meteor.subscribe("studentInfo");
     Template.adminOverall.helpers({
         studentInfo: function () {
-            //var c =Forms.find({}).count();
-            //alert(c);
             return studentInfo.find({});
 
         }
+
     });
 
+    /*Template.adminOverall.events({
+     'clicked .text' : function(event){
+     event.preventDefault();
+
+     }
+     });*/
 }
 
 if (Meteor.isServer) {
     Meteor.publish("forms", function () {
-        var c = forms.find().count();
-        alert(c);
+        //var c = forms.find().count();
+        //alert(c);
         return forms.find({});
     });
 
@@ -29,8 +34,8 @@ if (Meteor.isClient) {
     Meteor.subscribe("forms");
     Template.student.helpers({
         forms: function () {
-            var c =forms.find({}).count();
-            alert(c);
+            //var c =forms.find({}).count();
+            //alert(c);
             return forms.find({});
 
         }

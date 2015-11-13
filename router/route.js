@@ -14,3 +14,4 @@ Router.route('/student');
 Router.route('/statistics');
 Router.route('/help');
 Router.route('/infoPage');
+Router.route('/addforms');

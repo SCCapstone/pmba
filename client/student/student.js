@@ -1,11 +1,5 @@
 forms = new Mongo.Collection("forms");
 
-if (Meteor.isServer) {
-    Meteor.publish("studentInfo", "forms", function () {
-        return Users.find({});
-    });
-
-}
 if (Meteor.isClient) {
     Meteor.subscribe("studentInfo");
     Meteor.subscribe("forms");
@@ -47,10 +41,4 @@ if (Meteor.isClient) {
 		}
 	});
 
-}
-function updateInfoPage() {
-    var id = window.location.hash.substring(1);
-    var user = studentInfo.find({_id: id})
-
-    window.location.href = "/updateInfo"+ "#" + id;
 }

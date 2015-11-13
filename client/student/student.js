@@ -1,3 +1,5 @@
+forms = new Mongo.Collection("forms");
+
 if (Meteor.isServer) {
     Meteor.publish("studentInfo", "forms", function () {
         return Users.find({});

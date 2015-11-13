@@ -1,5 +1,3 @@
-login = new Mongo.Collection('login');
- 
  if (Meteor.isServer) {
   Meteor.publish("login", function () {
     return Users.find({});

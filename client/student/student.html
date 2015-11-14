@@ -7,7 +7,7 @@
     </div>
 
     <div class="btn-group">
-        <a class="btn btn-primary" href="#"><i class="icon-user icon-white"></i> Student </a>
+        <a class="btn btn-primary" href="student"><i class="icon-user icon-white"></i> Student </a>
         <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
         <ul class="dropdown-menu">
             <li class="active"><a href="student"><i class="icon-home icon-white"></i> Home</a></li>
@@ -16,18 +16,18 @@
             <li><a href="login"><i class="icon-logout"></i> Logout</a></li>
         </ul>
     </div>
-	
-	
-	<div class="row-fluid row-offcanvas row-offcanvas-left">
+
+
+    <div class="row-fluid row-offcanvas row-offcanvas-left">
         <div class="col-sm-3 col-md-2 sidebar-offcanvas" id="sidebar" role="navigation">
             <div class="well sidebar-nav">
                 <ul class="nav nav-sidebar">
-				<a href="#" onclick="updateInfo()">Update Personal Information</a>
-				</ul>
-          </div>
-      </div>
+                    <a href="#" onclick="updateInfo()">Update Personal Information</a>
+                </ul>
+            </div>
+        </div>
     </div>
-	
+
     <div class="row-fluid">
         <div class=" col-md-6 col-md-offset-1 panel panel-default">
             <div class="panel-heading">
@@ -44,17 +44,18 @@
                         </li>
                     {{/each}}
                 </ul>
-				<label class="hide-completed">
+                <label class="hide-completed">
                     <button type="submit" class="btn">Hide</button>
-				</label>
+                </label>
             </div>
         </div>
-    </div>
-	<script type="text/javascript">
+    </div> 
 	
-function updateInfo(){
-	var id = window.location.hash.substring(1);		
-	window.location.href = "/updateStudentInfo"+ "#" + id;
-	}
-</script>
+    <script type="text/javascript">
+
+        function updateInfo(){
+            var id = window.location.hash.substring(1);
+            window.location.href = "/updateStudentInfo"+ "#" + id;
+        }
+    </script>
 </template>

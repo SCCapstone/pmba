@@ -1,3 +1,7 @@
+
+// Variable to store user id for routes
+var currentUser = null;
+
 if (Meteor.isServer) {
 	Meteor.publish("login","studentInfo", function () {
 
@@ -13,13 +17,17 @@ if (Meteor.isClient) {
 			event.preventDefault();
 			var user = login.findOne({UserID: inputEmail.value});
 			var userInfo = studentInfo.findOne({UserID: inputEmail.value});
-
+            console.log("SUBMIT FORM");
 			if(user.UserID == inputEmail.value && user.Password == inputPassword.value && user.TempPassword=="Y"){
 				console.log("You are using a temp password, must reset");
 				window.location.href = "/changePassword" + "#" + user._id;
 			}
 			else if(user.UserID == inputEmail.value && user.Password == inputPassword.value){
+                //currentUser = userInfo._id;
+               // console.log("USER: "+ currentUser);
 				if(user.IDType=="S"){
+
+                    //Router.go('/student');
 					window.location.href = "/student" + "#" + userInfo._id;
 				}
 				else{

@@ -16,10 +16,10 @@ if (Meteor.isClient) {
 
 			var text = document.getElementById('hide').textContent;
 			if (text === "Hide"){
-				document.getElementById('hide').textContent = "Show";
+				//document.getElementById('hide').textContent = "Show";
 			}
 			else {
-				document.getElementById('hide').textContent = "Hide";
+				//document.getElementById('hide').textContent = "Hide";
 			}
 		}
 	});

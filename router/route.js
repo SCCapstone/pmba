@@ -1,10 +1,15 @@
-/////////////////////////////// Router Configuration ////////////////////////////
+/******************************************************************************
+ * Router Configuration
+ */
 Router.configure({
+    //TODO Make templates for notFound and loading
     //loadingTemplate: "loading",
    // notFoundTemplate: "notFound"
 });
 
-/////////////////////////////////// Hooks ///////////////////////////////////
+/******************************************************************************
+ * Hooks
+ */
 
 // This function checks to make sure the userid is in the url, else
 // they are not logged in and are redirected to the login page.
@@ -22,7 +27,9 @@ var before = {
     }
 };
 
-/////////////////////////////////// Routes ///////////////////////////////////
+/******************************************************************************
+ * Routes
+ */
 
 Router.route('/', {
     template: 'login'

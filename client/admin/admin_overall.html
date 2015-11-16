@@ -61,17 +61,12 @@
             <div class="panel-body">
                 <ul>
                     {{#each forms}}
-                        <li class="{{#if checked}}checked{{/if}}">
-                            <label class ="checkbox">
-                                <input type="checkbox" checked="{{checked}}" class="toggle-checked">
-                                <a href="infoPage"> {{Name}} </a>
-                            </label>
+                        <li>
+                            <a href="infoPage"> {{Name}} </a>
                         </li>
                     {{/each}}
                 </ul>
-                <label class="hide-completed">
-                    <button type="submit" class="btn">Hide</button>
-                </label>
+                <input type="button" onclick=" window.location.href = '/addforms'" value = 'add forms'>
            </div>
      </div>
     </div>

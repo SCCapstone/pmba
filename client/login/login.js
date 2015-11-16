@@ -1,7 +1,3 @@
-
-// Variable to store user id for routes
-var currentUser = null;
-
 if (Meteor.isServer) {
 	Meteor.publish("login","studentInfo", function () {
 
@@ -23,11 +19,8 @@ if (Meteor.isClient) {
 				window.location.href = "/changePassword" + "#" + user._id;
 			}
 			else if(user.UserID == inputEmail.value && user.Password == inputPassword.value){
-                //currentUser = userInfo._id;
-               // console.log("USER: "+ currentUser);
 				if(user.IDType=="S"){
 
-                    //Router.go('/student');
 					window.location.href = "/student" + "#" + userInfo._id;
 				}
 				else{

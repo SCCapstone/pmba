@@ -1,47 +1,34 @@
-// Routes
+
+/////////////////////////////////// Hooks ///////////////////////////////////
+
+// This function checks to make sure the userid is in the url, else
+// they are not logged in and are redirected to the login page.
+var before = {
+    loginRequired: function(pause) {
+        console.log('ENTER BEFORE ACTION');
+        if  (window.location.hash.substring(1) === '') {
+            console.log('User: ' + window.location.hash.substring(1));
+            console.log('TRUE!!!!!!!!!!!!!!');
+            //this.render('login');
+            Router.go('/login');
+        }
+        console.log('NEXT!!!!!!!!!!!!!!');
+        this.next();
+    }
+};
+
+/////////////////////////////////// Routes ///////////////////////////////////
 
 Router.route('/', {
     template: 'login'
 });
 
 Router.route('/login');
-//Router.route('/changePassword');
-//Router.route('/admin_overall');
-//Router.route('/updateStudentInfo');
-//Router.route('/admin_student');
-//Router.route('/addStudent');
-//Router.route('/student');
-//Router.route('/statistics');
-//Router.route('/help');
-//Router.route('/infoPage');
-//Router.route('/addforms');
 
-/*Router.onBeforeAction(function () {
-    except: ['login'];
-    Console.log("ENter onBeforeAction");
-    if  (user_id !== null) {
-        console.log("FALSE!!!!!!!!!!!!!");
-        // if the user is not logged in, render the Login template
-        this.redirect('/login');
-    } else {
-        console.log("TRUE!!!!!!!!!!!!!");
-        console.log("USER: "+ user_id);
-        // otherwise don't hold up the rest of hooks or our route/action function
-        // from running
-        this.next();
-    }
-});*/
-/*Router.onBeforeAction(function () {
-    except: ['login'];
-    console.log('id::::!!!:::' + user_id);
-    console.log('ENTER BEFORE ACTION');
-    if  (user_id !== null) {
-        console.log('TRUE!!!!!!!!!!!!!!');
-        this.render('login');
-    }
-    console.log('NEXT!!!!!!!!!!!!!!');
-    this.next();
-});*/
+// Check to make sure user user is logged in
+/*Router.onBeforeAction(before.loginRequired, {
+    except: ['login']
+});*/ //DISABLED FOR NOW
 
 Router.route('student', function () {
     this.render('student')

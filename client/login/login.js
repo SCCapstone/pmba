@@ -6,6 +6,19 @@ if (Meteor.isServer) {
 }
 
 if (Meteor.isClient) {
+ Meteor.subscribe("login","studentInfo");
+    Template.login.events({
+        'submit form': function (event) {
+            event.preventDefault();
+            var emailVar = inputEmail.value;
+            var passwordVar = inputPassword.value;
+            console.log("login submitted.");
+            Meteor.loginWithPassword(emailVar, passwordVar);
+            console.log(Meteor.userId());
+        }}
+    )}
+
+/*if (Meteor.isClient) {
 	Meteor.subscribe("login","studentInfo");
 
 	Template.login.events({
@@ -31,4 +44,4 @@ if (Meteor.isClient) {
 			}
 		}
 	});
-}
+}*/

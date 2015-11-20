@@ -42,7 +42,7 @@ Router.route('/login');
     except: ['login']
 });*/ //DISABLED FOR NOW
 
-Router.route('student', function () {
+Router.route('/student', function () {
     this.render('student')
 });
 

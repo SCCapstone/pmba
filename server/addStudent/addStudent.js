@@ -20,7 +20,7 @@ Meteor.methods({
         });
         console.log("INSERTING STUDENT INFO");
         studentInfo.insert({
-            UserId: userId,
+            _id: userId,
             Email: email,
             IDType : "S",
             Form1: false,
@@ -29,5 +29,6 @@ Meteor.methods({
         /* } else {
          console.log("not logged in or not an admin");
          }*/
+        console.log('Student Added');
     }
 });

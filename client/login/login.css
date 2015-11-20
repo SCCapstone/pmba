@@ -4,8 +4,8 @@
     margin-top: 0px;
 }
 
-.center-block {
-    display: block;
+.center{
+    float: none;
     margin-right: auto;
     margin-left: auto;
 }

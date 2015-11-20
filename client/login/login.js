@@ -14,5 +14,9 @@ if (Meteor.isClient) {
             console.log("login submitted.");
             Meteor.loginWithPassword(emailVar, passwordVar);
             console.log("User Id: " + Meteor.userId());
+
+            if (Meteor.userId() != null) {
+                Router.go('/student')
+            }
         }}
     )}

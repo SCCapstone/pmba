@@ -1,5 +1,4 @@
-login = new Mongo.Collection('login');
-studentInfo = new Mongo.Collection('studentInfo');
+//studentInfo = new Mongo.Collection('studentInfo');
 
 Meteor.publish("studentInfo", function () {
     return studentInfo.find();

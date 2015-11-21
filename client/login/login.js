@@ -19,7 +19,7 @@ if (Meteor.isClient) {
             console.log("User Id: " + Meteor.userId());
             console.log('IDType ' + studentInfo.findOne(Meteor.userId(), {fields: {'IDType': 1}}).IDType);
             /***************************************/
-            
+
             if (Meteor.userId() != null &&
                 studentInfo.findOne(Meteor.userId(), {fields: {'IDType': 1}}).IDType == 'S') {
                 Router.go('/student');

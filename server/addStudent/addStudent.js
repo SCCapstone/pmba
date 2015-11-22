@@ -12,11 +12,13 @@ Meteor.methods({
     createStudent:function(email, password) {
         // used to get the userId from createUser to set un studentInfo
         var userId;
-        //if (Meteor.user() /*&& Meteor.user().admin === true*/) {
-        userId = Accounts.createUser({
-            email: email,
-            password: password
-        });
+       /*if (Meteor.userID() &&
+                studentInfo.findOne(Meteor.userId(), {fields: {'IDType': 1}}).IDType == 'A') */{
+            userId = Accounts.createUser({
+                email: email,
+                password: password
+            });
+        }
         console.log("INSERTING STUDENT INFO");
         studentInfo.insert({
             _id: userId,

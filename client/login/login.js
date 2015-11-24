@@ -15,10 +15,20 @@ if (Meteor.isClient) {
 			
             console.log("login submitted.");
             Meteor.loginWithPassword(emailVar, passwordVar);
-            console.log("User Id: " + Meteor.userId());
 
-            if (Meteor.userId() != null) {
-                Router.go('/student')
+            // For testing
+            /***************************************/
+            console.log("User Id: " + Meteor.userId());
+            console.log('IDType ' + studentInfo.findOne(Meteor.userId(), {fields: {'IDType': 1}}).IDType);
+            /***************************************/
+
+            if (Meteor.userId() != null &&
+                studentInfo.findOne(Meteor.userId(), {fields: {'IDType': 1}}).IDType == 'S') {
+                Router.go('/student');
+            }
+            else if (Meteor.userId() != null &&
+                studentInfo.findOne(Meteor.userId(), {fields: {'IDType': 1}}).IDType == 'A') {
+                Router.go('/admin_overall');
             }
         }}
     )}

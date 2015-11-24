@@ -1,9 +1,3 @@
-/*if (Meteor.isServer) {
-	Meteor.publish("login","studentInfo", function () {
-		return Users.find({});
-	});
-}*/
-
 
  Meteor.subscribe("studentInfo");
     Template.login.events({

@@ -15,9 +15,6 @@ html, body { height: 100%; }
     padding-top:0px;
     margin-top: 0px;
 }
-.muted {
-    color: #999;
-}
 li.checked {
-    color: #999;
+    color: #888;
 }

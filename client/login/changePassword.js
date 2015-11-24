@@ -1,10 +1,3 @@
- if (Meteor.isServer) {
-  Meteor.publish("login", function () {
-    return Users.find({});
-  });
-}
-
-if (Meteor.isClient) {
   Meteor.subscribe("login");
   
 	Template.changePassword.events({
@@ -24,4 +17,3 @@ if (Meteor.isClient) {
 			
 		}
 	});
-}

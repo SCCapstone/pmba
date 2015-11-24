@@ -1,10 +1,4 @@
-if (Meteor.isServer) {
-	Meteor.publish("login","studentInfo", function () {
-		return Users.find({});
-	});
-}
 
-if (Meteor.isClient) {
  Meteor.subscribe("studentInfo");
     Template.login.events({
         'submit form': function (event) {
@@ -29,4 +23,4 @@ if (Meteor.isClient) {
                 Router.go('/admin_overall');
             }
         }}
-    )}
+    );

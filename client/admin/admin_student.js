@@ -1,10 +1,4 @@
-if (Meteor.isServer) {
-    Meteor.publish("forms", "studentInfo", function () {
-        return Users.find({});
-    });
 
-}
-if (Meteor.isClient) {
     Meteor.subscribe("forms");
     Meteor.subscribe("studentInfo");
     Template.adminStudent.helpers({
@@ -19,4 +13,3 @@ if (Meteor.isClient) {
         }
     });
 
-}

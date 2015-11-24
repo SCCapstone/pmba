@@ -10,7 +10,8 @@ if (Meteor.isClient) {
 	Template.updateStudentInfo.events({
 		'submit form' : function(event){
 			event.preventDefault();
-			var id = window.location.hash.substring(1);//selects current user from url
+			//This gets the id from the userInfo collection from sessionStorage
+			var id = JSON.parse(sessionStorage.user)
 			studentInfo.update({_id: id},{$set:{
 				FirstName : firstName.value,
 				LastName : lastName.value,
@@ -20,7 +21,7 @@ if (Meteor.isClient) {
 				Picture : "Upic1"}});
 
 			alert("Your information has been updated!");
-			window.location.href = "/student" + "#" + id;
+			window.location.href = "/student";
 		}
 	});
 }

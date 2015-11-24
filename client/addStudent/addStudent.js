@@ -1,4 +1,4 @@
-login = new Mongo.Collection('login');
+studentInfo = new Mongo.Collection('studentInfo');
 
 if (Meteor.isServer) {
 	 // WHAT DOES THIS DO?
@@ -18,6 +18,8 @@ if (Meteor.isClient) {
 			var emailVar = inputEmail.value;
 			var passwordVar = 'password'; //Just for testing
 			Meteor.call('createStudent', emailVar, passwordVar );
+			
+			window.location.href = "/addStudent";
 		}
 	});
 }

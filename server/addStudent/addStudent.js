@@ -1,4 +1,3 @@
-login = new Mongo.Collection('login');
 studentInfo = new Mongo.Collection('studentInfo');
 
 Meteor.publish("studentInfo", function () {
@@ -20,7 +19,6 @@ Meteor.methods({
         });
         console.log("INSERTING STUDENT INFO");
         studentInfo.insert({
-            _id: userId,
             Email: email,
             IDType : "S",
             Form1: false,
@@ -30,5 +28,6 @@ Meteor.methods({
          console.log("not logged in or not an admin");
          }*/
         console.log('Student Added');
+		window.location.href = "/addStudent";
     }
 });

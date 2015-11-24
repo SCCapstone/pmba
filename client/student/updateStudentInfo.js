@@ -5,13 +5,12 @@ if (Meteor.isServer) {
 	});
 }
 if (Meteor.isClient) {
-	//Meteor.subscribe("login");
 	Meteor.subscribe("studentInfo");
 	Template.updateStudentInfo.events({
 		'submit form' : function(event){
 			event.preventDefault();
-			var id = window.location.hash.substring(1);//selects current user from url
-			studentInfo.update({_id: id},{$set:{
+			//var id = window.location.hash.substring(1);//selects current user from url
+			studentInfo.update({_id: Meteor.userId()},{$set:{
 				FirstName : firstName.value,
 				LastName : lastName.value,
 				CellNumber : cellNumber.value,
@@ -19,8 +18,8 @@ if (Meteor.isClient) {
 				HomeNumber : homeNumber.value,
 				Picture : "Upic1"}});
 
-			alert("Your information has been updated!");
-			window.location.href = "/student" + "#" + id;
+			//alert("Your information has been updated!");
+			//window.location.href = "/student" + "#" + id;
 		}
 	});
 }

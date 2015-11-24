@@ -34,12 +34,16 @@
                 <h3 class="panel-title">Form Status</h3>
             </div>
             <div class="panel-body">
+                <label class="hide-completed">
+                    <input type="checkbox" checked="{{hideCompleted}}" />
+                    Hide Completed Tasks
+                </label>
                 <ul>
                     {{#each forms}}
-                        <li class="{{#if checked}}checked{{/if}}">
+                        <li class="{{#if Done}}checked{{/if}}">
                             <label class ="checkbox">
-                                <input type="checkbox" checked="{{checked}}" class="toggle-checked">
-                                <a href="infoPage"> {{Name}} </a>
+                                <input type="checkbox" checked ="{{Done}}" class="toggle-checked">
+                                <a href="infoPage" id="{{FormNumber}}" onclick="infoPass(id);"> {{Name}} </a>
                             </label>
                         </li>
                     {{/each}}
@@ -49,13 +53,12 @@
                 </label>
             </div>
         </div>
-    </div> 
-	
-    <script type="text/javascript">
-
-        function updateInfo(){
-            var id = window.location.hash.substring(1);
-            window.location.href = "/updateStudentInfo"+ "#" + id;
+    </div>
+    <script>
+        function infoPass(formNum) {
+            var form = forms.findOne({FormNumber: formNum});
+            var id = form._id;
         }
     </script>
+
 </template>

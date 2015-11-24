@@ -1,10 +1,9 @@
-
+/*
 if (Meteor.isServer) {
 	Meteor.publish("login", "studentInfo", function () {
 		return studentInfo.find({});
 	});
-}
-if (Meteor.isClient) {
+}*/
 	//Meteor.subscribe("login");
 	Meteor.subscribe("studentInfo");
 	Template.updateStudentInfo.events({
@@ -23,4 +22,3 @@ if (Meteor.isClient) {
 			window.location.href = "/student" + "#" + id;
 		}
 	});
-}

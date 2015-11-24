@@ -1,4 +1,3 @@
-login = new Mongo.Collection('login');
 
 if (Meteor.isServer) {
 	 // WHAT DOES THIS DO?
@@ -9,7 +8,6 @@ if (Meteor.isServer) {
 
 }
 
-if (Meteor.isClient) {
   Meteor.subscribe("login");
   Meteor.subscribe("studentInfo");
 	Template.addStudent.events({
@@ -20,7 +18,6 @@ if (Meteor.isClient) {
 			Meteor.call('createStudent', emailVar, passwordVar );
 		}
 	});
-}
 
 
 

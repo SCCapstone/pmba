@@ -1,6 +1,4 @@
-forms = new Mongo.Collection("forms");
 
-if (Meteor.isClient) {
     Meteor.subscribe("studentInfo");
     Meteor.subscribe("forms");
     Template.student.helpers({
@@ -23,5 +21,3 @@ if (Meteor.isClient) {
 			}
 		}
 	});
-
-}

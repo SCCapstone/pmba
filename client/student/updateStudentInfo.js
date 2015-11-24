@@ -10,8 +10,6 @@ if (Meteor.isClient) {
 	Template.updateStudentInfo.events({
 		'submit form' : function(event){
 			event.preventDefault();
-			//This gets the id from the userInfo collection from sessionStorage
-			var id = JSON.parse(sessionStorage.user)
 			studentInfo.update({_id: id},{$set:{
 				FirstName : firstName.value,
 				LastName : lastName.value,

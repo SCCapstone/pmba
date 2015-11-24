@@ -4,14 +4,7 @@ if (Meteor.isClient) {
         'submit form': function (event) {
             event.preventDefault();
             var emailVar = inputEmail.value;
-            var passwordVar = inputPassword.value;
-			//uses emailVar to find student in userInfo collection
-			var userInfo = studentInfo.findOne({Email: inputEmail.value});
-			//sets user that is logging in to user
-			var user = userInfo._id;
-			//creates an item in session storage equal to the current user
-			sessionStorage.setItem('user', JSON.stringify(user));
-			
+            var passwordVar = inputPassword.value;		
 			
             console.log("login submitted.");
             Meteor.loginWithPassword(emailVar, passwordVar);

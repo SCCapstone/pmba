@@ -10,7 +10,7 @@ if (Meteor.isClient) {
 	Template.updateStudentInfo.events({
 		'submit form' : function(event){
 			event.preventDefault();
-			studentInfo.update({_id: id},{$set:{
+			studentInfo.update({_id: Meteor.userId()},{$set:{
 				FirstName : firstName.value,
 				LastName : lastName.value,
 				CellNumber : cellNumber.value,

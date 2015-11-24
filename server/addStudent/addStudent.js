@@ -1,5 +1,3 @@
-studentInfo = new Mongo.Collection('studentInfo');
-
 Meteor.publish("studentInfo", function () {
     return studentInfo.find();
 });

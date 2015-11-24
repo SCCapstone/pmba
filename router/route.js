@@ -42,7 +42,7 @@ Router.route('/login');
     except: ['login']
 });*/ //DISABLED FOR NOW
 
-Router.route('student', function () {
+Router.route('/student', function () {
     this.render('student')
 });
 
@@ -58,8 +58,8 @@ Router.route('/changePassword', function () {
     this.render('changePassword')
 });
 
-Router.route('/updateStudent', function () {
-    this.render('updateStudent')
+Router.route('/updateStudentInfo', function () {
+    this.render('updateStudentInfo')
 });
 
 Router.route('/addStudent', function () {

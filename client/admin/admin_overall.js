@@ -1,5 +1,4 @@
 
-if (Meteor.isClient) {
     Meteor.subscribe("studentInfo");
 	Meteor.subscribe("forms");
 	
@@ -17,4 +16,3 @@ if (Meteor.isClient) {
      event.preventDefault();
      }
      });
-}

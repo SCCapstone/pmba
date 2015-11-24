@@ -1,35 +1,27 @@
 <template name="login">
     <div class = "page-header" id="header">
         <h1>
-            <img src="img/logo.svg" class="img-responsive">
+            <img src="/img/logo.svg" class="img-responsive">
         </h1>
     </div>
-    <div style="text-align: center;">
-		<h2 style="text-align: center;">Login</h2>
-		<form class="form-horizontal">
-			<div class="row-fluid">
-
-					<div class="control-group">
-						<label class="control-label" for="inputEmail">Email</label>
-						<div class="controls">
-							<input type="text" id="inputEmail" placeholder="Email">
-						</div>
-					</div>
-					<div class="control-group">
-						<label class="control-label" for="inputPassword">Password</label>
-						<div class="controls">
-							<input type="password" id="inputPassword" placeholder="Password">
-						</div>
-					</div>
-					<div class="control-group">
-						<div class="controls">
-							<label class="checkbox">
-								<input type="checkbox"> Remember me
-							</label>
-							<button type="submit" class="btn">Sign in</button>
-						</div>
-					</div>
-			</div>
-	    </form>
-    </div>
+    <div class="container" style="margin-top:30px">
+        <div class="col-md-4 center">
+            <div class="panel panel-default">
+                <div class="panel-heading"><h3 class="panel-title"><strong>Sign In </strong></h3></div>
+                <div class="panel-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="inputEmail">Email</label>
+                            <input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword">Password <a href="/login">(forgot password)</a></label>
+                            <input type="password" class="form-control" id="inputPassword" name="inputPassword" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-sm btn-default">Sign in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
 </template>

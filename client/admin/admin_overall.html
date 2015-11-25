@@ -5,7 +5,7 @@
 <template name="adminOverall">
     <div class = "page-header" id="header">
         <h1>
-            <img src="img/logo.svg" class="img-responsive">
+            <img src="/img/logo.svg" class="img-responsive">
             <small style="color:#000000">Administrator Page</small>
         </h1>
     </div>
@@ -72,6 +72,8 @@
     </div>
 
     <div class="row-fluid col-md-6 col-md-offset-1">
-        {{> sendEmail}}
+		<div class="well well-xlg" id="messages">
+            {{> sendEmail}}
+        </div>
     </div>
 </template>

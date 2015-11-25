@@ -18,8 +18,5 @@ if (Meteor.isServer) {
 				WorkNumber : workNumber.value,
 				HomeNumber : homeNumber.value,
 				Picture : "Upic1"}});
-
-			//alert("Your information has been updated!");
-			//window.location.href = "/student" + "#" + id;
 		}
 	});

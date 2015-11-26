@@ -1,11 +1,4 @@
 
-if (Meteor.isServer) {
-    Meteor.publish("forms", function () {
-        return forms.find({});
-    });
-
-}
-if (Meteor.isClient) {
     Meteor.subscribe("forms");
     Template.student.helpers({
         forms: function () {
@@ -18,8 +11,7 @@ if (Meteor.isClient) {
             event.preventDefault();
 
         }
-    })
-}
+    });
 /*
 if (Meteor.isClient) {
     //Meteor.subscribe("login");

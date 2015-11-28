@@ -5,9 +5,10 @@ Meteor.startup(function () {
 });
 
 Meteor.methods({
+
     // This method sends one email
     sendEmail : function (address, subject , message) {
-        console.log("Sending Email");
+        console.log("Sending Email to " + address);
         Email.send({
          to: address,
          from: "pmba.sc.capstone@gmail.com",

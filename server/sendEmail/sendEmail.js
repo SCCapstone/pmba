@@ -1,11 +1,14 @@
 Meteor.startup(function () {
-    console.log('Starting up Email!');
+    //Setup the email environment variable
+    // Right now its using the pmba gmail account
     process.env.MAIL_URL="smtp://pmba.sc.capstone%40gmail.com:pmbaPMBA@smtp.gmail.com:465/";
 });
 
 Meteor.methods({
+
+    // This method sends one email
     sendEmail : function (address, subject , message) {
-        console.log("Sending Email");
+        console.log("Sending Email to " + address);
         Email.send({
          to: address,
          from: "pmba.sc.capstone@gmail.com",

@@ -40,10 +40,9 @@
                     <ul>
                         {{#each studentInfo}}
                             <li id="formNumber" value = "0">
-                               <a href="admin_student"> {{FirstName}} {{LastName}} </a>
-                                <div class="progress progress-striped active">
-                                    <div class="bar" style="width: 40%;"></div>
-                                </div>
+                               <a href="admin_student"
+                                  onclick="Session.set('selectedStudent', '{{_id}}');">
+                                   {{FirstName}} {{LastName}} </a>
                             </li>
                         {{/each}}
                     </ul>
@@ -69,11 +68,5 @@
                 <input type="button" onclick=" window.location.href = '/addforms'" value = 'add forms'>
            </div>
      </div>
-    </div>
-
-    <div class="row-fluid col-md-6 col-md-offset-1">
-		<div class="well well-xlg" id="messages">
-            {{> sendEmail}}
-        </div>
     </div>
 </template>

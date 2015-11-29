@@ -36,11 +36,11 @@
                     <ul class="nav nav-sidebar">
                         <img src="..." class="img-polaroid">
                         <li><strong>Student Info</strong></li>
-                        {{#each studentInfo}}
-                        <li>{{FirstName}} {{LastName}}</li>
-                        <li>{{UserID}}</li>
-                        <li>{{CellNumber}}</li>
-                        <li>{{Email}}</li>
+                        {{#each data}}
+                        <li>Name: {{FirstName}} {{LastName}}</li>
+                        <li>UserID: {{UserID}}</li>
+                        <li>Cell: {{CellNumber}}</li>
+                        <li>Email: {{Email}}</li>
                         {{/each}}
                     </ul>
                 </div>

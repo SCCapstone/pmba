@@ -1,5 +1,3 @@
-//studentInfo = new Mongo.Collection('studentInfo');
-
 Meteor.publish("studentInfo", function () {
     return studentInfo.find();
 });
@@ -8,6 +6,8 @@ Meteor.startup(function () {
     console.log('Starting UP!');
 });
 
+//Meteor method to add a user on the server side
+// If we attempt to create a user on the client side it will autologin that new user
 Meteor.methods({
     createStudent:function(email, password) {
         // used to get the userId from createUser to set un studentInfo
@@ -21,7 +21,6 @@ Meteor.methods({
         }
         console.log("INSERTING STUDENT INFO");
         studentInfo.insert({
-            _id: userId,
             Email: email,
             IDType : "S",
             Form1: false,
@@ -31,5 +30,6 @@ Meteor.methods({
          console.log("not logged in or not an admin");
          }*/
         console.log('Student Added');
+		window.location.href = "/addStudent";
     }
 });

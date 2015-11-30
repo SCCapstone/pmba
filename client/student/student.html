@@ -34,30 +34,30 @@
                 <h3 class="panel-title">Form Status</h3>
             </div>
             <div class="panel-body">
-                <label class="hide-completed">
-                    <input type="checkbox" checked="{{hideCompleted}}" />
-                    Hide Completed Tasks
-                </label>
                 <ul>
                     {{#each forms}}
                         <li class="{{#if Done}}checked{{/if}}">
                             <label class ="checkbox">
                                 <input type="checkbox" checked ="{{Done}}" class="toggle-checked">
-                                <a href="infoPage" id="{{FormNumber}}" onclick="infoPass(id);"> {{Name}} </a>
+                                <a href="infoPage" id="{{FormNumber}}"
+                                   onclick="Session.set('selectedForm', '{{_id}}');">
+                                    {{Name}} </a>
                             </label>
                         </li>
                     {{/each}}
                 </ul>
+                <script>
+                    if (Session.get("hideCompleted")){
+                        document.getElementById('hide').value="Show";
+                    }
+                    else {
+                        document.getElementById('hide').value="Hide";
+                    }
+                </script>
                 <label class="hide-completed">
-                    <button type="submit" class="btn" id="hide">Hide</button>
+                    <input type="button" id="hide" value="Hide"/>
                 </label>
             </div>
         </div>
     </div>
-    <script>
-        function infoPass(formNum) {
-            var form = forms.findOne({FormNumber: formNum});
-            var id = form._id;
-        }
-    </script>
 </template>

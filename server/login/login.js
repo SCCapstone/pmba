@@ -1,6 +1,6 @@
 /**
  * Created by userpc on 11/24/2015.
  */
-    Meteor.publish("login","studentInfo", function () {
-        return Users.find({});
+    Meteor.publish("studentInfo", function () {
+        return studentInfo.find({});
     });

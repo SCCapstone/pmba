@@ -16,3 +16,17 @@ html, body { height: 100%; }
     margin-top: 0px;
 }
 
+#studentData {
+
+}
+
+ul{
+display: table;
+margin-left: 0;
+padding-left: 0;
+list-style: none;
+}
+
+li {
+    display: table-row;
+}

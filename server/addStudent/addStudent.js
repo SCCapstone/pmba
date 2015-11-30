@@ -21,6 +21,7 @@ Meteor.methods({
         }
         console.log("INSERTING STUDENT INFO");
         studentInfo.insert({
+            _id: userId,
             Email: email,
             IDType : "S",
             Form1: false,

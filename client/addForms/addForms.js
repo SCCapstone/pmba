@@ -1,10 +1,12 @@
 
     Meteor.subscribe("forms");
-    Template.student.helpers({
-        forms: function () {
-            return forms.find({});
+
+    Template.addForms.helpers({
+        forms: function() {
+            return forms.find();
         }
     });
+
     Template.addForms.events({
         'submit form' : function(event){
             event.preventDefault();

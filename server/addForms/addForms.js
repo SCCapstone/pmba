@@ -13,7 +13,10 @@ Meteor.methods({
                 Description: description,
                 DueDate: dueDate
             });
-            console.log('Form Added');
+            var $set = {};
+            $set['Forms.' + name] = false;
+            studentInfo.upsert({},
+                { $set: $set}, {multi: true});
         //}
        /* else {
             console.log("Can't add form not logged in or not an admin");

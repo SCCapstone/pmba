@@ -6,7 +6,8 @@
 			event.preventDefault();
 			var emailVar = inputEmail.value;
 			var passwordVar = 'password'; //Just for testing
-			Meteor.call('createStudent', emailVar, passwordVar );
+			var accountType = document.getElementById("Account").value;
+			Meteor.call('createStudent', emailVar, passwordVar, accountType );
 			
 			window.location.href = "/addStudent";
 		}

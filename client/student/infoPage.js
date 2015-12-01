@@ -1,9 +1,14 @@
     Meteor.subscribe("forms");
     Template.infoPage.helpers({
         forms: function () {
-            return forms.find({_id : Session.get('selectedForm')});
+            return forms.find({});
         },
-        selectedForm : function () {
-            return Session.get("selectedForm")
+        studentInfo: function() {
+            var temp = "ID";
+            temp = temp +2;
+            return studentInfo.find({UserID: temp});
+        },
+        profile: function() {
+            return forms.find(Session.get('selectedForm')).fetch();
         }
     });

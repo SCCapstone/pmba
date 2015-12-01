@@ -3,25 +3,52 @@
 </head>
 
 <template name="adminOverall">
+
     <div class = "page-header" id="header">
-        <h1>
+        <!--<h1>
             <img src="/img/logo.svg" class="img-responsive">
             <small style="color:#000000">Administrator Page</small>
-        </h1>
+        </h1>-->
     </div>
 
-    <div class="btn-group">
-        <a class="btn btn-primary" href="admin_Overall"><i class="icon-user icon-white"></i> Administrator </a>
-        <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
-        <ul class="dropdown-menu">
-            <li class="active"><a href="admin_Overall"><i class="icon-home icon-white"></i> Home</a></li>
-            <li><a href="#"><i class="icon-pencil"></i> Notifications</a></li>
-            <li><a href="addforms"><i class="icon-pencil"></i>Forms</a></li>
-            <li><a href="#"><i class="icon-book"></i> Settings</a></li>
-            <li><a href="statistics"><i class="icon-book"></i> Statistics</a></li>
-            <li><a href="login"><i class="icon-book"></i> Logout</a></li>
-        </ul>
-    </div>
+    <div class="container-fluid">
+
+        <!-- Second navbar for search -->
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-3">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="admin_Overall">PMBA</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-collapse-3">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="admin_Overall">Home</a></li>
+                        <li><a href="#">Notifications</a></li>
+                        <li><a href="addforms"><i class="icon-pencil"></i>Forms</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="statistics">Statistics</a></li>
+                        <li><a href="login">Logout</a></li>
+                    </ul>
+                    <div class="collapse nav navbar-nav nav-collapse" id="nav-collapse3">
+                        <form class="navbar-form navbar-right" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search" />
+                            </div>
+                            <button type="submit" class="btn btn-danger"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                        </form>
+                    </div>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container -->
+        </nav><!-- /.navbar -->
+    </div><!-- /.container-fluid -->
 
     <div class="container-fluid">
 		<div class="row">
@@ -65,7 +92,7 @@
                         </li>
                     {{/each}}
                 </ul>
-                <input type="button" onclick=" window.location.href = '/addforms'" value = 'add forms'>
+                <input type="button" onclick=" window.location.href = '/addForms'" value = 'add forms'>
            </div>
      </div>
     </div>

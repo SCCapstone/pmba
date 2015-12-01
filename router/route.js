@@ -78,7 +78,7 @@ Router.route('/infoPage', function () {
     this.render('infoPage')
 });
 
-Router.route('/addforms', function () {
-    this.render('addforms')
+Router.route('/addForms', function () {
+    this.render('addForms')
 });
 

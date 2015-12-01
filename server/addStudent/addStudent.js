@@ -10,7 +10,7 @@ Meteor.startup(function () {
 //Meteor method to add a user on the server side
 // If we attempt to create a user on the client side it will autologin that new user
 Meteor.methods({
-    createStudent:function(email, password) {
+    createStudent:function(email, password, accountType) {
         // used to get the userId from createUser to set un studentInfo
         var userId;
        /*if (Meteor.userID() &&
@@ -24,7 +24,7 @@ Meteor.methods({
         studentInfo.insert({
             _id: userId,
             Email: email,
-            IDType: "S"
+            IDType: accountType
         });
 
         var cursor = forms.find();

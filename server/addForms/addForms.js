@@ -3,7 +3,7 @@ Meteor.publish("forms", function () {
 });
 
 Meteor.methods({
-    addForm: function (name, description, dueDate) {
+    addForm: function (name, description, dueDate, num, pic) {
        /* if (Meteor.userID() &&
             studentInfo.findOne(Meteor.userId(), {fields: {'IDType': 1}}).IDType == 'A') {*/
 
@@ -11,7 +11,9 @@ Meteor.methods({
             forms.insert({
                 Name: name,
                 Description: description,
-                DueDate: dueDate
+                DueDate: dueDate,
+                FormNumber: num,
+                FormPicture: pic
             });
             var $set = {};
             $set['Forms.' + name] = false;

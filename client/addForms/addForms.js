@@ -10,10 +10,14 @@
     Template.addForms.events({
         'submit form' : function(event){
             event.preventDefault();
+            var num = forms.find({}).count() + 1;
+            //This is temp and not the final way to handle the form number and form picture
+            var formNum = "Form"+num;
+            var formPic = "Fpic"+num;
             var name = inputName.value;
             var description = inputDescription.value;
             var dueDate = inputDueDate.value;
-            Meteor.call('addForm', name, description, dueDate );
+            Meteor.call('addForm', name, description, dueDate, formNum, formPic );
 
         }
     });

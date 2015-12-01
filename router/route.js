@@ -82,3 +82,14 @@ Router.route('/addForms', function () {
     this.render('addForms')
 });
 
+Router.route('/home', function () {
+    if (Meteor.userId() != null &&
+        studentInfo.findOne(Meteor.userId(), {fields: {'IDType': 1}}).IDType == 'S') {
+        Router.go('/student');
+    }
+    else if (Meteor.userId() != null &&
+        studentInfo.findOne(Meteor.userId(), {fields: {'IDType': 1}}).IDType == 'A') {
+        Router.go('/admin_overall');
+    }
+});
+

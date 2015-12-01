@@ -1,7 +1,7 @@
 html, body { height: 100%; }
 
 .container {
-    mon-height: 100% overflow : hidden;
+    mon-height: 100%; overflow : hidden;
 }
 
 #col1, #col2 {
@@ -17,7 +17,7 @@ html, body { height: 100%; }
 span.tabButton{
     padding: 0 56px;
 }
-span.tabDescribe{
+span.tabDescription{
     padding: 0 43px;
 }
 span.tabName{

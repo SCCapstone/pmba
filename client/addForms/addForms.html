@@ -1,8 +1,8 @@
 <head>
-    <!--<title>PMBA</title>-->
+    <title>PMBA</title>
 </head>
 
-<template name="addforms">
+<template name="addForms">
     <div class = "page-header" id="header">
        <!-- <h1>
             <img src="img/logo.svg" class="img-responsive">
@@ -86,7 +86,7 @@
                 <ul>
 
                     <li>
-                            <a href="infoPage"> PMBA Locator Form </a>
+                        <a href="infoPage"> PMBA Locator Form </a>
                     </li>
                     <li>
                             <a href="infoPage"> USC Student Immunization Form </a>
@@ -99,22 +99,22 @@
         </div>
     </div>
 
-    <form id="addform" action="addforms" class="form-horizontal">
+    <form id="addform" class="form-horizontal">
         <div class="row-fluid col-md-6 col-md-offset-4">
 
             <div class="name">
-                <label class="name" for="inputName">Name:</label><span class="tabName"> </span>
-                <input type="text" id="inputName" placeholder="Name">
+                <label class="name" for="inputName">Name:</label><span class="tabName"></span>
+                <input type="text" name="inputName" id="inputName" placeholder="Name">
             </div>
             <br>
             <div class="description">
-                <label class="description" for="inputDescribe">Description:</label><span class="tabDescribe"> </span>
-                <input type="text" id="inputDescribe" placeholder="">
+                <label class="description" for="inputDescription">Description:</label><span class="tabDescription"> </span>
+                <input type="text" name="inputDescription" id="inputDescription" placeholder="">
             </div>
             <br>
             <div class="duedate">
-                <label class="dueDate" for="">Due Date:</label><span class="tabDueDate"> </span>
-                <input type="text" id="dueDate" placeholder="Ex. -/--/----">
+                <label class="inputDueDate" for="">Due Date:</label><span class="tabDueDate"> </span>
+                <input type="datetime" name="inputDueDate" id="inputDueDate" placeholder="Ex. -/--/----">
             </div>
             <br>
             <div class="addButton">

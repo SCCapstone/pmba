@@ -2,7 +2,7 @@
   // Server authentication info
   "servers": [
     {
-      "host": "129.252.130.157",
+      "host": "129.252.29.12",
       "sshOptions": { "port" : 222 },
       "username": "meteor",
       "password": "q1w2e3r4Q!W@E#R$"

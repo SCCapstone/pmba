@@ -1,8 +1,12 @@
-<template name="statistics">
+<head>
+    <title>PMBA</title>
+</head>
+
+<template name="addForms">
     <div class = "page-header" id="header">
        <!-- <h1>
             <img src="img/logo.svg" class="img-responsive">
-            <small style="color:#000000">Statistics Page</small>
+            <small style="color:#000000">Add or Delete Forms</small>
         </h1>-->
     </div>
 
@@ -27,9 +31,9 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="admin_Overall">Home</a></li>
                         <li><a href="#">Notifications</a></li>
-                        <li><a href="addforms"><i class="icon-pencil"></i>Forms</a></li>
+                        <li class="active"><a href="addforms"><i class="icon-pencil"></i>Forms</a></li>
                         <li><a href="#">Settings</a></li>
-                        <li class="active"><a href="statistics">Statistics</a></li>
+                        <li><a href="statistics">Statistics</a></li>
                         <li><a href="login">Logout</a></li>
                     </ul>
                     <div class="collapse nav navbar-nav nav-collapse" id="nav-collapse3">
@@ -47,32 +51,67 @@
 
     <!--
     <div class="btn-group">
-        <a class="btn btn-primary" href="#"><i class="icon-user icon-white"></i> Administrator </a>
+        <a class="btn btn-primary" href="admin_Overall"><i class="icon-user icon-white"></i> Administrator </a>
         <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
         <ul class="dropdown-menu">
             <li><a href="admin_Overall"><i class="icon-home icon-white"></i> Home</a></li>
             <li><a href="#"><i class="icon-pencil"></i> Notifications</a></li>
+            <li class="active"><a href="#"><i class="icon-pencil"></i>Forms</a></li>
             <li><a href="#"><i class="icon-book"></i> Settings</a></li>
-            <li class="active"><a href="statistics"><i class="icon-book"></i> Statistics</a></li>
+            <li><a href="statistics"><i class="icon-book"></i> Statistics</a></li>
             <li><a href="login"><i class="icon-book"></i> Logout</a></li>
         </ul>
     </div>-->
-<!-- This button is used for testing various statistics functions.values -->
 
-	<label class="hide-completed">
-                    <button type="submit" class="btn" id="hide">NumberStudents</button>
-    </label>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10">
+            </div>
+        </div>
+    </div>
 
     <div class="row-fluid">
-        <div class=" col-md-6 col-md-offset-1 panel panel-default">
+        <div class=" col-md-6 col-md-offset-3 panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">Stats</h3>
+                <h3 class="panel-title">Current Forms</h3>
             </div>
             <div class="panel-body">
                 <ul>
-                    <li>Graph</li>
+                    {{#each forms}}
+                        <li>
+                                <a href="infoPage"> {{Name}} </a>
+                        </li>
+                    {{/each}}
                 </ul>
             </div>
         </div>
     </div>
+
+    <form id="addform" class="form-horizontal">
+        <div class="row-fluid col-md-6 col-md-offset-4">
+
+            <div class="name">
+                <label class="name" for="inputName">Name:</label><span class="tabName"></span>
+                <input type="text" name="inputName" id="inputName" placeholder="Name">
+            </div>
+            <br>
+            <div class="description">
+                <label class="description" for="inputDescription">Description:</label><span class="tabDescription"> </span>
+                <input type="text" name="inputDescription" id="inputDescription" placeholder="">
+            </div>
+            <br>
+            <div class="duedate">
+                <label class="inputDueDate" for="">Due Date:</label><span class="tabDueDate"> </span>
+                <input type="datetime" name="inputDueDate" id="inputDueDate" placeholder="Ex. -/--/----">
+            </div>
+            <br>
+            <div class="addButton">
+                <div class="controls">
+                    <span class="tabAddForm"></span><button type="submit">Add Form</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
 </template>

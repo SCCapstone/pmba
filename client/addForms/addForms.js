@@ -1,14 +1,23 @@
 
     Meteor.subscribe("forms");
-    Template.student.helpers({
-        forms: function () {
-            return forms.find({});
 
+    Template.addForms.helpers({
+        forms: function() {
+            return forms.find();
         }
     });
-    Template.student.events({
-        'click .toggle-checked' : function(event){
+
+    Template.addForms.events({
+        'submit form' : function(event){
             event.preventDefault();
+            var num = forms.find({}).count() + 1;
+            //This is temp and not the final way to handle the form number and form picture
+            var formNum = "Form"+num;
+            var formPic = "Fpic"+num;
+            var name = inputName.value;
+            var description = inputDescription.value;
+            var dueDate = inputDueDate.value;
+            Meteor.call('addForm', name, description, dueDate, formNum, formPic );
 
         }
     });
@@ -16,7 +25,7 @@
 if (Meteor.isClient) {
     //Meteor.subscribe("login");
     Meteor.subscribe("forms");
-    Template.addforms.events({
+    Template.addForms.events({
         'submit form' : function(event){
             //var userid = window.location.hash.substring(1);//selects current user email from url
             //var user1 = login.findOne({UserID: userid});

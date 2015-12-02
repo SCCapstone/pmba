@@ -23,6 +23,17 @@ var before = {
             // from running
             this.next();
         }
+    },
+
+    checkAdmin: function() {
+        if (Meteor.userId &&
+            adminInfo.findOne(Meteor.userId())) {
+            console.log('admin in routes');
+            this.next();
+        }
+        else {
+            console.log('You do not have permission');
+        }
     }
 };
 /******************************************************************************
@@ -38,6 +49,9 @@ Router.route('/login');
 // Check to make sure user user is logged in
 Router.onBeforeAction(before.loginRequired, {
     except: ['login']
+});
+Router.onBeforeAction(before.checkAdmin, {
+    only: ['admin_overall', 'admin_student', 'addForms', 'addStudent', '']
 });
 
 Router.route('/student', function () {

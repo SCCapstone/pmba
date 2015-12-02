@@ -35,10 +35,24 @@ Meteor.methods({
             studentInfo.upsert(userId,
                 { $set: $set}, {multi: true});
         });
-        
+
         console.log('Student Added');
         /* } else {
          console.log("not logged in or not an admin");
          }*/
-    }
+    },
+
+    /*updateAllStudents:function() {
+        var studentCursor = studentInfo.find();
+        studentCursor.forEach(function (student) {
+        var formCursor = forms.find();
+
+        formCursor.forEach(function (doc) {
+            var $set = {};
+            $set['Forms.' + doc.Name] = false;
+            studentInfo.upsert(student,
+                {$set: $set}, {multi: true});
+        });
+    });
+    }*/
 });

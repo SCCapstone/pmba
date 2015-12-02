@@ -13,30 +13,40 @@ Meteor.methods({
     createStudent:function(email, password, accountType) {
         // used to get the userId from createUser to set un studentInfo
         var userId;
-       /*if (Meteor.userID() &&
-                studentInfo.findOne(Meteor.userId(), {fields: {'IDType': 1}}).IDType == 'A') */{
+        /*if (Meteor.userID() &&
+         studentInfo.findOne(Meteor.userId(), {fields: {'IDType': 1}}).IDType == 'A') */
+        {
             userId = Accounts.createUser({
                 email: email,
                 password: password
             });
         }
-        console.log("INSERTING STUDENT INFO");
-        studentInfo.insert({
-            _id: userId,
-            Email: email,
-            IDType: accountType
-        });
+        if (accountType = 'A') {
+            adminInfo.insert({
+                _id: userId,
+                Email: email,
+                IDType: accountType
+            });
+        }
+        else if (accountType = 'S') {
+            console.log("INSERTING STUDENT INFO");
+            studentInfo.insert({
+                _id: userId,
+                Email: email,
+                IDType: accountType
+            });
 
-        var cursor = forms.find();
-        cursor.forEach(function(doc){
-            console.log(doc.Name + "\t" + userId);
-            var $set = {};
-            $set['Forms.' + doc.Name] = false;
-            studentInfo.upsert(userId,
-                { $set: $set}, {multi: true});
-        });
+            var cursor = forms.find();
+            cursor.forEach(function (doc) {
+                console.log(doc.Name + "\t" + userId);
+                var $set = {};
+                $set['Forms.' + doc.Name] = false;
+                studentInfo.upsert(userId,
+                    {$set: $set}, {multi: true});
+            });
 
-        console.log('Student Added');
+            console.log('Student Added');
+        }
         /* } else {
          console.log("not logged in or not an admin");
          }*/

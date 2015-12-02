@@ -27,7 +27,8 @@ var before = {
 
     checkAdmin: function() {
         if (Meteor.userId &&
-            studentInfo.findOne(Meteor.userId(), {fields: {'IDType': 1}}).IDType == 'A') {
+            adminInfo.findOne(Meteor.userId())) {
+            console.log('admin in routes');
             this.next();
         }
         else {

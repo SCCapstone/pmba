@@ -76,6 +76,24 @@
                     <label class="email" for="inputEmail">Email:</label><span class="tabEmail"> </span>
                         <input type="email" id="inputEmail" name="inputEmail" placeholder="Email">
                 </div>
+                <div class="btn-group">
+                    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" id="Account">
+                        Account Type
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#" onclick="AccountType('S', 'Student')">
+                                Student
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="AccountType('A', 'Admin')">
+                                Admin
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 				<br>
                 <div class="updateButton">
                     <div class="controls">
@@ -84,6 +102,11 @@
                 </div>
         </div>
     </form>
-	
+	<script>
+        function AccountType(accType, selectedType){
+            document.getElementById("Account").value = accType;
+            document.getElementById("Account").textContent = selectedType;
+        }
+    </script>
 
     </template>

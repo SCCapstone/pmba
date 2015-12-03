@@ -2,14 +2,7 @@
     <title>PMBA</title>
 </head>
 
-<template name="adminOverall">
-
-    <div class = "page-header" id="header">
-        <!--<h1>
-            <img src="/img/logo.svg" class="img-responsive">
-            <small style="color:#000000">Administrator Page</small>
-        </h1>-->
-    </div>
+<template name="adminNavBar">
 
     <div class="container-fluid">
 
@@ -49,6 +42,19 @@
             </div><!-- /.container -->
         </nav><!-- /.navbar -->
     </div><!-- /.container-fluid -->
+
+</template>
+
+<template name="adminOverall">
+
+    <div class = "page-header" id="header">
+        <h1>>
+            <img src="/img/logo.svg" class="img-responsive">
+            <small style="color:#000000">Administrator Page</small>
+            {{>adminNavBar}}
+        </h1>
+    </div>
+
 
     <div class="container-fluid">
 		<div class="row">

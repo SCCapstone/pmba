@@ -1,9 +1,4 @@
-<template name="login">
-    <div class = "page-header" id="header">
-        <!--<h1>
-            <img src="/img/logo.svg" class="img-responsive">
-        </h1>-->
-    </div>
+<template name="loginNavBar">
 
     <div class="container-fluid">
 
@@ -38,6 +33,16 @@
             </div><!-- /.container -->
         </nav><!-- /.navbar -->
     </div><!-- /.container-fluid -->
+
+</template>
+
+<template name="login">
+    <div class = "page-header" id="header">
+        <h1>
+            <img src="/img/logo.svg" class="img-responsive">
+            {{>loginNavBar}}
+        </h1>
+    </div>
 
     <div class="container" style="margin-top:30px">
         <div class="col-md-4 center">

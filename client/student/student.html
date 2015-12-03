@@ -76,7 +76,7 @@
                     {{#each forms}}
                         <li class="{{#if Done}}checked{{/if}}">
                             <label class ="checkbox">
-                                <input type="checkbox" checked ="{{Done}}" class="toggle-checked">
+                                <input type="checkbox" checked ={{Done}} class="toggle-checked">
                                 <a href="infoPage" id="{{FormNumber}}"
                                    onclick="Session.set('selectedForm', '{{_id}}');">
                                     {{Name}} </a>
@@ -90,6 +90,9 @@
                     }
                     else {
                         document.getElementById('hide').value="Hide";
+                    }
+                    function studentForm(Fname) {
+                        return true;
                     }
                 </script>
                 <label class="hide-completed">

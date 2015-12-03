@@ -21,19 +21,28 @@ Meteor.methods({
                 password: password
             });
         }
-        if (accountType = 'A') {
+        if (accountType == 'A') {
             adminInfo.insert({
                 _id: userId,
                 Email: email,
-                IDType: accountType
+                IDType: accountType,
+                FirstName: "",
+                LastName: "",
+                CellNumber: "",
+                HomeNumber: "",
+                WorkNumber: ""
             });
         }
-        else if (accountType = 'S') {
-            console.log("INSERTING STUDENT INFO");
+        else if (accountType == 'S') {
             studentInfo.insert({
                 _id: userId,
                 Email: email,
-                IDType: accountType
+                IDType: accountType,
+                FirstName: "",
+                LastName: "",
+                CellNumber: "",
+                HomeNumber: "",
+                WorkNumber: ""
             });
 
             var cursor = forms.find();
@@ -44,8 +53,6 @@ Meteor.methods({
                 studentInfo.upsert(userId,
                     {$set: $set}, {multi: true});
             });
-
-            console.log('Student Added');
         }
         /* } else {
          console.log("not logged in or not an admin");

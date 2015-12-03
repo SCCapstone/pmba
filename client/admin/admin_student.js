@@ -17,6 +17,10 @@
          **/
         profile: function() {
             return studentInfo.find(Session.get('selectedStudent')).fetch();
+        },
+        studentForms: function() {
+            var list = studentInfo.find(Session.get('selectedStudent'), {fields: {Forms: 1}}).fetch();
+            return list.Forms;
         }
 
     });

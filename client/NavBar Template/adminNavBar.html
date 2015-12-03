@@ -1,11 +1,4 @@
-<template name="changePassword">
-    <div class = "page-header" id="header">
-        <h1>
-            <img src="img/logo.svg" class="img-responsive">
-            {{>loginNavBar}}
-        </h1>
-    </div>
-    <h2><!--Login--></h2>
+<template name="adminNavBar">
 
     <div class="container-fluid">
 
@@ -26,7 +19,7 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-collapse-3">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="admin_Overall">Home</a></li>
+                        <li><a href="admin_Overall">Home</a></li>
                         <li><a href="#">Notifications</a></li>
                         <li><a href="addforms"><i class="icon-pencil"></i>Forms</a></li>
                         <li><a href="#">Settings</a></li>
@@ -45,40 +38,5 @@
             </div><!-- /.container -->
         </nav><!-- /.navbar -->
     </div><!-- /.container-fluid -->
-	
-    <form class="form-horizontal">
-        <div class="row-fluid col-md-6 col-md-offset-1">
-                <div class="control-group">
-                    <label class="control-label" for="inputPassword">Old Password</label>
-                    <div class="controls">
-                        <input type="password" id="oldPassword" placeholder="Old Password">
-                    </div>
-                </div>
-				                <div class="control-group">
-                    <label class="control-label" for="inputPassword">New Password</label>
-                    <div class="controls">
-                        <input type="password" id="newPassword" placeholder="New Password">
-                    </div>
-                </div>
-				 <div class="control-group">
-                    <label class="control-label" for="inputPassword">Confirm New Password</label>
-                    <div class="controls">
-                        <input type="password" id="confirmNewPassword" placeholder="New Password">
-                    </div>
-                </div>
-				<br>
-                <div class="control-group">
-                    <div class="controls">
-                        <button type="submit">Change Password</button>
-                    </div>
-                </div>
-        </div>
-    </form>
-    <ul>
-        <li><a href="admin_overall"> Admin</a></li>
-        <li><a href="Student"> Student</a></li>
-        <li><a href="statistics"> Statistics</a></li>
-        <li><a href="help"> Help</a></li>
-    </ul>
 
 </template>

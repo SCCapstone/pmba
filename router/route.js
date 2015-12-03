@@ -11,22 +11,30 @@ Router.configure({
  * Hooks
  */
 
-// This function checks to make sure the userid is in the url, else
-// they are not logged in and are redirected to the login page.
+// This function checks to make sure that a user is logged on
+// if not then go to login
 var before = {
-    loginRequired: function(pause) {
-        console.log('ENTER BEFORE ACTION');
-        if  (window.location.hash.substring(1) === '') {
-            console.log('User: ' + window.location.hash.substring(1));
-            console.log('TRUE!!!!!!!!!!!!!!');
-            //this.render('login');
-            Router.go('/login');
+    loginRequired: function() {
+        if (!Meteor.userId()) {
+            // if the user is not logged in, render the Login template
+            this.render('login');
+        } else {
+            // otherwise don't hold up the rest of hooks or our route/action function
+            // from running
+            this.next();
         }
-        console.log('NEXT!!!!!!!!!!!!!!');
-        this.next();
+    },
+
+    checkAdmin: function() {
+        if (Meteor.userId &&
+            adminInfo.findOne(Meteor.userId())) {
+            this.next();
+        }
+        else {
+            console.log('You do not have permission');
+        }
     }
 };
-
 /******************************************************************************
  * Routes
  */
@@ -40,7 +48,10 @@ Router.route('/login');
 // Check to make sure user user is logged in
 /*Router.onBeforeAction(before.loginRequired, {
     except: ['login']
-});*/ //DISABLED FOR NOW
+});
+Router.onBeforeAction(before.checkAdmin, {
+    only: ['admin_overall', 'admin_student', 'addForms', 'addStudent', '']
+});*/
 
 Router.route('/student', function () {
     this.render('student')
@@ -80,5 +91,16 @@ Router.route('/infoPage', function () {
 
 Router.route('/addForms', function () {
     this.render('addForms')
+});
+
+Router.route('/home', function () {
+    if (Meteor.userId() != null &&
+        studentInfo.findOne(Meteor.userId(), {fields: {'IDType': 1}}).IDType == 'S') {
+        Router.go('/student');
+    }
+    else if (Meteor.userId() != null &&
+        studentInfo.findOne(Meteor.userId(), {fields: {'IDType': 1}}).IDType == 'A') {
+        Router.go('/admin_overall');
+    }
 });
 

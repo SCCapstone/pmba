@@ -1,5 +1,4 @@
-if (Meteor.isClient) {
- Meteor.subscribe("studentInfo");
+Meteor.subscribe("studentInfo");
     Template.login.events({
         'submit form': function (event) {
             event.preventDefault();
@@ -9,19 +8,13 @@ if (Meteor.isClient) {
             console.log("login submitted.");
             Meteor.loginWithPassword(emailVar, passwordVar);
 
-            // For testing
-            /***************************************/
-            console.log("User Id: " + Meteor.userId());
-            console.log('IDType ' + studentInfo.findOne(Meteor.userId(), {fields: {'IDType': 1}}).IDType);
-            /***************************************/
-
-            if (Meteor.userId() != null &&
-                studentInfo.findOne(Meteor.userId(), {fields: {'IDType': 1}}).IDType == 'S') {
-                Router.go('/student');
+            if (Meteor.userId() != null) {
+                if (studentInfo.findOne(Meteor.userId())) {
+                    Router.go('/student');
+                }
+                else if (adminInfo.findOne(Meteor.userId())) {
+                    Router.go('/admin_overall');
+                }
             }
-            else if (Meteor.userId() != null &&
-                studentInfo.findOne(Meteor.userId(), {fields: {'IDType': 1}}).IDType == 'A') {
-                Router.go('/admin_overall');
-            }
-        }}
-    )}
+        }
+    });

@@ -2,7 +2,7 @@ Meteor.subscribe("studentInfo");
 Meteor.subscribe("forms");
 Meteor.subscribe("FormStatus");
 Template.student.helpers({
-    forms: function () {
+    Student: function () {
         var student = studentInfo.findOne({_id: Meteor.userId()});
         var studentEmail = student.Email;
         if (Session.get("hideCompleted")) {
@@ -10,6 +10,10 @@ Template.student.helpers({
         } else {
             return FormStatus.find({Email: studentEmail});
         }
+    },
+    form: function (fNumber) {
+        var currentForm = forms.findOne({FormNumber: fNumber});
+        return currentForm._id;
     },
     hideCompleted: function () {
         return Session.get("hideCompleted");

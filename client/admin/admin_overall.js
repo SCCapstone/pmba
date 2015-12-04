@@ -11,7 +11,6 @@
         },
         // This works but should probably executed on server
         formPercent: function (name) {
-
             var numCompleted = FormStatus.find({$and: [{'FormName': name},{Done: true}]}).count();
             var total = studentInfo.find().count();
             var percentage = numCompleted / total;

@@ -19,12 +19,12 @@ html, body { height: 100%; }
 #studentData {
     display: table-row;
 }
-
-ul{
-display: table;
-margin-left: 0;
-padding-left: 0;
-list-style: none;
+.progress {
+    width: 400px;
 }
-
-
+ul{
+    display: table;
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+}

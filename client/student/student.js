@@ -1,16 +1,15 @@
 Meteor.subscribe("studentInfo");
 Meteor.subscribe("forms");
+Meteor.subscribe("FormStatus");
 Template.student.helpers({
     forms: function () {
+        var student = studentInfo.findOne({_id: Meteor.userId()});
+        var studentEmail = student.Email;
         if (Session.get("hideCompleted")) {
-            return forms.find({Done: {$ne: true}});
+            return FormStatus.find({$and: [{Email: studentEmail}, {Done: {$ne: true}}]});
         } else {
-            return forms.find({});
+            return FormStatus.find({Email: studentEmail});
         }
-    },
-    studentInfo: function() {
-        var user = Meteor.userId();
-        return studentInfo.find({_id: user }, { Forms: {}});
     },
     hideCompleted: function () {
         return Session.get("hideCompleted");
@@ -18,29 +17,23 @@ Template.student.helpers({
     selectedForm: function () {
         return Session.get("selectedForm");
     }
-
 });
 Template.student.events({
     'click .toggle-checked' : function(event){
         event.preventDefault();
         var formId = this._id;
-        var formNum = forms.findOne({_id: formId});
-        var test = formNum.FormNumber;
-        var checkValue = formNum.Done;
+        var form = FormStatus.findOne({_id: formId});
+        var formNum = form.FormNumber;
+        var checkValue = form.Done;
+
         if (checkValue == true){
-            document.getElementById(test).style.color = "blue";
-            forms.update(formId, {$set :{Done : false}});
+            document.getElementById(formNum).style.color = "blue";
+            FormStatus.update(formId, {$set :{Done : false}});
         }
         else {
-            document.getElementById(test).style.color = "grey";
-            forms.update(formId, {$set :{Done : true}});
+            document.getElementById(formNum).style.color = "grey";
+            FormStatus.update(formId, {$set :{Done : true}});
         }
-        var formN = formNum.Name;
-        var name = "Forms."+formN;
-        var $qry = {};
-        $qry['Forms.' + formN] = false;
-        var completedForm = studentInfo.find({$and: [{'formN': false}, {_id: Meteor.userId()}]}).count();
-        alert(completedForm);
     },
     'click .btn' : function(event){
         event.preventDefault();

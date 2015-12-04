@@ -4,7 +4,7 @@
 
     Template.adminStudent.helpers({
         forms: function () {
-            return forms.find({});
+            return forms.find();
 
         },
         studentInfo: function() {
@@ -17,7 +17,17 @@
          **/
         profile: function() {
             return studentInfo.find(Session.get('selectedStudent')).fetch();
+        },
+        formComplete: function(name) {
+            var email = studentInfo.findOne(Session.get('selectedStudent'), {fields: {Email: 1}}).Email;
+            var result = FormStatus.find({$and: [{Email: email}, {FormName: name},{Done: true}]}).count();
+            return result;
+        },
+        studentFormPercent: function () {
+            var email = studentInfo.findOne(Session.get('selectedStudent'), {fields: {Email: 1}}).Email;
+            var numCompleted = FormStatus.find({$and: [{Email: email},{Done: true}]}).count();
+            var total = forms.find().count();
+            var percentage = numCompleted / total;
+            return percentage * 100;
         }
-
     });
-

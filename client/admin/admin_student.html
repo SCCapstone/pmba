@@ -42,8 +42,11 @@
             <div class=" col-md-6 col-md-offset-1 panel panel-default">
                 <div class="panel-heading">
                     <h3 class="panel-title">Form Status
-                        <div class="progress progress-striped active">
-                            <div class="bar" style="width: 40%;"></div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="{{studentFormPercent}}"
+                                 aria-valuemin="0" aria-valuemax="100" style="width: {{studentFormPercent}}%;">
+                                {{studentFormPercent}}%
+                            </div>
                         </div>
                     </h3>
                 </div>
@@ -51,9 +54,23 @@
                     <ul>
                         {{#each forms}}
                             <li>
-                                <a href="infoPage"
-                                   onclick="Session.set('selectedForm', '{{_id}}');">
-                                    {{Name}} </a>
+                                {{#if formComplete Name}}
+                                    <div class="alert alert-success" role="alert">
+                                        <a href="#" class="alert-link">
+                                            <a href="infoPage" onclick="Session.set('selectedForm', '{{_id}}');">
+                                                {{Name}}
+                                            </a>
+                                        </a>
+                                    </div>
+                                {{else}}
+                                    <div class="alert alert-danger" role="alert">
+                                        <a href="#" class="alert-link">
+                                            <a href="infoPage" onclick="Session.set('selectedForm', '{{_id}}');">
+                                                {{Name}}
+                                            </a>
+                                        </a>
+                                    </div>
+                                {{/if}}
                             </li>
                         {{/each}}
                     </ul>

@@ -19,7 +19,9 @@ html, body { height: 100%; }
 #studentData {
     display: table-row;
 }
-
+.progress {
+    width: 400px;
+}
 ul{
 display: table;
 margin-left: 0;

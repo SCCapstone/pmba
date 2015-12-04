@@ -1,35 +1,42 @@
 Meteor.subscribe("studentInfo");
 Meteor.subscribe("forms");
+Meteor.subscribe("FormStatus");
 Template.student.helpers({
-   forms: function () {
-       if (Session.get("hideCompleted")) {
-           return forms.find({Done: {$ne: true}});
-       } else {
-           return forms.find({});
-       }
-   },
+    Student: function () {
+        var student = studentInfo.findOne({_id: Meteor.userId()});
+        var studentEmail = student.Email;
+        if (Session.get("hideCompleted")) {
+            return FormStatus.find({$and: [{Email: studentEmail}, {Done: {$ne: true}}]});
+        } else {
+            return FormStatus.find({Email: studentEmail});
+        }
+    },
+    form: function (fNumber) {
+        var currentForm = forms.findOne({FormNumber: fNumber});
+        return currentForm._id;
+    },
     hideCompleted: function () {
         return Session.get("hideCompleted");
     },
     selectedForm: function () {
         return Session.get("selectedForm");
     }
-
 });
 Template.student.events({
     'click .toggle-checked' : function(event){
         event.preventDefault();
         var formId = this._id;
-        var formNum = forms.findOne({_id: formId});
-        var test = formNum.FormNumber;
-        var checkValue = formNum.Done;
+        var form = FormStatus.findOne({_id: formId});
+        var formNum = form.FormNumber;
+        var checkValue = form.Done;
+
         if (checkValue == true){
-            document.getElementById(test).style.color = "blue";
-            forms.update(formId, {$set :{Done : false}});
+            document.getElementById(formNum).style.color = "blue";
+            FormStatus.update(formId, {$set :{Done : false}});
         }
         else {
-            document.getElementById(test).style.color = "grey";
-            forms.update(formId, {$set :{Done : true}});
+            document.getElementById(formNum).style.color = "grey";
+            FormStatus.update(formId, {$set :{Done : true}});
         }
     },
     'click .btn' : function(event){
@@ -38,7 +45,6 @@ Template.student.events({
     "click .hide-completed": function (event) {
         event.preventDefault();
         var text = document.getElementById('hide').value;
-
         if (text === "Hide") {
             Session.set('hideCompleted', true);
             document.getElementById('hide').value = "Show";

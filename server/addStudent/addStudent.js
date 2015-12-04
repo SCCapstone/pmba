@@ -21,31 +21,42 @@ Meteor.methods({
                 password: password
             });
         }
-        if (accountType = 'A') {
+        if (accountType == 'A') {
             adminInfo.insert({
                 _id: userId,
                 Email: email,
-                IDType: accountType
+                IDType: accountType,
+                FirstName: "",
+                LastName: "",
+                CellNumber: "",
+                HomeNumber: "",
+                WorkNumber: ""
             });
         }
-        else if (accountType = 'S') {
-            console.log("INSERTING STUDENT INFO");
+        else if (accountType == 'S') {
             studentInfo.insert({
                 _id: userId,
                 Email: email,
-                IDType: accountType
+                IDType: accountType,
+                FirstName: "",
+                LastName: "",
+                CellNumber: "",
+                HomeNumber: "",
+                WorkNumber: ""
             });
 
             var cursor = forms.find();
             cursor.forEach(function (doc) {
-                console.log(doc.Name + "\t" + userId);
-                var $set = {};
-                $set['Forms.' + doc.Name] = false;
-                studentInfo.upsert(userId,
-                    {$set: $set}, {multi: true});
+                var name = doc.Name;
+                var num = doc.FormNumber;
+                FormStatus.insert({
+                    Email: email,
+                    FormNumber: num,
+                    FormName: name,
+                    Done: false
+                })
             });
-
-            console.log('Student Added');
+            //will need to add in a update for teh FormStatus collection, to add studdent to
         }
         /* } else {
          console.log("not logged in or not an admin");

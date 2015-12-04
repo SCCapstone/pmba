@@ -1,3 +1,4 @@
+
 Meteor.publish("forms", function () {
     return forms.find({});
 });
@@ -19,10 +20,21 @@ Meteor.methods({
                 FormNumber: num,
                 FormPicture: pic
             });
-            var $set = {};
-            $set['Forms.' + name] = false;
-            studentInfo.upsert({},
-                {$set: $set}, {multi: true});
+
+            // Loop through all students and add the new form
+            var cursor = studentInfo.find();
+            cursor.forEach(function (doc) {
+                console.log(doc.Email);
+                var email = doc.Email;
+
+                console.log("INSERTING FORM INFO FOR: " + email);
+                FormStatus.insert({
+                    Email: email,
+                    FormNumber: num,
+                    FormName: name,
+                    Done: false
+                });
+            });
             //}
             /* else {
              console.log("Can't add form not logged in or not an admin");

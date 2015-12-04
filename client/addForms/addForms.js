@@ -1,5 +1,6 @@
 
     Meteor.subscribe("forms");
+    Meteor.subscribe("FormStatus");
 
     Template.addForms.helpers({
         forms: function() {

@@ -1,5 +1,4 @@
-if (Meteor.isClient) {
- Meteor.subscribe("studentInfo");
+Meteor.subscribe("studentInfo");
     Template.login.events({
         'submit form': function (event) {
             event.preventDefault();
@@ -11,13 +10,11 @@ if (Meteor.isClient) {
 
             if (Meteor.userId() != null) {
                 if (studentInfo.findOne(Meteor.userId())) {
-                    console.log('student');
                     Router.go('/student');
                 }
                 else if (adminInfo.findOne(Meteor.userId())) {
-                    console.log('admin');
                     Router.go('/admin_overall');
                 }
             }
-        }}
-    )}
+        }
+    });

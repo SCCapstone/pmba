@@ -4,7 +4,7 @@
 
     Template.adminStudent.helpers({
         forms: function () {
-            return forms.find({});
+            return forms.find();
 
         },
         studentInfo: function() {

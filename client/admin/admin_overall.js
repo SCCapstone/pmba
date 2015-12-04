@@ -9,22 +9,10 @@
         forms: function () {
             return forms.find({});
         },
-        // I'm not sure why this won't work
-        percent: function (name) {
-            Meteor.call('formPercent', name, function(error, result) {
-                if (error) {
-                    console.log(error.reason);
-                    return;
-                }
-                var num = parseInt(result);
-                return num;
-            });
-        },
         // This works but should probably executed on server
         formPercent: function (name) {
-            var $qry = {};
-            $qry['Forms.' +name] = true;
-            var numCompleted = studentInfo.find($qry).count();
+
+            var numCompleted = FormStatus.find({$and: [{'FormName': name},{Done: true}]}).count();
             var total = studentInfo.find().count();
             var percentage = numCompleted / total;
             return percentage * 100;

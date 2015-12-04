@@ -2,7 +2,9 @@
     <div class = "page-header" id="header">
         <h1>
             <img src="img/logo.svg" class="img-responsive">
-            <small style="color:#000000">Additional Information</small>
+            {{#each profile}}
+            <small style="color:#000000">{{Name}} Additional Information</small>
+            {{/each}}
             {{>studentNavBar}}
         </h1>
     </div>
@@ -12,7 +14,9 @@
             <div class="well sidebar-nav">
                 <ul class="nav nav-sidebar">
                     <img src="..." class="img-polaroid">
-                    <li>Due Date:  <strong>X/XX/XX</strong></li>
+                    {{#each profile}}
+                        <li>Due Date:  <strong>{{DueDate}}</strong></li>
+                    {{/each}}
                 </ul>
             </div>
         </div>

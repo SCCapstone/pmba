@@ -38,12 +38,12 @@
             </div>
             <div class="panel-body">
                 <ul>
-                    {{#each forms}}
+                    {{#each Student}}
                         <li class="{{#if Done}}checked{{/if}}">
                             <label class ="checkbox">
                                 <input type="checkbox" checked ={{Done}} class="toggle-checked">
                                 <a href="infoPage" id="{{FormNumber}}"
-                                   onclick="Session.set('selectedForm', '{{_id}}');">
+                                   onclick="Session.set('selectedForm', '{{form FormNumber}}');">
                                     {{FormName}} </a>
                             </label>
                         </li>

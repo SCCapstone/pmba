@@ -44,7 +44,7 @@
                                 <input type="checkbox" checked ={{Done}} class="toggle-checked">
                                 <a href="infoPage" id="{{FormNumber}}"
                                    onclick="Session.set('selectedForm', '{{_id}}');">
-                                    {{Name}} </a>
+                                    {{FormName}} </a>
                             </label>
                         </li>
                     {{/each}}
@@ -56,9 +56,7 @@
                     else {
                         document.getElementById('hide').value="Hide";
                     }
-                    function studentForm(Fname) {
-                        return true;
-                    }
+
                 </script>
                 <label class="hide-completed">
                     <input type="button" id="hide" value="Hide"/>

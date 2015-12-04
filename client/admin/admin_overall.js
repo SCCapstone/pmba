@@ -1,6 +1,6 @@
 
     Meteor.subscribe("studentInfo");
-	Meteor.subscribe("forms");
+    Meteor.subscribe("forms");
 
     Template.adminOverall.helpers({
         studentInfo: function () {
@@ -19,7 +19,7 @@
     });
 
     Template.adminOverall.events({
-     'click .btn' : function(event){
-     event.preventDefault();
-     }
-     });
+        'click .btn' : function(event){
+            event.preventDefault();
+        }
+    });

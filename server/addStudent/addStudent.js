@@ -47,12 +47,16 @@ Meteor.methods({
 
             var cursor = forms.find();
             cursor.forEach(function (doc) {
-                console.log(doc.Name + "\t" + userId);
-                var $set = {};
-                $set['Forms.' + doc.Name] = false;
-                studentInfo.upsert(userId,
-                    {$set: $set}, {multi: true});
+                var name = doc.Name;
+                var num = doc.FormNumber;
+                FormStatus.insert({
+                    Email: email,
+                    FormNumber: num,
+                    FormName: name,
+                    Done: false
+                })
             });
+            //will need to add in a update for teh FormStatus collection, to add studdent to
         }
         /* } else {
          console.log("not logged in or not an admin");

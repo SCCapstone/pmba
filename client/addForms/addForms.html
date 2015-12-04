@@ -41,7 +41,9 @@
                 <ul>
                     {{#each forms}}
                         <li>
-                                <a href="infoPage"> {{Name}} </a>
+                                <a href="infoPage"
+                                   onclick="Session.set('selectedForm', '{{_id}}');">
+                                    {{Name}} </a>
                         </li>
                     {{/each}}
                 </ul>

@@ -25,12 +25,9 @@
         },
         studentFormPercent: function () {
             var email = studentInfo.findOne(Session.get('selectedStudent'), {fields: {Email: 1}}).Email;
-            console.log('Email = ' +email);
             var numCompleted = FormStatus.find({$and: [{Email: email},{Done: true}]}).count();
-            console.log('completed = ' + numCompleted);
             var total = forms.find().count();
             var percentage = numCompleted / total;
-            console.log('percentage = ' + percentage);
             return percentage * 100;
         }
     });

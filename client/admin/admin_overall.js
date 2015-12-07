@@ -14,7 +14,8 @@
             var numCompleted = FormStatus.find({$and: [{'FormName': name},{Done: true}]}).count();
             var total = studentInfo.find().count();
             var percentage = numCompleted / total;
-            return percentage * 100;
+            return (percentage * 100).toFixed(0);
+
         }
     });
 

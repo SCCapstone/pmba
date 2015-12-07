@@ -28,6 +28,6 @@ Template.adminStudent.helpers({
         var numCompleted = FormStatus.find({$and: [{Email: email},{Done: true}]}).count();
         var total = forms.find().count();
         var percentage = numCompleted / total;
-        return percentage * 100;
+        return (percentage * 100).toFixed(0);
     }
 });

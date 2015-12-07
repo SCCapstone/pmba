@@ -15,6 +15,10 @@ Template.student.helpers({
         var currentForm = forms.findOne({FormNumber: fNumber});
         return currentForm._id;
     },
+    studentName: function() {
+        var student = studentInfo.findOne({_id: Meteor.userId()});
+        return student.Email;
+    },
     hideCompleted: function () {
         return Session.get("hideCompleted");
     },

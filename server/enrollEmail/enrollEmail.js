@@ -1,4 +1,3 @@
-Meteor.startup(function () {
 
     Accounts.emailTemplates.enrollAccount.subject = function (user) {
         var first = studentInfo.findOne(user._id)['FirstName'];
@@ -10,4 +9,3 @@ Meteor.startup(function () {
             + " To activate your account, simply click the link below:\n\n"
             + url;
     };
-});

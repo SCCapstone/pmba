@@ -11,7 +11,7 @@ Meteor.startup(function () {
 // If we attempt to create a user on the client side it will autologin that new user
 Meteor.methods({
     createStudent:function(email, password, accountType) {
-        // used to get the userId from createUser to set un studentInfo
+        // used to get the userId from createUser to set up studentInfo
         var userId;
         /*if (Meteor.userID() &&
          studentInfo.findOne(Meteor.userId(), {fields: {'IDType': 1}}).IDType == 'A') */
@@ -61,7 +61,9 @@ Meteor.methods({
         /* } else {
          console.log("not logged in or not an admin");
          }*/
-    },
+        // Send Enrollment Email to the new user
+        Accounts.sendEnrollmentEmail(userId);
+    }
 
     /*updateAllStudents:function() {
         var studentCursor = studentInfo.find();

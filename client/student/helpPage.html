@@ -3,7 +3,11 @@
         <h1>
             <img src="img/logo.svg" class="img-responsive">
             <small style="color:white">Help</small>
-            {{>studentNavBar}}
+            {{#if AccountType}}
+                {{>studentNavBar}}
+                {{else}}
+                    {{>adminNavBar}}
+            {{/if}}
         </h1>
     </div>
 

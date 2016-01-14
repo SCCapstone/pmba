@@ -1,3 +1,9 @@
+/* The purpose of this file is to setup:
+   - email environment variable
+   - email templates
+   - Accounts, send verification email
+  */
+
 Meteor.startup(function () {
     //Setup the email environment variable
     // Right now its using the pmba gmail account

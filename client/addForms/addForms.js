@@ -20,6 +20,7 @@
             var dueDate = inputDueDate.value;
             Meteor.call('addForm', name, description, dueDate, formNum, formPic );
 
+            window.location.href = "/addForms";
         }
     });
 /*

@@ -1,0 +1,71 @@
+<template name="welcomePage">
+    <div class = "page-header" id="header">
+        <h1>
+            <img src="img/logo.svg" class="img-responsive">
+            <small style="color:white">Welcome</small>
+            {{#if AccountType}}
+                {{>studentNavBar}}
+            {{else}}
+                {{>adminNavBar}}
+            {{/if}}
+        </h1>
+    </div>
+
+    {{#if AccountType}}
+        <div class="row-fluid row-offcanvas row-offcanvas-left">
+            <div class="col-sm-3 col-md-2 sidebar-offcanvas" id="sidebar" role="navigation">
+                <div class="well sidebar-nav">
+                    <ul class="nav nav-sidebar">
+                        <img src="..." class="img-polaroid">
+                        {{#each profile}}
+                            <li>Due Date:  <strong>{{DueDate}}</strong></li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    {{else}}
+        <div class="row-fluid row-offcanvas row-offcanvas-left">
+            <div class="col-sm-3 col-md-2 sidebar-offcanvas" id="sidebar" role="navigation">
+                <div class="well sidebar-nav">
+                    <ul class="nav nav-sidebar">
+                        <img src="..." class="img-polaroid">
+                        {{#each profile}}
+                            <li>Due Date:  <strong>{{DueDate}}</strong></li>
+                        {{/each}}
+                        <ul>
+                            {{#each studnets}}
+                                <li id="formNumber" value = "0">
+                                    <a href="admin_student"
+                                       onclick="Session.set('selectedStudent', '{{_id}}');">
+                                        {{FirstName}} {{LastName}} </a>
+                                </li>
+                            {{/each}}
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    {{/if}}
+
+    <div class="row-fluid">
+        <div class=" col-md-6 col-md-offset-1 panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Welcome!</h3>
+            </div>
+            <div class="panel-body">
+                <ul>
+                    {{#each profile}}
+                        <li>
+                            {{Description}}
+                        </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</template>
+

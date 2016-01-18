@@ -89,6 +89,10 @@ Router.route('/infoPage', function () {
     this.render('infoPage')
 });
 
+Router.route('/welcomePage', function () {
+    this.render('welcomePage')
+});
+
 Router.route('/addForms', function () {
     this.render('addForms')
 });

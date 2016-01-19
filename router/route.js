@@ -46,12 +46,12 @@ Router.route('/', {
 Router.route('/login');
 
 // Check to make sure user user is logged in
-Router.onBeforeAction(before.loginRequired, {
+/*Router.onBeforeAction(before.loginRequired, {
     except: ['login']
 });
 Router.onBeforeAction(before.checkAdmin, {
     only: ['admin_overall', 'admin_student', 'addForms', 'addStudent', '']
-});
+});*/
 
 Router.route('/student', function () {
     this.render('student')
@@ -95,6 +95,10 @@ Router.route('/welcomePage', function () {
 
 Router.route('/addForms', function () {
     this.render('addForms')
+});
+
+Router.route('/notifications', function () {
+    this.render('notifications')
 });
 
 Router.route('/home', function () {

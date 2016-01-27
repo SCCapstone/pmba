@@ -2,7 +2,7 @@
 html, body { height: 100%; }
 
 .container {
-    mon-height: 100% overflow : hidden;
+    mon-height: 100%; overflow : hidden;
 }
 
 #col1, #col2 {
@@ -27,12 +27,17 @@ span.tabLastName{
 span.tabCellPhone{
     padding: 0 58px; 
 }
-span.tabWorkPhone{
-    padding: 0 58px; 
+span.tabWorkPhone {
+    padding: 0 58px;
 }
 span.tabHomePhone{
     padding: 0 56px; 
 }
+
+span.tabDate{
+    padding: 0 84px;
+}
+
 span.tabUpdateInfo{
     padding: 0 56px; 
 }

@@ -2,7 +2,7 @@
 html, body { height: 100%; }
 
 .container {
-    mon-height: 100% overflow : hidden;
+    mon-height: 100%; overflow : hidden;
 }
 
 #col1, #col2 {

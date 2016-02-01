@@ -19,7 +19,7 @@ Meteor = sinon.stub({
 
 // Tests
 describe('Page title', function () {
-    it('should be set to PMBA by the Meteor method @watch', function () {
+    it('should be set to PMBA @watch', function () {
         browser.url('localhost:3000/');
         expect(browser.getTitle()).to.equal('PMBA');
     });

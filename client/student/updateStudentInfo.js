@@ -16,7 +16,6 @@ if (Meteor.isClient) {
 				CellNumber : cellNumber.value,
 				WorkNumber : workNumber.value,
 				HomeNumber : homeNumber.value,
-				Date: date.value,
 				Picture : "Upic1"}});
 
 			alert("Your information has been updated!");

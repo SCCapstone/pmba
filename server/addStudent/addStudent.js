@@ -10,7 +10,7 @@ Meteor.startup(function () {
 //Meteor method to add a user on the server side
 // If we attempt to create a user on the client side it will autologin that new user
 Meteor.methods({
-    createStudent:function(email, password, accountType) {
+    createStudent:function(email, password, accountType, firstName, lastName, date) {
         // used to get the userId from createUser to set up studentInfo
         var userId;
         /*if (Meteor.userID() &&
@@ -26,11 +26,12 @@ Meteor.methods({
                 _id: userId,
                 Email: email,
                 IDType: accountType,
-                FirstName: "",
-                LastName: "",
+                FirstName: firstName,
+                LastName: lastName,
                 CellNumber: "",
                 HomeNumber: "",
-                WorkNumber: ""
+                WorkNumber: "",
+                FinishDate: date
             });
         }
         else if (accountType == 'S') {
@@ -38,11 +39,12 @@ Meteor.methods({
                 _id: userId,
                 Email: email,
                 IDType: accountType,
-                FirstName: "",
-                LastName: "",
+                FirstName: firstName,
+                LastName: lastName,
                 CellNumber: "",
                 HomeNumber: "",
-                WorkNumber: ""
+                WorkNumber: "",
+                FinishDate: date
             });
 
             var cursor = forms.find();

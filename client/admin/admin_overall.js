@@ -28,6 +28,7 @@
             var deleteID = event.target.id;
             var holder = studentInfo.findOne({_id: deleteID});
             var deleteEmail = holder.Email;
+            //Session.get("selectedStudent"); work in progress for a list of people to be deleted
             //calls a function on the server side and sends the target id and email
             //function removes the documents with the email or id in the collections
             Meteor.call('deleteAccount', deleteID, deleteEmail );

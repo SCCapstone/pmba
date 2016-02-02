@@ -18,6 +18,7 @@
             var name = inputName.value;
             var description = inputDescription.value;
             var dueDate = inputDueDate.value;
+            var date = date.value;
             Meteor.call('addForm', name, description, dueDate, formNum, formPic );
 
             window.location.href = "/addForms";

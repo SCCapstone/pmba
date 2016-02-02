@@ -101,6 +101,10 @@ Router.route('/notifications', function () {
     this.render('notifications')
 });
 
+Router.route('/formsTable', function () {
+    this.render('formsTable')
+});
+
 Router.route('/home', function () {
     if (Meteor.userId() != null &&
         studentInfo.findOne(Meteor.userId(), {fields: {'IDType': 1}}).IDType == 'S') {

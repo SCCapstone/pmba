@@ -1,0 +1,17 @@
+<template name="formsTable">
+    <div class = "page-header" id="header">
+        <h1>
+            <img src="img/logo.svg" class="img-responsive">
+            <small style="color:white">Welcome</small>
+            {{#if AccountType}}
+                {{>studentNavBar}}
+            {{else}}
+                {{>adminNavBar}}
+            {{/if}}
+        </h1>
+    </div>
+
+
+
+</template>
+

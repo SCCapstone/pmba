@@ -34,6 +34,8 @@
                                        onclick="Session.set('selectedStudent', '{{_id}}');">
                                         {{FirstName}} {{LastName}} </a>
                                 </li>
+                                <!-- add delete button and set id to target's id -->
+                                <button class = "delete" id="{{_id}}">&times;</button>
                             {{/each}}
                         </ul>
                     </div>

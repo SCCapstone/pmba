@@ -18,11 +18,14 @@ span.tabButton{
     padding: 0 56px;
 }
 span.tabDescription{
-    padding: 0 43px;
+    padding: 0 42px;
 }
 span.tabName{
     padding: 0 62px;
 }
 span.tabDueDate{
     padding: 0 51px;
+}
+span.tabDate {
+    padding: 0 66px;
 }

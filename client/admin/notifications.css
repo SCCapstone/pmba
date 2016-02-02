@@ -2,7 +2,7 @@
 html, body { height: 100%; }
 
 .container {
-    mon-height: 100%; overflow : hidden;
+    mon-height: 100% overflow : hidden;
 }
 
 #col1, #col2 {
@@ -15,12 +15,6 @@ html, body { height: 100%; }
     padding-top:0px;
     margin-top: 0px;
 }
-span.tabButton{
-    padding: 0 56px; 
+.progress {
+    width: 400px;
 }
-
-span.tabDate {
-    padding: 0 83px;
-}
-
-

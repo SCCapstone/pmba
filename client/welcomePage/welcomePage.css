@@ -1,4 +1,4 @@
-/* CSS declarations go here */
+/* Generic Structure for webpage */
 html, body { height: 100%; }
 
 .container {
@@ -15,12 +15,4 @@ html, body { height: 100%; }
     padding-top:0px;
     margin-top: 0px;
 }
-span.tabButton{
-    padding: 0 56px; 
-}
-
-span.tabDate {
-    padding: 0 83px;
-}
-
 

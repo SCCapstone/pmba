@@ -2,7 +2,7 @@
 <template name="login">
     <div class = "page-header" id="header">
         <h1>
-            <img src="/img/logo.svg" class="img-responsive">
+            <img src="/public/img/logo.svg" class="img-responsive">
             {{>loginNavBar}}
         </h1>
     </div>
@@ -21,7 +21,7 @@
                             <label for="inputPassword">Password <a href="/login">(forgot password)</a></label>
                             <input type="password" class="form-control" id="inputPassword" name="inputPassword" placeholder="Password">
                         </div>
-                        <button type="submit" class="btn btn-sm btn-default">Sign in</button>
+                        <button id="submit" type="submit" class="btn btn-sm btn-default">Sign in</button>
                     </form>
                 </div>
             </div>

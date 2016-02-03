@@ -27,9 +27,10 @@
                 <ul>
                     {{#each forms}}
                         <li>
-                                <a href="infoPage"
-                                   onclick="Session.set('selectedForm', '{{_id}}');">
-                                    {{Name}} </a>
+                            <button class = "delete" id="{{_id}}">&times;</button>
+                            <a href="infoPage"
+                               onclick="Session.set('selectedForm', '{{_id}}');">
+                                {{Name}} </a>
                         </li>
                     {{/each}}
                 </ul>

@@ -17,7 +17,10 @@ Template.student.helpers({
     },
     studentName: function() {
         var student = studentInfo.findOne({_id: Meteor.userId()});
-        return student.Email;
+        var firstName = student.FirstName;
+        var lastName = student.LastName;
+        var fullName = firstName + " " + lastName;
+        return fullName;
     },
     hideCompleted: function () {
         return Session.get("hideCompleted");

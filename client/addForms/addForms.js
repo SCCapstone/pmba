@@ -21,6 +21,12 @@
             Meteor.call('addForm', name, description, dueDate, formNum, formPic );
 
             window.location.href = "/addForms";
+        },
+        'click .delete' : function(event) {
+            var deleteID = event.target.id;
+            var holder = forms.findOne({_id: deleteID});
+            var deleteFormName = holder.Name;
+            Meteor.call('deleteForm', deleteID, deleteFormName );
         }
     });
 

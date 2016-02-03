@@ -7,6 +7,8 @@
 var assert = require('assert');
 var should = require('chai').should();
 var sinon = require('sinon');
+var chai = require('chai');
+
 
 //Meteor Stubs
 Meteor = sinon.stub({
@@ -15,7 +17,10 @@ Meteor = sinon.stub({
     userId: function() {},
     publish: function() {},
     methods: function() {}
+
 });
+
+studentInfo = require('../../../server/addStudent/addStudent.js');
 
 // Tests
 describe('Page title', function () {
@@ -24,6 +29,19 @@ describe('Page title', function () {
         expect(browser.getTitle()).to.equal('PMBA');
     });
 });
+
+describe('TEST', function () {
+    it('should be a test @watch', function () {
+        //browser.setValue('#inputEmail', 'student1@student.com');
+        //browser.setValue('#inputPassword', 'password');
+        //browser.click('#submit');
+
+        //browser.url('localhost:3000/admin_overall');
+        var test = browser.getUrl();
+        console.log(test);
+    });
+});
+
 
 // This is an example
 describe('Array', function() {

@@ -13,9 +13,8 @@ if (Meteor.isClient) {
             adminInfo.update({_id: Meteor.userId()},{$set:{
                 FirstName : firstName.value,
                 LastName : lastName.value,
-                CellNumber : cellNumber.value,
                 WorkNumber : workNumber.value,
-                HomeNumber : homeNumber.value,
+                Address : address.value,
                 Picture : "Upic1"}});
 
             alert("Your information has been updated!");

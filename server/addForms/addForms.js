@@ -40,5 +40,10 @@ Meteor.methods({
              console.log("Can't add form not logged in or not an admin");
              }*/
         }
+    },
+    //this functions removes selected forms from the database
+    deleteForm:  function ( deleteID, deleteFormName ) {
+        forms.remove(deleteID);
+        FormStatus.remove({FormName:deleteFormName});
     }
 });

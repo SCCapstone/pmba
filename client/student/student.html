@@ -1,4 +1,6 @@
-
+<head>
+    <title>PMBA</title>
+</head>
 <template name="student">
     <div class = "page-header" id="header">
         <h1>
@@ -29,8 +31,8 @@
                         <li class="{{#if Done}}checked{{/if}}">
                             <label class ="checkbox">
                                 <input type="checkbox" checked ={{Done}} class="toggle-checked">
-                                <a href="infoPage" id="{{FormNumber}}"
-                                   onclick="Session.set('selectedForm', '{{form FormNumber}}');">
+                                <a href="infoPage" id="{{_id}}"
+                                   onclick="Session.set('selectedForm', '{{form _id}}');">
                                     {{FormName}} </a>
                             </label>
                         </li>

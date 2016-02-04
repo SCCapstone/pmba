@@ -12,7 +12,7 @@ Template.student.helpers({
         }
     },
     form: function (fNumber) {
-        var currentForm = forms.findOne({_id: fNumber});
+        var currentForm = forms.findOne({Name: fNumber});
         return currentForm._id;
     },
     studentName: function() {

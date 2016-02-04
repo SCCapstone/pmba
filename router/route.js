@@ -101,6 +101,10 @@ Router.route('/notifications', function () {
     this.render('notifications')
 });
 
+Router.route('/updateAdminInfo', function () {
+    this.render('updateAdminInfo')
+});
+
 Router.route('/home', function () {
     if (Meteor.userId() != null &&
         studentInfo.findOne(Meteor.userId(), {fields: {'IDType': 1}}).IDType == 'S') {

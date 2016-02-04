@@ -25,13 +25,22 @@
         },
         'click .delete' :  function(event) {
             //grabs targets id and uses it to get targets email
+            var holder;
+            var deleteEmail;
             var deleteID = event.target.id;
-            var holder = studentInfo.findOne({_id: deleteID});
-            var deleteEmail = holder.Email;
+            var account = studentInfo.findOne({_id:deleteID });
+            if (account.IDType === 'S') {
+                holder = studentInfo.findOne({_id: deleteID});
+                deleteEmail = holder.Email;
+                Meteor.call('deleteAccount', deleteID, deleteEmail, true );
+            }
+            else {
+                holder = adminInfo.findOne({_id: deleteID});
+                deleteEmail = holder.Email;
+                Meteor.call('deleteAccount', deleteID, deleteEmail, false );
+            }
             //Session.get("selectedStudent"); work in progress for a list of people to be deleted
             //calls a function on the server side and sends the target id and email
             //function removes the documents with the email or id in the collections
-            Meteor.call('deleteAccount', deleteID, deleteEmail );
-            //need to add a check for account type and send as a variable to function
         }
     });

@@ -12,7 +12,7 @@ Template.student.helpers({
         }
     },
     form: function (fNumber) {
-        var currentForm = forms.findOne({FormNumber: fNumber});
+        var currentForm = forms.findOne({Name: fNumber});
         return currentForm._id;
     },
     studentName: function() {
@@ -34,15 +34,14 @@ Template.student.events({
         event.preventDefault();
         var formId = this._id;
         var form = FormStatus.findOne({_id: formId});
-        var formNum = form.FormNumber;
         var checkValue = form.Done;
 
         if (checkValue == true){
-            document.getElementById(formNum).style.color = "blue";
+            document.getElementById(formId).style.color = "blue";
             FormStatus.update(formId, {$set :{Done : false}});
         }
         else {
-            document.getElementById(formNum).style.color = "grey";
+            document.getElementById(formId).style.color = "grey";
             FormStatus.update(formId, {$set :{Done : true}});
         }
     },

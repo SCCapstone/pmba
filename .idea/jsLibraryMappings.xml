@@ -2,5 +2,10 @@
 <project version="4">
   <component name="JavaScriptLibraryMappings">
     <file url="PROJECT" libraries="{meteor-packages-auto-import-browser}" />
+<<<<<<< HEAD
+=======
+    <includedPredefinedLibrary name="ECMAScript 6" />
+    <includedPredefinedLibrary name="Meteor project library" />
+>>>>>>> ad2b1f6361e232398945f46c9cbda20d6adce272
   </component>
 </project>

@@ -101,8 +101,13 @@ Router.route('/notifications', function () {
     this.render('notifications')
 });
 
+<<<<<<< HEAD
 Router.route('/formsTable', function () {
     this.render('formsTable')
+=======
+Router.route('/updateAdminInfo', function () {
+    this.render('updateAdminInfo')
+>>>>>>> ad2b1f6361e232398945f46c9cbda20d6adce272
 });
 
 Router.route('/home', function () {

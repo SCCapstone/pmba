@@ -17,10 +17,19 @@
             var formPic = "Fpic"+num;
             var name = inputName.value;
             var description = inputDescription.value;
-            var dueDate = inputDueDate.value;
-            var date = date.value;
+            var dueDate = date.value;
             Meteor.call('addForm', name, description, dueDate, formNum, formPic );
 
             window.location.href = "/addForms";
+        },
+        'click .delete' : function(event) {
+            var deleteID = event.target.id;
+            var holder = forms.findOne({_id: deleteID});
+            var deleteFormName = holder.Name;
+            Meteor.call('deleteForm', deleteID, deleteFormName );
         }
     });
+<<<<<<< HEAD
+=======
+
+>>>>>>> ad2b1f6361e232398945f46c9cbda20d6adce272

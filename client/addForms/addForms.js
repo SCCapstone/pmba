@@ -29,7 +29,3 @@
             Meteor.call('deleteForm', deleteID, deleteFormName );
         }
     });
-<<<<<<< HEAD
-=======
-
->>>>>>> ad2b1f6361e232398945f46c9cbda20d6adce272

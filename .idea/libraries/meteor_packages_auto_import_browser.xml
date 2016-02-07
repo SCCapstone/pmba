@@ -188,6 +188,9 @@
         <item url="file://$USER_HOME$/.meteor/packages/iron_controller/1.0.12/web.browser/lib/wait_list.js" />
         <item url="file://$USER_HOME$/.meteor/packages/iron_core/1.0.11/web.browser/lib/iron_core.js" />
         <item url="file://$USER_HOME$/.meteor/packages/iron_core/1.0.11/web.browser/lib/version_conflict_error.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/tinytest/1.0.6/web.browser/tinytest_client.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/tinytest/1.0.6/web.browser/model.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/tinytest/1.0.6/web.browser/tinytest.js" />
         <item url="file://$USER_HOME$/.meteor/packages/iron_dynamic-template/1.0.12/web.browser/blaze_overrides.js" />
         <item url="file://$USER_HOME$/.meteor/packages/iron_dynamic-template/1.0.12/web.browser/dynamic_template.js" />
         <item url="file://$USER_HOME$/.meteor/packages/iron_dynamic-template/1.0.12/web.browser/version_conflict_error.js" />
@@ -408,6 +411,9 @@
       <root url="file://$USER_HOME$/.meteor/packages/iron_controller/1.0.12/web.browser/lib/wait_list.js" />
       <root url="file://$USER_HOME$/.meteor/packages/iron_core/1.0.11/web.browser/lib/iron_core.js" />
       <root url="file://$USER_HOME$/.meteor/packages/iron_core/1.0.11/web.browser/lib/version_conflict_error.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/tinytest/1.0.6/web.browser/tinytest_client.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/tinytest/1.0.6/web.browser/model.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/tinytest/1.0.6/web.browser/tinytest.js" />
       <root url="file://$USER_HOME$/.meteor/packages/iron_dynamic-template/1.0.12/web.browser/blaze_overrides.js" />
       <root url="file://$USER_HOME$/.meteor/packages/iron_dynamic-template/1.0.12/web.browser/dynamic_template.js" />
       <root url="file://$USER_HOME$/.meteor/packages/iron_dynamic-template/1.0.12/web.browser/version_conflict_error.js" />

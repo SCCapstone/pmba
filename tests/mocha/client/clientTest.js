@@ -16,14 +16,15 @@ Meteor = sinon.stub({
     user: function() {},
     userId: function() {},
     publish: function() {},
-    methods: function() {}
+    methods: function() {},
+    subscribe: function() {}
 
 });
 
-studentInfo = require('../../../server/addStudent/addStudent.js');
+//addStudent = require('../../../client/addStudent/addStudent.js');
 
 // Tests
-describe('Page title', function () {
+describe('Page setTitle', function () {
     it('should be set to PMBA @watch', function () {
         browser.url('localhost:3000/login');
         expect(browser.getTitle()).to.equal('PMBA');
@@ -41,6 +42,15 @@ describe('Student Login', function () {
         //browser.url('localhost:3000/admin_overall');
         var test = browser.getUrl();
         //console.log(test);
+    });
+});
+
+describe('This is a test test?', function() {
+    it('Should test a collection or something? @watch', function() {
+        /*var studentAccount = server.call(addStudent.createStudent({
+            username: 'test@student.com',
+            password: 'password'
+        }));*/
     });
 });
 

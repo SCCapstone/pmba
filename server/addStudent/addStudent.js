@@ -13,40 +13,41 @@ Meteor.methods({
     createStudent:function(email, password, accountType, firstName, lastName, date) {
         // used to get the userId from createUser to set up studentInfo
         var userId;
-        /*if (Meteor.userID() &&
-         studentInfo.findOne(Meteor.userId(), {fields: {'IDType': 1}}).IDType == 'A') */
+        // Must be Admin to create user
+        if (Meteor.userId() && adminInfo.findOne(Meteor.userId()))
         {
             userId = Accounts.createUser({
                 email: email,
                 password: password
             });
-        }
-        if (accountType == 'A') {
-            adminInfo.insert({
-                _id: userId,
-                Email: email,
-                IDType: accountType,
-                FirstName: firstName,
-                LastName: lastName,
-                CellNumber: "",
-                HomeNumber: "",
-                WorkNumber: "",
-                FinishDate: date
-            });
-        }
-        else if (accountType == 'S') {
-            studentInfo.insert({
-                _id: userId,
-                Email: email,
-                IDType: accountType,
-                FirstName: firstName,
-                LastName: lastName,
-                CellNumber: "",
-                HomeNumber: "",
-                WorkNumber: "",
-                FinishDate: date
-            });
-
+            // Insert info in adminInfo if they are Admin?
+            if (accountType == 'A') {
+                adminInfo.insert({
+                    _id: userId,
+                    Email: email,
+                    IDType: accountType,
+                    FirstName: firstName,
+                    LastName: lastName,
+                    CellNumber: "",
+                    HomeNumber: "",
+                    WorkNumber: "",
+                    FinishDate: date
+                });
+            }
+            // Insert info in studentInfo if they are Student?
+            else if (accountType == 'S') {
+                studentInfo.insert({
+                    _id: userId,
+                    Email: email,
+                    IDType: accountType,
+                    FirstName: firstName,
+                    LastName: lastName,
+                    CellNumber: "",
+                    HomeNumber: "",
+                    WorkNumber: "",
+                    FinishDate: date
+                });
+            }
             var cursor = forms.find();
             cursor.forEach(function (doc) {
                 var name = doc.Name;
@@ -58,26 +59,11 @@ Meteor.methods({
                     Done: false
                 })
             });
-            //will need to add in a update for teh FormStatus collection, to add studdent to
+            // Send Enrollment Email to the new user
+            Accounts.sendEnrollmentEmail(userId);
         }
-        /* } else {
-         console.log("not logged in or not an admin");
-         }*/
-        // Send Enrollment Email to the new user
-        Accounts.sendEnrollmentEmail(userId);
+        else {
+            console.log("not logged in or not an admin");
+        }
     }
-
-    /*updateAllStudents:function() {
-        var studentCursor = studentInfo.find();
-        studentCursor.forEach(function (student) {
-        var formCursor = forms.find();
-
-        formCursor.forEach(function (doc) {
-            var $set = {};
-            $set['Forms.' + doc.Name] = false;
-            studentInfo.upsert(student,
-                {$set: $set}, {multi: true});
-        });
-    });
-    }*/
 });

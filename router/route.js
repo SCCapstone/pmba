@@ -111,7 +111,7 @@ Router.route('/home', function () {
         Router.go('/student');
     }
     else if (Meteor.userId() != null &&
-        studentInfo.findOne(Meteor.userId(), {fields: {'IDType': 1}}).IDType == 'A') {
+        adminInfo.findOne(Meteor.userId(), {fields: {'IDType': 1}}).IDType == 'A') {
         Router.go('/admin_overall');
     }
 });

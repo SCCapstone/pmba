@@ -2,12 +2,12 @@
   // Server authentication info
   "servers": [
     {
-      "host": "162.243.15.124",
-      "sshOptions": { "port" : 22 },
-      "username": "root",
-      //"password": "q1w2e3r4Q!W@E#R$"
+      "host": "pmba.cse.sc.edu",
+      "sshOptions": { "port" : 222 },
+      "username": "meteor",
+      "password": "q1w2e3r4Q!W@E#R$"
       // or pem file (ssh based authentication)
-      "pem": "~/.ssh/id_rsa"
+      //"pem": "~/.ssh/id_rsa"
     }
   ],
 

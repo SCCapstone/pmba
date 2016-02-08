@@ -50,7 +50,11 @@ Router.onBeforeAction(before.loginRequired, {
     except: ['login']
 });
 Router.onBeforeAction(before.checkAdmin, {
-    only: ['admin_overall', 'admin_student', 'addForms', 'addStudent', '']
+    only: ['admin_overall', 'admin_student', 'addForms', 'addStudent']
+});
+
+Router.onBeforeAction(!before.checkAdmin, {
+    only: ['student', 'updateStudentInfo']
 });
 
 Router.route('/student', function () {

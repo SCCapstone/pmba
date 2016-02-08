@@ -47,7 +47,7 @@ Router.route('/login');
 
 // Check to make sure user user is logged in
 Router.onBeforeAction(before.loginRequired, {
-    except: ['login', 'resetPassword']
+    except: ['login']
 });
 Router.onBeforeAction(before.checkAdmin, {
     only: ['admin_overall', 'admin_student', 'addForms', 'addStudent', '']
@@ -101,12 +101,12 @@ Router.route('/notifications', function () {
     this.render('notifications')
 });
 
+Router.route('/formsTable', function () {
+    this.render('formsTable')
+});
+	
 Router.route('/updateAdminInfo', function () {
     this.render('updateAdminInfo')
-});
-
-Router.route('/resetPassword', function () {
-    this.render('resetPassword')
 });
 
 Router.route('/home', function () {

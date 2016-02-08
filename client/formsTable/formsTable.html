@@ -7,20 +7,31 @@
     </div> 
 </template>
 
+<body>
+  <div id="outer">
+    {{> fTable}}
+  </div>
+  
+  {{#each formNames}}
+			{{> name}}
+{{/each}}
+</body>
+
 <template name="fTable">
-  <div id="table">
-    {{> reactiveTable collection=forms settings=tableSettings}}
-  </div>
-  <div class="theFormTable">
-    {{#each form}}
-      {{> Name}}
-    {{/each}}
-  </div>
-	
-	
-	
+	<div id="table">
+		Table please
+		{{> reactiveTable collection=forms settings=tableSettings}}
+		</div>
+    <div class="fTable">
+		{{#each formNames}}
+			{{> name}}
+		{{/each}}
+    </div>
+</template>
 
 
-
+<template name="name">
+    <span class="name">{{Name}}</span>
+    <span class="description">{{Description}}</span>
 </template>
 

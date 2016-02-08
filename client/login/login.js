@@ -8,7 +8,9 @@ Meteor.subscribe('studentInfo');
             console.log("login submitted.");
             Meteor.loginWithPassword(emailVar, passwordVar, function(err){
                 if (err) {
-                    // login failed
+                    var message = "There was an error logging in: <strong>" + err.reason + "</strong>";
+                    console.log(message);
+                    template.find('#form-messages').html(message);
                 }
                 else {
                     // login succeeded

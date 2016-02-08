@@ -1,3 +1,9 @@
+
+
+<template name="table">
+  {{> tabular table=TabularTables.Forms class="table table-striped table-bordered table-condensed"}}
+</template>
+
 <template name="formsTable">
     <div class = "page-header" id="header">
        <h1>
@@ -5,33 +11,15 @@
             {{>adminNavBar}}
         </h1>
     </div> 
-</template>
+
 
 <body>
-  <div id="outer">
-    {{> fTable}}
+  <div class="container">
+    <div class="page-header">
+      <h1>Forms Table</h1>
+    </div>  
+    {{> table }}
   </div>
-  
-  {{#each formNames}}
-			{{> name}}
-{{/each}}
 </body>
-
-<template name="fTable">
-	<div id="table">
-		Table please
-		{{> reactiveTable collection=forms settings=tableSettings}}
-		</div>
-    <div class="fTable">
-		{{#each formNames}}
-			{{> name}}
-		{{/each}}
-    </div>
-</template>
-
-
-<template name="name">
-    <span class="name">{{Name}}</span>
-    <span class="description">{{Description}}</span>
 </template>
 

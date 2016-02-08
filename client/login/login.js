@@ -1,4 +1,5 @@
 Meteor.subscribe('studentInfo');
+
     Template.login.events({
         'submit form': function (event) {
             event.preventDefault();
@@ -8,9 +9,13 @@ Meteor.subscribe('studentInfo');
             console.log("login submitted.");
             Meteor.loginWithPassword(emailVar, passwordVar, function(err){
                 if (err) {
-                    var message = "There was an error logging in: <strong>" + err.reason + "</strong>";
-                    console.log(message);
-                    template.find('#form-messages').html(message);
+                    // Login failed
+                    sAlert.error('Invalid Email or Password',
+                        {
+                            timeout: 1500,
+                            offset: '140px',
+                            position: 'bottom'
+                        });
                 }
                 else {
                     // login succeeded

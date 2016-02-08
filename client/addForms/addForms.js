@@ -29,4 +29,3 @@
             Meteor.call('deleteForm', deleteID, deleteFormName );
         }
     });
-

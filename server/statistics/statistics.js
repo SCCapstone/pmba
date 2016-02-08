@@ -2,9 +2,7 @@
  * Created by userpc on 11/5/2015.
  */
 Meteor.methods({
-    getStats:function() {
-    },
-	getNumStudentsFormXCompleted: function(number){
+		getNumStudentsFormXCompleted: function(number){
 		var formName = "Forms.Name" + number;
 		var numStudents = studentInfo.find({IDType: { $in: ['S']}}).count();
 		var completedForm = studentInfo.find({$and: [{formName: true}, {'IDType': 'S'}]}).count();

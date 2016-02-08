@@ -46,12 +46,12 @@ Router.route('/', {
 Router.route('/login');
 
 // Check to make sure user user is logged in
-/*Router.onBeforeAction(before.loginRequired, {
-    except: ['login']
+Router.onBeforeAction(before.loginRequired, {
+    except: ['login', 'resetPassword']
 });
 Router.onBeforeAction(before.checkAdmin, {
     only: ['admin_overall', 'admin_student', 'addForms', 'addStudent', '']
-});*/
+});
 
 Router.route('/student', function () {
     this.render('student')
@@ -89,8 +89,24 @@ Router.route('/infoPage', function () {
     this.render('infoPage')
 });
 
+Router.route('/welcomePage', function () {
+    this.render('welcomePage')
+});
+
 Router.route('/addForms', function () {
     this.render('addForms')
+});
+
+Router.route('/notifications', function () {
+    this.render('notifications')
+});
+
+Router.route('/updateAdminInfo', function () {
+    this.render('updateAdminInfo')
+});
+
+Router.route('/resetPassword', function () {
+    this.render('resetPassword')
 });
 
 Router.route('/home', function () {
@@ -99,7 +115,7 @@ Router.route('/home', function () {
         Router.go('/student');
     }
     else if (Meteor.userId() != null &&
-        studentInfo.findOne(Meteor.userId(), {fields: {'IDType': 1}}).IDType == 'A') {
+        adminInfo.findOne(Meteor.userId(), {fields: {'IDType': 1}}).IDType == 'A') {
         Router.go('/admin_overall');
     }
 });

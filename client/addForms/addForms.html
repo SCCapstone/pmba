@@ -1,12 +1,13 @@
 <head>
     <title>PMBA</title>
+    <link rel="icon" sizes="16x16 32x32" href="/favicon.ico?v=2">
 </head>
 
 <template name="addForms">
     <div class = "page-header" id="header">
        <h1>
             <img src="img/logo.svg" class="img-responsive">
-            <small style="color:#000000">Add or Delete Forms</small>
+            <small style="color:white">Add or Delete Forms</small>
             {{>adminNavBar}}
         </h1>
     </div>
@@ -27,9 +28,10 @@
                 <ul>
                     {{#each forms}}
                         <li>
-                                <a href="infoPage"
-                                   onclick="Session.set('selectedForm', '{{_id}}');">
-                                    {{Name}} </a>
+                            <button class = "delete" id="{{_id}}">&times;</button>
+                            <a href="infoPage"
+                               onclick="Session.set('selectedForm', '{{_id}}');">
+                                {{Name}} </a>
                         </li>
                     {{/each}}
                 </ul>
@@ -49,15 +51,18 @@
                 <label class="description" for="inputDescription">Description:</label><span class="tabDescription"> </span>
                 <input type="text" name="inputDescription" id="inputDescription" placeholder="">
             </div>
+
+            <!-- added date field. NK. 2/1-->
             <br>
-            <div class="duedate">
-                <label class="inputDueDate" for="">Due Date:</label><span class="tabDueDate"> </span>
-                <input type="datetime" name="inputDueDate" id="inputDueDate" placeholder="Ex. -/--/----">
+            <div class="date">
+                <label class="date" for="date">Due Date: </label><span class="tabDate"> </span>
+                <input type="Date" id="date" placeholder="Date">
             </div>
+
             <br>
             <div class="addButton">
                 <div class="controls">
-                    <span class="tabAddForm"></span><button type="submit">Add Form</button>
+                    <span class="tabAddForm"></span><button type="submit">Add Item</button>
                 </div>
             </div>
         </div>

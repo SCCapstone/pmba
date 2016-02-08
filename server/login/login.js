@@ -1,5 +1,3 @@
-if (Meteor.isServer) {
-	Meteor.publish("login","studentInfo", function () {
-		return Users.find({});
-	});
-}
+Meteor.publish('studentInfo', function () {
+		return studentInfo.find({});
+});

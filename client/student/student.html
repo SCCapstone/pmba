@@ -1,9 +1,13 @@
+<head>
+    <title>PMBA</title>
+    <link rel="icon" sizes="16x16 32x32" href="/favicon.ico?v=2">
+</head>
 
 <template name="student">
     <div class = "page-header" id="header">
         <h1>
             <img src="/img/logo.svg" class="img-responsive">
-            <small style="color:#000000">{{studentName}}</small>
+            <small style="color:white">{{studentName}}</small>
             {{>studentNavBar}}
         </h1>
     </div>
@@ -29,8 +33,8 @@
                         <li class="{{#if Done}}checked{{/if}}">
                             <label class ="checkbox">
                                 <input type="checkbox" checked ={{Done}} class="toggle-checked">
-                                <a href="infoPage" id="{{FormNumber}}"
-                                   onclick="Session.set('selectedForm', '{{form FormNumber}}');">
+                                <a href="infoPage" id="{{_id}}"
+                                   onclick="Session.set('selectedForm', '{{form FormName}}');">
                                     {{FormName}} </a>
                             </label>
                         </li>

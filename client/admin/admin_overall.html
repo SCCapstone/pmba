@@ -1,0 +1,77 @@
+<head>
+    <title>PMBA</title>
+    <link rel="icon" sizes="16x16 32x32" href="/favicon.ico?v=2">
+</head>
+
+<template name="adminOverall">
+    <div class = "page-header" id="header">
+        <h1>
+            <img src="/img/logo.svg" class="img-responsive">
+            <small style="color:white">Administrator Page</small>
+            {{>adminNavBar}}
+        </h1>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10">
+            </div>
+        </div>
+    </div>
+
+    <div class="row-fluid row-offcanvas row-offcanvas-left">
+        <div class="col-sm-3 col-md-3 sidebar-offcanvas" id="sidebar" role="navigation">
+            <div class="well sidebar-nav">
+                <a href="addStudent">Add Account</a><br><br>
+                <ul class="nav nav-sidebar">
+                    <li><strong>Student list</strong></li>
+                    <div class="panel-body">
+                        <ul>
+                            {{#each studentInfo}}
+                                <li id="formNumber" value = "0">
+                                    <!-- add delete button and set id to target's id -->
+                                    <button class = "delete" id="{{_id}}">&times;</button>
+                                        <!--input type="checkbox" class="toggle-checked"
+                                               onclick="Session.set('selectedDelete', {{_id}})"-->
+                                    <a href="admin_student"
+                                       onclick="Session.set('selectedStudent', '{{_id}}');">
+                                        {{FirstName}} {{LastName}} </a>
+                                </li>
+                            {{/each}}
+                            <!--button class="delete"> Delete </button-->
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row-fluid">
+        <div class=" col-md-6 col-md-offset-1 panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Form Status</h3>
+            </div>
+            <div class="panel-body">
+                <ul>
+                    {{#each forms}}
+                        <li>
+                            <a href="infoPage"
+                               onclick="Session.set('selectedForm', '{{_id}}');">
+                                {{Name}}
+                            </a>
+                            <div class="progress">
+                                <div class="progress-bar left" role="progressbar" aria-valuenow="{{formPercent Name}}"
+                                     aria-valuemin="0" aria-valuemax="100" style="width: {{formPercent Name}}%;">
+                                    {{formPercent Name}}%
+                                </div>
+                            </div>
+
+                        </li>
+                    {{/each}}
+                </ul>
+                <input type="button" onclick=" window.location.href = '/addForms'" value = 'Add Item'>
+            </div>
+        </div>
+    </div>
+</template>

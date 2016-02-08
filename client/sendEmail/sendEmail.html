@@ -1,0 +1,39 @@
+<template name="sendEmail">
+    {{#with profile}}
+    <form class="form-horizontal">
+        <fieldset>
+            <!-- Text input -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="address">To:</label>
+                <div class="col-md-4">
+                   <!-- <textarea class="form-control" id="addressInput" name="addressInput" placeholder="Email Address"></textarea> -->
+                    <input id="addressInput" name="addressInput" value="{{Email}}" type="text" placeholder="Email Address" class="form-control input-md" required>
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="subject">Subject: </label>
+                <div class="col-md-4">
+                    <input id="subjectInput" name="subjectInput" type="text" class="form-control input-md" required>
+                </div>
+            </div>
+
+            <!-- Text input -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="message">Message:</label>
+                <div class="col-md-4">
+                    <textarea class="form-control" id="messageInput" name="messageInput" placeholder="Enter message here...." required></textarea>
+                </div>
+            </div>
+            <!-- Button -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="sendButton"></label>
+                <div class="col-md-4">
+                    <button id="sendButton" name="sendButton" class="btn btn-success">Send</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+    {{/with}}
+</template>

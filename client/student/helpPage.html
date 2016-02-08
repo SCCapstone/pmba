@@ -1,0 +1,37 @@
+<head>
+    <title>PMBA</title>
+    <link rel="icon" sizes="16x16 32x32" href="/favicon.ico?v=2">
+</head>
+
+<template name="help">
+    <div class = "page-header" id="header">
+        <h1>
+            <img src="img/logo.svg" class="img-responsive">
+            <small style="color:white">Help</small>
+            {{#if AccountType}}
+                {{>studentNavBar}}
+                {{else}}
+                    {{>adminNavBar}}
+            {{/if}}
+        </h1>
+    </div>
+
+    <div class="row-fluid">
+        <div class=" col-md-6 col-md-offset-1 panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Send email to Admins</h3>
+            </div>
+            <div class="panel-body">
+                <ul>
+                    <li>Send Message</li>
+                    <textarea rows="10" cols="60"></textarea>
+                    <p>
+                        <button class="btn btn-large btn-primary" type="button">Send</button>
+                    </p>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</template>

@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eba2f6bf-1855-4ecf-953b-4c80780a50fa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/pmba.iml" afterPath="$PROJECT_DIR$/.idea/pmba.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/resetPassword/resetPassword.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/resetPassword/resetPassword.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/resetPassword/resetPassword.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/packages" afterPath="$PROJECT_DIR$/.meteor/packages" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/versions" afterPath="$PROJECT_DIR$/.meteor/versions" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/login/login.html" afterPath="$PROJECT_DIR$/client/login/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/login/login.js" afterPath="$PROJECT_DIR$/client/login/login.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/router/route.js" afterPath="$PROJECT_DIR$/router/route.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/addStudent/addStudent.js" afterPath="$PROJECT_DIR$/server/addStudent/addStudent.js" />
     </list>
     <ignored path="pmba.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -386,6 +382,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="resetPassword" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="login" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -612,12 +626,6 @@
       <created>1447695740479</created>
       <option name="number" value="Default" />
       <updated>1447695740479</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Took out some debug code&#10;&#10;&#10;">
-      <created>1448860140063</created>
-      <option name="number" value="00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1448860140063</updated>
     </task>
     <task id="LOCAL-00023" summary="added sendEmail.css&#10;&#10;&#10;">
       <created>1448860177866</created>
@@ -907,7 +915,13 @@
       <option name="project" value="LOCAL" />
       <updated>1454964173469</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="Fixed everything that got deleted, I think.">
+      <created>1454965807718</created>
+      <option name="number" value="00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1454965807718</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -987,7 +1001,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="SHOW_FILE_HISTORY_DETAILS" value="false" />
-    <MESSAGE value="Changed percentages so they are rounded with no decimals" />
     <MESSAGE value="Forgot to fix admin_student" />
     <MESSAGE value="Updated project to meteor 1.21" />
     <MESSAGE value="Add Student sends an enrollment email with link to set password. I Disabled it for now" />
@@ -1012,7 +1025,8 @@
     <MESSAGE value="fixed code" />
     <MESSAGE value="fixed input type errors" />
     <MESSAGE value="changed mupx deploy info" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed mupx deploy info" />
+    <MESSAGE value="Fixed everything that got deleted, I think." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed everything that got deleted, I think." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

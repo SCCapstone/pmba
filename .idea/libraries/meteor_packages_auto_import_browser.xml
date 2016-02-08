@@ -199,6 +199,10 @@
         <item url="file://$USER_HOME$/.meteor/packages/iron_location/1.0.11/web.browser/lib/utils.js" />
         <item url="file://$USER_HOME$/.meteor/packages/iron_location/1.0.11/web.browser/lib/state.js" />
         <item url="file://$USER_HOME$/.meteor/packages/iron_location/1.0.11/web.browser/lib/location.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/juliancwirko_s-alert/3.1.4/web.browser/client/s-alert.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/juliancwirko_s-alert/3.1.4/web.browser/client/s-alert-default.css" />
+        <item url="file://$USER_HOME$/.meteor/packages/juliancwirko_s-alert/3.1.4/web.browser/client/s-alert-template.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/juliancwirko_s-alert/3.1.4/web.browser/client/s-alert-collection.js" />
         <item url="file://$USER_HOME$/.meteor/packages/iron_middleware-stack/1.0.11/web.browser/lib/middleware_stack.js" />
         <item url="file://$USER_HOME$/.meteor/packages/iron_middleware-stack/1.0.11/web.browser/lib/handler.js" />
         <item url="file://$USER_HOME$/.meteor/packages/dburles_mongo-collection-instances/0.3.4/web.browser/packages/dburles_mongo-collection-instances.js" />
@@ -422,6 +426,10 @@
       <root url="file://$USER_HOME$/.meteor/packages/iron_location/1.0.11/web.browser/lib/utils.js" />
       <root url="file://$USER_HOME$/.meteor/packages/iron_location/1.0.11/web.browser/lib/state.js" />
       <root url="file://$USER_HOME$/.meteor/packages/iron_location/1.0.11/web.browser/lib/location.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/juliancwirko_s-alert/3.1.4/web.browser/client/s-alert.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/juliancwirko_s-alert/3.1.4/web.browser/client/s-alert-default.css" />
+      <root url="file://$USER_HOME$/.meteor/packages/juliancwirko_s-alert/3.1.4/web.browser/client/s-alert-template.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/juliancwirko_s-alert/3.1.4/web.browser/client/s-alert-collection.js" />
       <root url="file://$USER_HOME$/.meteor/packages/iron_middleware-stack/1.0.11/web.browser/lib/middleware_stack.js" />
       <root url="file://$USER_HOME$/.meteor/packages/iron_middleware-stack/1.0.11/web.browser/lib/handler.js" />
       <root url="file://$USER_HOME$/.meteor/packages/dburles_mongo-collection-instances/0.3.4/web.browser/packages/dburles_mongo-collection-instances.js" />

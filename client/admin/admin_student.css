@@ -2,7 +2,7 @@
 html, body { height: 100%; }
 
 .container {
-    mon-height: 100% overflow : hidden;
+    min-height: 100% overflow : hidden;
 }
 
 #col1, #col2 {
@@ -11,9 +11,7 @@ html, body { height: 100%; }
 }
 
 #header {
-    background-color: #73000A;
-    padding-top:0px;
-    margin-top: 0px;
+    background-color: #fff;
 }
 
 #studentData {

@@ -1,6 +1,6 @@
  TINY TEST INSTRUCTIONS:
  
- YOu must change the path of project files in package.js
+ You must change the path of project files in package.js
  
 To run tiny test type the following command in at the project's root directory:
  

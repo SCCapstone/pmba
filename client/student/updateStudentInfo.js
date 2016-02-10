@@ -18,8 +18,15 @@ if (Meteor.isClient) {
 				HomeNumber : homeNumber.value,
 				Picture : "Upic1"}});
 
-			alert("Your information has been updated!");
-			window.location.href = "/student";
+				sAlert.success('Your Information Has Been Updated',
+					{
+						onClose: function() {
+		                    Router.go('/student');
+		                },
+						timeout: 1500,
+						offset: '40px',
+						position: 'bottom'
+					});
 		}
 	});
 }

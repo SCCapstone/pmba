@@ -1,3 +1,3 @@
-Meteor.publish("login", "studentInfo", function () {
-    return studentInfo.find({});
+Meteor.publish("studentInfo", function () {
+    return studentInfo.find();
 });

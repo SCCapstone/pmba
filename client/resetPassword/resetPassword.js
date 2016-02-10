@@ -9,9 +9,6 @@ Template.resetPassword.events({
 
         sAlert.error('An email has been sent to reset your password if your account was found',
             {
-                onClose: function() {
-                    Router.go('/login');
-                },
                 timeout: 1500,
                 offset: '120px',
                 position: 'bottom'

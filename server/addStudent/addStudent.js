@@ -1,6 +1,12 @@
 Meteor.publish("studentInfo", function () {
     return studentInfo.find();
 });
+Meteor.publish("FormStatus", function () {
+    return FormStatus.find();
+});
+Meteor.publish("forms", function () {
+    return forms.find();
+});
 
 Meteor.startup(function () {
     console.log('Starting UP!');

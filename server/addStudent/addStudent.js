@@ -61,7 +61,7 @@ Meteor.methods({
             });
         }
             // Send Enrollment Email to the new user
-            // Accounts.sendEnrollmentEmail(userId);
+            Accounts.sendEnrollmentEmail(userId);
          } else {
          console.log("not logged in or not an admin");
          }

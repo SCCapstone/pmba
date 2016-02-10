@@ -53,9 +53,11 @@ Router.onBeforeAction(before.checkAdmin, {
     only: ['admin_overall', 'admin_student', 'addForms', 'addStudent']
 });
 
-Router.onBeforeAction(!before.checkAdmin, {
+//TODO
+//THIS NEEDS TO BE FIXED
+/*Router.onBeforeAction(!before.checkAdmin, {
     only: ['student', 'updateStudentInfo']
-});
+});*/
 
 Router.route('/student', function () {
     this.render('student')

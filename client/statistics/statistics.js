@@ -1,6 +1,6 @@
 /**
  * Created by userpc on 11/5/2015.
- */
+ */ 
  Template.statistics.helpers({
         studentInfo: function () {
            return forms.find({});

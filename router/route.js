@@ -4,7 +4,7 @@
 Router.configure({
     //TODO Make templates for notFound and loading
     //loadingTemplate: "loading",
-   // notFoundTemplate: "notFound"
+    // notFoundTemplate: "notFound"
 });
 
 /******************************************************************************
@@ -56,8 +56,8 @@ Router.onBeforeAction(before.checkAdmin, {
 //TODO
 //THIS NEEDS TO BE FIXED
 /*Router.onBeforeAction(!before.checkAdmin, {
-    only: ['student', 'updateStudentInfo']
-});*/
+ only: ['student', 'updateStudentInfo']
+ });*/
 
 Router.route('/student', function () {
     this.render('student')
@@ -110,7 +110,7 @@ Router.route('/notifications', function () {
 Router.route('/formsTable', function () {
     this.render('formsTable')
 });
-    
+
 Router.route('/updateAdminInfo', function () {
     this.render('updateAdminInfo')
 });
@@ -130,4 +130,3 @@ Router.route('/home', function () {
         Router.go('/admin_overall');
     }
 });
-

@@ -130,4 +130,3 @@ Router.route('/home', function () {
         Router.go('/admin_overall');
     }
 });
-

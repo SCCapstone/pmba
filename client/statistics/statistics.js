@@ -12,7 +12,6 @@ Template.statistics.events({
 		'click .btn' : function(event){
 			event.preventDefault();
 			var numForms = forms.find({}).count();
-			console.log(numForms);
 				for(i = 1; i <= numForms; i++){
 					Meteor.call('getNumStudentsFormXCompleted', i);
 				}

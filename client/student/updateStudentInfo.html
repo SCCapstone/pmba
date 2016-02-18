@@ -1,12 +1,16 @@
 <head>
-    <!--<title>PMBA</title>-->
+    <title>PMBA</title>
+    <link rel="icon" sizes="16x16 32x32" href="/favicon.ico?v=2">
 </head>
 
 <template name="updateStudentInfo">
     <div class = "page-header" id="header">
         <h1>
-            <img src="img/logo.svg" class="img-responsive">
-            <small style="color:white">Update Information Page</small>
+            <img src="img/logo.svg" class="img-responsive" style="position:absolute;">
+            <img src="/img/banner.png" style="height: 23vh">
+
+            <small style="color:white; font-family: Adobe, Garamond, Pro, serif; font-size: 1em; position: absolute;
+            margin-top: -7vh; margin-left: 3vh;">Update Information Page</small>
             {{>studentNavBar}}
         </h1>
     </div>
@@ -16,27 +20,27 @@
 
                 <div class="firstName">
                     <label class="firstName" for="firstName">First Name:</label><span class="tabName"> </span>
-                        <input type="FirstName" id="firstName" placeholder="First Name">
+                        <input type="text" id="firstName" placeholder="First Name">
                 </div>
 				<br>
 				<div class="lastName">
                     <label class="lastName" for="lastName">Last Name:</label><span class="tabLastName"> </span>
-                        <input type="LastName" id="lastName" placeholder="Last Name">
+                        <input type="text" id="lastName" placeholder="Last Name">
                 </div>
 				<br>
 				<div class="cellPhone">
                     <label class="cellPhone" for="cellPhone">Cell Phone: </label><span class="tabName"> </span>
-                        <input type="CellNumber" id="cellNumber" placeholder="Cell Number">
+                        <input type="tel" id="cellNumber" placeholder="Cell Number">
                 </div>
 				<br>
 				<div class="workPhone">
                     <label class="workNumber" for="workPhone">Work Phone: </label><span class="tabWorkPhone"> </span>
-                        <input type="WorkNumber" id="workNumber" placeholder="Work Number">
+                        <input type="tel" id="workNumber" placeholder="Work Number">
                 </div>
 				<br>
 				<div class="homePhone">
                     <label class="homeNumber" for="homeNumber">Home Phone: </label><span class="tabHomePhone"> </span>
-                        <input type="HomeNumber" id="homeNumber" placeholder="Home Number">
+                        <input type="tel" id="homeNumber" placeholder="Home Number">
                 </div>
 
 
@@ -46,6 +50,7 @@
                         <span class="tabUpdateInfo"></span><button type="submit">Update Information</button>
                     </div>
                 </div>
+                {{>sAlert}}
         </div>
     </form>
 

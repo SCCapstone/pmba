@@ -7,7 +7,7 @@ aldeed:collection2-core@1.0.0
 aldeed:schema-deny@1.0.1
 aldeed:schema-index@1.0.1
 aldeed:simple-schema@1.5.3
-autopublish@1.0.4
+aldeed:tabular@1.6.0
 autoupdate@1.2.4
 babel-compiler@5.8.24_1
 babel-runtime@0.1.4
@@ -52,6 +52,7 @@ iron:middleware-stack@1.0.11
 iron:router@1.0.12
 iron:url@1.0.11
 jquery@1.11.4
+juliancwirko:s-alert@3.1.4
 lai:collection-extensions@0.1.4
 launch-screen@1.0.4
 less@2.5.1
@@ -100,6 +101,7 @@ srp@1.0.4
 standard-minifiers@1.0.2
 templating@1.1.5
 templating-tools@1.0.0
+tinytest@1.0.6
 tracker@1.0.9
 twbs:bootstrap@3.3.6
 ui@1.0.8

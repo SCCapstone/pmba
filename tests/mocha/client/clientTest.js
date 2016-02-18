@@ -16,29 +16,41 @@ Meteor = sinon.stub({
     user: function() {},
     userId: function() {},
     publish: function() {},
-    methods: function() {}
+    methods: function() {},
+    subscribe: function() {}
 
 });
 
-studentInfo = require('../../../server/addStudent/addStudent.js');
+//addStudent = require('../../../client/addStudent/addStudent.js');
 
 // Tests
-describe('Page title', function () {
+describe('Page setTitle', function () {
     it('should be set to PMBA @watch', function () {
-        browser.url('localhost:3000/');
+        browser.url('localhost:3000/login');
         expect(browser.getTitle()).to.equal('PMBA');
     });
 });
 
-describe('TEST', function () {
-    it('should be a test @watch', function () {
-        //browser.setValue('#inputEmail', 'student1@student.com');
-        //browser.setValue('#inputPassword', 'password');
-        //browser.click('#submit');
+describe('Student Login', function () {
+    it('should login student @watch', function () {
+        browser.setValue('#inputEmail', 'student4@student.com');
+        browser.setValue('#inputPassword', 'password');
+        browser.click('#submit');
+        browser.pause(5000);
+        expect(browser.getUrl()).to.equal('http://localhost:3000/student');
 
         //browser.url('localhost:3000/admin_overall');
         var test = browser.getUrl();
-        console.log(test);
+        //console.log(test);
+    });
+});
+
+describe('This is a test test?', function() {
+    it('Should test a collection or something? @watch', function() {
+        /*var studentAccount = server.call(addStudent.createStudent({
+            username: 'test@student.com',
+            password: 'password'
+        }));*/
     });
 });
 

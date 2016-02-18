@@ -110,7 +110,7 @@ Router.route('/notifications', function () {
 Router.route('/formsTable', function () {
     this.render('formsTable')
 });
-    
+
 Router.route('/updateAdminInfo', function () {
     this.render('updateAdminInfo')
 });

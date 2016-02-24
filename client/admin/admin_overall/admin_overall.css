@@ -1,6 +1,10 @@
 /* CSS declarations go here */
 html, body { height: 100%; }
 
+img {
+    max-width: 100%;
+}
+
 .container {
     min-height: 100% overflow : hidden;
 }
@@ -16,7 +20,7 @@ html, body { height: 100%; }
     margin-top: 0px;
 }
 .progress {
-    width: 400px;
+    max-width: 70%;
 }
 /*
 Code snippet by maridlcrmn for Bootsnipp.com

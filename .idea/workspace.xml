@@ -1,12 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eba2f6bf-1855-4ecf-953b-4c80780a50fa" name="Default" comment="Login and student navigation bar sizes/bolding updated.">
+    <list default="true" id="b939e07e-0b37-4c81-8a5e-d875761ed641" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/solidBanner.png" />
+      <change type="DELETED" beforePath="C:\Users\userpc\Documents\GitHub\pmba\.idea\encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\userpc\Documents\GitHub\pmba\.idea\pmba.iml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\userpc\Documents\GitHub\pmba\.idea\vcs.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/addForms/addForms.html" afterPath="$PROJECT_DIR$/client/addForms/addForms.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/addStudent/addStudent.html" afterPath="$PROJECT_DIR$/client/addStudent/addStudent.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/admin/admin_overall/admin_overall.css" afterPath="$PROJECT_DIR$/client/admin/admin_overall/admin_overall.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/admin/admin_overall/admin_overall.html" afterPath="$PROJECT_DIR$/client/admin/admin_overall/admin_overall.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/admin/admin_student/admin_student.html" afterPath="$PROJECT_DIR$/client/admin/admin_student/admin_student.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/login/changePassword.html" afterPath="$PROJECT_DIR$/client/login/changePassword.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/formsTable/formsTable.html" afterPath="$PROJECT_DIR$/client/formsTable/formsTable.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/helpPage/helpPage.css" afterPath="$PROJECT_DIR$/client/helpPage/helpPage.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/helpPage/helpPage.html" afterPath="$PROJECT_DIR$/client/helpPage/helpPage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/infoPage/infoPage.html" afterPath="$PROJECT_DIR$/client/infoPage/infoPage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/login/login.html" afterPath="$PROJECT_DIR$/client/login/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/admin/notifications/notifications.html" afterPath="$PROJECT_DIR$/client/admin/notifications/notifications.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/resetPassword/resetPassword.html" afterPath="$PROJECT_DIR$/client/resetPassword/resetPassword.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/router/route.js" afterPath="$PROJECT_DIR$/router/route.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/sendEmail/sendEmail.css" afterPath="$PROJECT_DIR$/client/sendEmail/sendEmail.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/statistics/statistics.html" afterPath="$PROJECT_DIR$/client/statistics/statistics.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/student/dashboard/student.html" afterPath="$PROJECT_DIR$/client/student/dashboard/student.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/admin/updateAdminInfo/updateAdminInfo.html" afterPath="$PROJECT_DIR$/client/admin/updateAdminInfo/updateAdminInfo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/student/updateStudentInfo/updateStudentInfo.html" afterPath="$PROJECT_DIR$/client/student/updateStudentInfo/updateStudentInfo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/welcomePage/welcomePage.html" afterPath="$PROJECT_DIR$/client/welcomePage/welcomePage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/NavBar Template/loginNavBar.css" afterPath="$PROJECT_DIR$/client/NavBar Template/loginNavBar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/NavBar Template/loginNavBar.html" afterPath="$PROJECT_DIR$/client/NavBar Template/loginNavBar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/NavBar Template/studentNavBar.css" afterPath="$PROJECT_DIR$/client/NavBar Template/studentNavBar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/NavBar Template/studentNavBar.html" afterPath="$PROJECT_DIR$/client/NavBar Template/studentNavBar.html" />
     </list>
     <ignored path="pmba.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,62 +46,54 @@
     <favorites_list name="pmba" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="adminNavBar.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/NavBar Template/adminNavBar.css">
+    <leaf>
+      <file leaf-file-name="admin_student.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/admin/admin_student/admin_student.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.9230769">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state vertical-scroll-proportion="47.285713">
+              <caret line="10" column="115" selection-start-line="10" selection-start-column="115" selection-end-line="10" selection-end-column="115" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="adminNavBar.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/NavBar Template/adminNavBar.html">
+      <file leaf-file-name="sendEmail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/sendEmail/sendEmail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.461538">
-              <caret line="21" column="124" selection-start-line="21" selection-start-column="124" selection-end-line="21" selection-end-column="124" />
+            <state vertical-scroll-proportion="-14.928572">
+              <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loginNavBar.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/NavBar Template/loginNavBar.css">
+      <file leaf-file-name="sendEmail.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/sendEmail/sendEmail.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.2692308">
-              <caret line="5" column="80" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="80" />
+            <state vertical-scroll-proportion="0.4125">
+              <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loginNavBar.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/NavBar Template/loginNavBar.html">
+      <file leaf-file-name="helpPage.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/helpPage/helpPage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.076923">
-              <caret line="20" column="60" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
-              <folding />
+            <state vertical-scroll-proportion="-22.785715">
+              <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+              <folding>
+                <element signature="n#style#0;n#small#0;n#h1#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="studentNavBar.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/NavBar Template/studentNavBar.css">
+      <file leaf-file-name="helpPage.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/helpPage/helpPage.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.2692308">
-              <caret line="5" column="81" selection-start-line="5" selection-start-column="81" selection-end-line="5" selection-end-column="81" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="studentNavBar.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/NavBar Template/studentNavBar.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9303483">
-              <caret line="22" column="137" selection-start-line="22" selection-start-column="137" selection-end-line="22" selection-end-column="137" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -92,8 +104,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Html5" />
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -101,90 +113,88 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="nandita &lt;nandit95@yahoo.com&gt;" />
-        <option value="Jeff Dumas &lt;jdumas@email.sc.edu&gt;" />
-        <option value="Jeff Dumas &lt;jdumas@email.sc.edu&gt;A" />
+        <option value="smitht57@email.sc.edu" />
+        <option value="Tanner" />
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="test" />
+        <entry key="$PROJECT_DIR$" value="smitht57" />
       </map>
     </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/client/admin/admin_overall.js" />
-        <option value="$PROJECT_DIR$/test/mocha/client/clientTest.js" />
-        <option value="$PROJECT_DIR$/test/clientTest.js" />
-        <option value="$PROJECT_DIR$/test/client/clientTest.js" />
-        <option value="$PROJECT_DIR$/tests/mocha/client/addStudentTest.js" />
-        <option value="$PROJECT_DIR$/tests/stubs.js" />
-        <option value="$PROJECT_DIR$/tests/mocha/client/stubs.js" />
-        <option value="$PROJECT_DIR$/server/enrollEmail/enrollEmail.js" />
-        <option value="$PROJECT_DIR$/server/login/login.js" />
-        <option value="$PROJECT_DIR$/tests/mocha/client/clientTest.js" />
-        <option value="$PROJECT_DIR$/client/title/title.js" />
-        <option value="$PROJECT_DIR$/client/title/title.html" />
-        <option value="$PROJECT_DIR$/client/setTitle/title.html" />
-        <option value="$PROJECT_DIR$/client/setTitle/setTitle.html" />
-        <option value="$PROJECT_DIR$/client/addForms/addForms.html" />
-        <option value="$PROJECT_DIR$/client/admin/admin_student.html" />
-        <option value="$PROJECT_DIR$/client/admin/notifications.html" />
-        <option value="$PROJECT_DIR$/client/login/changePassword.html" />
-        <option value="$PROJECT_DIR$/client/admin/admin_overall.html" />
-        <option value="$PROJECT_DIR$/client/statistics/statistics.html" />
-        <option value="$PROJECT_DIR$/client/student/helpPage.html" />
-        <option value="$PROJECT_DIR$/client/student/infoPage.html" />
-        <option value="$PROJECT_DIR$/client/student/student.html" />
-        <option value="$PROJECT_DIR$/client/welcomePage/welcomePage.html" />
-        <option value="$PROJECT_DIR$/client/admin/updateAdminInfo.html" />
-        <option value="$PROJECT_DIR$/client/student/updateStudentInfo.html" />
-        <option value="$PROJECT_DIR$/client/forgotPassword/forgotPassword.html" />
-        <option value="$PROJECT_DIR$/client/addStudent/addStudent.html" />
-        <option value="$PROJECT_DIR$/.deploy/mup.json" />
-        <option value="$PROJECT_DIR$/client/resetPassword/resetPassword.html" />
-        <option value="$PROJECT_DIR$/server/resetPassword/resetPassword.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/common/common.js" />
-        <option value="$PROJECT_DIR$/client/sAlert/sAlert.js" />
-        <option value="$PROJECT_DIR$/client/login/login.html" />
-        <option value="$PROJECT_DIR$/client/resetPassword/resetPassword.js" />
-        <option value="$PROJECT_DIR$/client/login/login.js" />
-        <option value="$PROJECT_DIR$/router/route.js" />
-        <option value="$PROJECT_DIR$/server/student/student.js" />
-        <option value="$PROJECT_DIR$/server/addStudent/addStudent.js" />
-        <option value="$PROJECT_DIR$/private/email/email.js" />
-        <option value="$PROJECT_DIR$/lib/publications.js" />
-        <option value="$PROJECT_DIR$/packages/pmba-tinytests/package.js" />
-        <option value="$PROJECT_DIR$/packages/pmba-tinytests/test-stubs.js" />
-        <option value="$PROJECT_DIR$/packages/pmba-tinytests/pmba-tinytests-tests.js" />
-        <option value="$PROJECT_DIR$/packages/pmba-tinytests/README.md" />
-        <option value="$PROJECT_DIR$/client/student/updateStudentInfo/updateStudentInfo.js" />
+        <option value="$PROJECT_DIR$/client/student/student.css" />
+        <option value="$PROJECT_DIR$/client/login/login.css" />
+        <option value="$PROJECT_DIR$/client/NavBar Template/adminNavBar.css" />
         <option value="$PROJECT_DIR$/client/NavBar Template/loginNavBar.css" />
         <option value="$PROJECT_DIR$/client/NavBar Template/studentNavBar.css" />
+        <option value="$PROJECT_DIR$/client/addForms/addForms.css" />
+        <option value="$PROJECT_DIR$/client/addStudent/addStudent.css" />
+        <option value="$PROJECT_DIR$/client/login/changePassword.css" />
+        <option value="$PROJECT_DIR$/client/student/updateStudentInfo.css" />
+        <option value="$PROJECT_DIR$/client/student/infoPage.css" />
+        <option value="$PROJECT_DIR$/client/student/helpPage.css" />
+        <option value="$PROJECT_DIR$/client/statistics/statistics.css" />
+        <option value="$PROJECT_DIR$/client/admin/notifications.css" />
+        <option value="$PROJECT_DIR$/client/admin/notifications.js" />
+        <option value="$PROJECT_DIR$/client/sendNotification/sendNotification.html" />
+        <option value="$PROJECT_DIR$/client/sendNotification/sendNotification.js" />
+        <option value="$PROJECT_DIR$/client/sendNotification/sendNotification.css" />
+        <option value="$PROJECT_DIR$/client/admin/admin_student.css" />
         <option value="$PROJECT_DIR$/client/NavBar Template/loginNavBar.html" />
         <option value="$PROJECT_DIR$/client/NavBar Template/studentNavBar.html" />
+        <option value="$PROJECT_DIR$/client/admin/notifications.html" />
+        <option value="$PROJECT_DIR$/client/admin/admin_student.html" />
+        <option value="$PROJECT_DIR$/client/student/infoPage.html" />
+        <option value="$PROJECT_DIR$/client/admin/updateAdminInfo.html" />
+        <option value="$PROJECT_DIR$/client/student/helpPage.html" />
+        <option value="$PROJECT_DIR$/client/student/student.html" />
+        <option value="$PROJECT_DIR$/client/student/updateStudentInfo.html" />
+        <option value="$USER_HOME$/Dropbox/_CSCE590/sampleApps/kendostarter/index.html" />
+        <option value="$PROJECT_DIR$/client/admin/admin_overall.html" />
+        <option value="$PROJECT_DIR$/client/admin/admin_overall.css" />
+        <option value="$PROJECT_DIR$/client/NavBar Template/adminNavBar.html" />
+        <option value="$PROJECT_DIR$/router/route.js" />
+        <option value="$PROJECT_DIR$/client/resetPassword/resetPassword.html" />
+        <option value="$PROJECT_DIR$/client/login/login.html" />
+        <option value="$PROJECT_DIR$/client/login/changePassword.html" />
+        <option value="$PROJECT_DIR$/client/admin/updateAdminInfo/updateAdminInfo.html" />
+        <option value="$PROJECT_DIR$/client/admin/admin_overall/admin_overall.css" />
+        <option value="$PROJECT_DIR$/client/admin/admin_overall/admin_overall.html" />
+        <option value="$PROJECT_DIR$/client/admin/notifications/notifications.html" />
+        <option value="$PROJECT_DIR$/client/formsTable/formsTable.html" />
+        <option value="$PROJECT_DIR$/client/admin/admin_student/admin_student.html" />
+        <option value="$PROJECT_DIR$/client/addStudent/addStudent.html" />
+        <option value="$PROJECT_DIR$/client/addForms/addForms.html" />
+        <option value="$PROJECT_DIR$/client/welcomePage/welcomePage.html" />
+        <option value="$PROJECT_DIR$/client/student/updateStudentInfo/updateStudentInfo.html" />
+        <option value="$PROJECT_DIR$/client/student/dashboard/student.html" />
+        <option value="$PROJECT_DIR$/client/statistics/statistics.html" />
+        <option value="$PROJECT_DIR$/client/infoPage/infoPage.html" />
+        <option value="$PROJECT_DIR$/client/helpPage/helpPage.css" />
+        <option value="$PROJECT_DIR$/client/helpPage/helpPage.html" />
+        <option value="$PROJECT_DIR$/client/sendEmail/sendEmail.css" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" />
-  <component name="JsBuildToolPackageJson" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
-  <component name="NodeJsMochaPackageDirSetting">
-    <data>/usr/local/lib/node_modules/mocha</data>
+  <component name="NamedScopeManager">
+    <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="784" />
+    <option name="x" value="-16" />
+    <option name="y" value="-16" />
+    <option name="width" value="3232" />
+    <option name="height" value="1744" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -193,6 +203,9 @@
     <OptionsSetting value="true" id="Edit" />
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="1" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -205,8 +218,6 @@
       <autoscrollToSource />
       <autoscrollFromSource />
       <sortByType />
-      <manualOrder />
-      <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="ProjectPane">
@@ -237,15 +248,135 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mocha" />
+              <option name="myItemId" value="server" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
+              <option name="myItemId" value="student" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="login" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="router" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -260,6 +391,126 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="welcomePage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="student" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="updateStudentInfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="student" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dashboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="statistics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sendNotification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sendEmail" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resetPassword" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -281,78 +532,241 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Problems" />
-        <subPane subId="Changed Files">
           <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="login" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infoPage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helpPage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="formsTable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="updateAdminInfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="notifications" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin_student" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin_overall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="addStudent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="addForms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
-        <subPane subId="Project Files" />
-        <subPane subId="Tests" />
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/CSCE 590/smitht57_h1/smitht57_p1_h1.html" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="enabled" />
     <property name="js.meteor.project" value="true" />
     <property name="js.meteor.library.was.enabled" value="true" />
-    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="254" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="271" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="275" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1069" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="266" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="267" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="272" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1064" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="recentsLimit" value="5" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="SearchEverywhereHistoryKey" value="apply&#9;ACTION&#9;ChangesView.ApplyPatch&#10;studentInfo&#9;FILE&#9;file:///Users/j/CSCE490/pmba/server/student/updateStudentInfo.js&#10;stubs&#9;null&#9;null&#10;&quot;../build/Release/bson&quot;&#9;null&#9;null&#10;studentInfo.apply&#9;FILE&#9;file:///Users/j/CSCE490/pmba/client/addStudent/addStudent.html" />
-    <property name="nodejs.mocha.node_interpreter_path" value="/usr/local/bin/node" />
-    <property name="nodejs.mocha.mocha_node_package_dir" value="/usr/local/lib/node_modules/mocha" />
-    <property name="javascript.karma.node_interpreter_path" value="/usr/local/bin/node" />
-    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
-    <property name="jsx.switch.disabled" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lib" />
-      <recent name="$PROJECT_DIR$/server/lib" />
-      <recent name="$PROJECT_DIR$/client/lib" />
-      <recent name="$PROJECT_DIR$/tests/mocha" />
-      <recent name="$PROJECT_DIR$/test" />
-    </key>
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager" selected="Meteor.Unnamed">
-    <configuration default="true" type="ChromiumRemoteDebugType" factoryName="Chromium Remote">
-      <method />
-    </configuration>
-    <configuration default="true" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
-    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
@@ -362,31 +776,14 @@
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
+    <configuration default="true" type="JsTestDriver-test-runner" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
-      <method />
-    </configuration>
-    <configuration default="true" type="NodeWebKit" factoryName="NW.js">
-      <method />
-    </configuration>
-    <configuration default="true" type="NodeunitConfigurationType" factoryName="Nodeunit">
-      <setting name="nodePath" value="/usr/local/bin/node" />
-      <envs />
-      <setting name="passParentEnvVars" value="true" />
-      <setting name="nodeunitModuleDir" value="" />
-      <setting name="workingDirectory" value="$PROJECT_DIR$" />
-      <setting name="testType" value="JS_FILE" />
-      <setting name="jsFile" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhoneGap" factoryName="PhoneGap/Cordova">
-      <option name="myExecutable" />
-      <option name="myWorkDir" />
-      <option name="myCommand" />
-      <option name="myPassParent" value="true" />
-      <option name="myPlatform" />
-      <option name="myExtraArgs" />
-      <option name="hasTarget" value="false" />
-      <option name="target" />
       <method />
     </configuration>
     <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
@@ -400,17 +797,12 @@
       <gulpfile />
       <tasks />
       <arguments />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
-      <scripts />
+      <pass-parent-envs>true</pass-parent-envs>
       <envs />
       <method />
     </configuration>
     <configuration default="true" type="meteor-app-runner" factoryName="Meteor">
-      <option name="exePath" value="/usr/local/bin/meteor" />
+      <option name="exePath" value="$USER_HOME$/AppData/Local/.meteor/meteor.bat" />
       <option name="startBrowserSettings">
         <browser url="http://localhost:3000" />
       </option>
@@ -419,22 +811,10 @@
           <browser url="http://localhost:3000" />
         </startBrowserSettings>
       </meteor-runner-state>
-      <method />
-    </configuration>
-    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
-      <node-options />
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <envs />
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>DIRECTORY</test-kind>
-      <test-directory />
-      <recursive>false</recursive>
       <method />
     </configuration>
     <configuration default="false" name="Unnamed" type="meteor-app-runner" factoryName="Meteor">
-      <option name="exePath" value="/usr/local/bin/meteor" />
+      <option name="exePath" value="$USER_HOME$/AppData/Local/.meteor/meteor.bat" />
       <option name="startBrowserSettings">
         <browser url="http://localhost:3000" />
       </option>
@@ -445,406 +825,178 @@
       </meteor-runner-state>
       <method />
     </configuration>
-    <configuration default="false" name="Unnamed (1)" type="meteor-app-runner" factoryName="Meteor">
-      <option name="exePath" value="/usr/local/bin/meteor" />
-      <option name="startBrowserSettings">
-        <browser url="http://localhost:3000" />
-      </option>
-      <meteor-runner-state>
-        <startBrowserSettings>
-          <browser url="http://localhost:3000" />
-        </startBrowserSettings>
-      </meteor-runner-state>
-      <method />
-    </configuration>
-    <configuration default="false" name="Test" type="mocha-javascript-test-runner" factoryName="Mocha">
-      <node-options />
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <envs />
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>DIRECTORY</test-kind>
-      <test-directory>$PROJECT_DIR$/tests</test-directory>
-      <recursive>true</recursive>
-      <method />
-    </configuration>
-    <list size="3">
+    <list size="1">
       <item index="0" class="java.lang.String" itemvalue="Meteor.Unnamed" />
-      <item index="1" class="java.lang.String" itemvalue="Meteor.Unnamed (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Mocha.Test" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
-    <configuration>$USER_HOME$/.subversion</configuration>
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="eba2f6bf-1855-4ecf-953b-4c80780a50fa" name="Default" comment="" />
-      <created>1447695740479</created>
+      <changelist id="b939e07e-0b37-4c81-8a5e-d875761ed641" name="Default" comment="" />
+      <created>1446518386356</created>
       <option name="number" value="Default" />
-      <updated>1447695740479</updated>
+      <updated>1446518386356</updated>
     </task>
-    <task id="LOCAL-00035" summary="students can't go to admin pages">
-      <created>1449076310164</created>
-      <option name="number" value="00035" />
+    <task id="LOCAL-00001" summary="Changed Punctuation">
+      <created>1446591373126</created>
+      <option name="number" value="00001" />
       <option name="project" value="LOCAL" />
-      <updated>1449076310164</updated>
+      <updated>1446591373126</updated>
     </task>
-    <task id="LOCAL-00036" summary="Added new IP address for server">
-      <created>1449086065747</created>
-      <option name="number" value="00036" />
+    <task id="LOCAL-00002" summary="Added Banner and Forms 1-3">
+      <created>1446593108400</created>
+      <option name="number" value="00002" />
       <option name="project" value="LOCAL" />
-      <updated>1449086065747</updated>
+      <updated>1446593108400</updated>
     </task>
-    <task id="LOCAL-00037" summary="Seperate collections for students and admins">
-      <created>1449087736770</created>
-      <option name="number" value="00037" />
+    <task id="LOCAL-00003" summary="Added multiple files (statistics, help, infopage) and also edited all files to work together.&#10;">
+      <created>1446750286452</created>
+      <option name="number" value="00003" />
       <option name="project" value="LOCAL" />
-      <updated>1449087736770</updated>
+      <updated>1446750286452</updated>
     </task>
-    <task id="LOCAL-00038" summary="almost have percentage bars working&#10;fixed login code">
-      <created>1449112221938</created>
-      <option name="number" value="00038" />
+    <task id="LOCAL-00004" summary="Added multiple files (statistics, help, infopage) and also edited all files to work together.&#10;">
+      <created>1446765463963</created>
+      <option name="number" value="00004" />
       <option name="project" value="LOCAL" />
-      <updated>1449112221939</updated>
+      <updated>1446765463963</updated>
     </task>
-    <task id="LOCAL-00039" summary="percentage bars work but they are really small">
-      <created>1449115934041</created>
-      <option name="number" value="00039" />
+    <task id="LOCAL-00005" summary="moved login">
+      <created>1446768090712</created>
+      <option name="number" value="00005" />
       <option name="project" value="LOCAL" />
-      <updated>1449115934041</updated>
+      <updated>1446768090712</updated>
     </task>
-    <task id="LOCAL-00040" summary="overall percentage bars are bigger">
-      <created>1449146035819</created>
-      <option name="number" value="00040" />
+    <task id="LOCAL-00006" summary="added code for admin_overall viewing the list of forms">
+      <created>1447343901582</created>
+      <option name="number" value="00006" />
       <option name="project" value="LOCAL" />
-      <updated>1449146035819</updated>
+      <updated>1447343901582</updated>
     </task>
-    <task id="LOCAL-00041" summary="trying to display forms for student in admin page.... It doesn't work">
-      <created>1449183583723</created>
-      <option name="number" value="00041" />
+    <task id="LOCAL-00007" summary="added code for admin_overall viewing the list of forms">
+      <created>1447344127581</created>
+      <option name="number" value="00007" />
       <option name="project" value="LOCAL" />
-      <updated>1449183583723</updated>
+      <updated>1447344127581</updated>
     </task>
-    <task id="LOCAL-00042" summary="Merge branch 'master' of https://github.com/SCCapstone/pmba into jeffdd&#10;&#10;# Conflicts:&#10;#&#9;client/admin/admin_overall.css&#10;">
-      <created>1449184267391</created>
-      <option name="number" value="00042" />
+    <task id="LOCAL-00008" summary="small fix">
+      <created>1447344203755</created>
+      <option name="number" value="00008" />
       <option name="project" value="LOCAL" />
-      <updated>1449184267391</updated>
+      <updated>1447344203755</updated>
     </task>
-    <task id="LOCAL-00043" summary="Using new FormStatus collection&#10;">
-      <created>1449200406578</created>
-      <option name="number" value="00043" />
+    <task id="LOCAL-00009" summary="Added addforms page. Doesn't currently work fully but looks like it">
+      <created>1447347915366</created>
+      <option name="number" value="00009" />
       <option name="project" value="LOCAL" />
-      <updated>1449200406578</updated>
+      <updated>1447347915366</updated>
     </task>
-    <task id="LOCAL-00044" summary="updated admin_student">
-      <created>1449203858496</created>
-      <option name="number" value="00044" />
+    <task id="LOCAL-00010" summary="commented">
+      <created>1447370360630</created>
+      <option name="number" value="00010" />
       <option name="project" value="LOCAL" />
-      <updated>1449203858496</updated>
+      <updated>1447370360630</updated>
     </task>
-    <task id="LOCAL-00045" summary="updated admin_student">
-      <created>1449204126604</created>
-      <option name="number" value="00045" />
+    <task id="LOCAL-00011" summary="commented out add forms javascript but not the part for displaying the forms">
+      <created>1447372221792</created>
+      <option name="number" value="00011" />
       <option name="project" value="LOCAL" />
-      <updated>1449204126604</updated>
+      <updated>1447372221792</updated>
     </task>
-    <task id="LOCAL-00046" summary="Changed percentages so they are rounded with no decimals">
-      <created>1449461753865</created>
-      <option name="number" value="00046" />
+    <task id="LOCAL-00012" summary="fixed file structure">
+      <created>1448392166947</created>
+      <option name="number" value="00012" />
       <option name="project" value="LOCAL" />
-      <updated>1449461753866</updated>
+      <updated>1448392166947</updated>
     </task>
-    <task id="LOCAL-00047" summary="Changed percentages so they are rounded with no decimals">
-      <created>1449461783381</created>
-      <option name="number" value="00047" />
+    <task id="LOCAL-00013" summary="fixed file structure">
+      <created>1448392457714</created>
+      <option name="number" value="00013" />
       <option name="project" value="LOCAL" />
-      <updated>1449461783381</updated>
+      <updated>1448392457714</updated>
     </task>
-    <task id="LOCAL-00048" summary="Forgot to fix admin_student">
-      <created>1449462189323</created>
-      <option name="number" value="00048" />
+    <task id="LOCAL-00014" summary="fixed file structure part 3">
+      <created>1448392756612</created>
+      <option name="number" value="00014" />
       <option name="project" value="LOCAL" />
-      <updated>1449462189323</updated>
+      <updated>1448392756612</updated>
     </task>
-    <task id="LOCAL-00049" summary="Updated project to meteor 1.21">
-      <created>1452644543617</created>
-      <option name="number" value="00049" />
+    <task id="LOCAL-00015" summary="Merge branch 'smitht57' of https://github.com/SCCapstone/pmba&#10;&#10;# Conflicts:&#10;#&#9;client/student/student.js&#10;#&#9;client/student/updateStudentInfo.js&#10;">
+      <created>1448406063615</created>
+      <option name="number" value="00015" />
       <option name="project" value="LOCAL" />
-      <updated>1452644543617</updated>
+      <updated>1448406063615</updated>
     </task>
-    <task id="LOCAL-00050" summary="Add Student sends an enrollment email with link to set password.&#10;Email has been disabled but it will output any emails you send to the console">
-      <created>1452656003493</created>
-      <option name="number" value="00050" />
+    <task id="LOCAL-00016" summary="Merge branch 'smitht57' of https://github.com/SCCapstone/pmba&#10;&#10;# Conflicts:&#10;#&#9;client/student/student.js&#10;#&#9;client/student/updateStudentInfo.js&#10;">
+      <created>1448926345915</created>
+      <option name="number" value="00016" />
       <option name="project" value="LOCAL" />
-      <updated>1452656003588</updated>
+      <updated>1448926345915</updated>
     </task>
-    <task id="LOCAL-00051" summary="Moved email server settings to private folder&#10;Took out startup code in enrollEmail because not needed">
-      <created>1452694652558</created>
-      <option name="number" value="00051" />
+    <task id="LOCAL-00017" summary="I've moved the navbar to its own template (&quot;studentNavBar&quot;, &quot;loginNavBar&quot;, &quot;adminNavBar&quot;) and referenced it accordingly in each necessary file&#10;">
+      <created>1449154895787</created>
+      <option name="number" value="00017" />
       <option name="project" value="LOCAL" />
-      <updated>1452694652559</updated>
+      <updated>1449154895787</updated>
     </task>
-    <task id="LOCAL-00052" summary="Checks to make sure user is logged in">
-      <created>1452780720980</created>
-      <option name="number" value="00052" />
+    <task id="LOCAL-00018" summary="bug fix">
+      <created>1449155394739</created>
+      <option name="number" value="00018" />
       <option name="project" value="LOCAL" />
-      <updated>1452780720980</updated>
+      <updated>1449155394739</updated>
     </task>
-    <task id="LOCAL-00053" summary="Created directory for tests">
-      <created>1452984046178</created>
-      <option name="number" value="00053" />
+    <task id="LOCAL-00019" summary="So it turns out I didn't actually fully finish the navbar. Created directory for navbar templates. Moved css code to this directory also">
+      <created>1449156526202</created>
+      <option name="number" value="00019" />
       <option name="project" value="LOCAL" />
-      <updated>1452984046178</updated>
+      <updated>1449156526202</updated>
     </task>
-    <task id="LOCAL-00054" summary="Working on tests">
-      <created>1453867690354</created>
-      <option name="number" value="00054" />
+    <task id="LOCAL-00020" summary="deleting old dropdown menu">
+      <created>1449251545366</created>
+      <option name="number" value="00020" />
       <option name="project" value="LOCAL" />
-      <updated>1453867690355</updated>
+      <updated>1449251545366</updated>
     </task>
-    <task id="LOCAL-00055" summary="Working on tests">
-      <created>1454356514065</created>
-      <option name="number" value="00055" />
+    <task id="LOCAL-00021" summary="adding barebones framework for notifications page">
+      <created>1453241054012</created>
+      <option name="number" value="00021" />
       <option name="project" value="LOCAL" />
-      <updated>1454356514066</updated>
+      <updated>1453241054012</updated>
     </task>
-    <task id="LOCAL-00056" summary="Fixed bug and some other things&#10;Working on tests">
-      <created>1454471311338</created>
-      <option name="number" value="00056" />
+    <task id="LOCAL-00022" summary="added new banner, changed fonts. beginning of appearance changes">
+      <created>1455047557575</created>
+      <option name="number" value="00022" />
       <option name="project" value="LOCAL" />
-      <updated>1454471311339</updated>
+      <updated>1455047557575</updated>
     </task>
-    <task id="LOCAL-00057" summary="broke logo with last commit, fixed now">
-      <created>1454471405790</created>
-      <option name="number" value="00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1454471405790</updated>
-    </task>
-    <task id="LOCAL-00058" summary="Removed unneeded code">
-      <created>1454471690490</created>
-      <option name="number" value="00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1454471690491</updated>
-    </task>
-    <task id="LOCAL-00059" summary="added favico.ico">
-      <created>1454771753559</created>
-      <option name="number" value="00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1454771753562</updated>
-    </task>
-    <task id="LOCAL-00060" summary="forgot to add the file">
-      <created>1454771809755</created>
-      <option name="number" value="00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1454771809755</updated>
-    </task>
-    <task id="LOCAL-00061" summary="Merge branch 'master' of https://github.com/SCCapstone/pmba into jeffdd&#10;&#10;# Conflicts:&#10;#&#9;client/login/login.html&#10;#&#9;public/favicon.ico&#10;">
-      <created>1454771864041</created>
-      <option name="number" value="00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1454771864042</updated>
-    </task>
-    <task id="LOCAL-00062" summary="Added title and favico to pages&#10;">
-      <created>1454859992171</created>
-      <option name="number" value="00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1454859992171</updated>
-    </task>
-    <task id="LOCAL-00063" summary="Fixed some of the input type warnings">
-      <created>1454860323176</created>
-      <option name="number" value="00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1454860323176</updated>
-    </task>
-    <task id="LOCAL-00064" summary="fixed check if admin before creating user">
-      <created>1454865504592</created>
-      <option name="number" value="00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1454865504593</updated>
-    </task>
-    <task id="LOCAL-00065" summary="added forgot password functionality">
-      <created>1454897950249</created>
-      <option name="number" value="00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1454897950249</updated>
-    </task>
-    <task id="LOCAL-00066" summary=" forgot password more user friendly">
-      <created>1454906833255</created>
-      <option name="number" value="00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1454906833255</updated>
-    </task>
-    <task id="LOCAL-00067" summary="fixed code">
-      <created>1454907659462</created>
-      <option name="number" value="00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1454907659462</updated>
-    </task>
-    <task id="LOCAL-00068" summary="fixed input type errors">
-      <created>1454958315720</created>
-      <option name="number" value="00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1454958315720</updated>
-    </task>
-    <task id="LOCAL-00069" summary="changed mupx deploy info">
-      <created>1454960968009</created>
-      <option name="number" value="00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1454960968009</updated>
-    </task>
-    <task id="LOCAL-00070" summary="changed mupx deploy info">
-      <created>1454964173469</created>
-      <option name="number" value="00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1454964173469</updated>
-    </task>
-    <task id="LOCAL-00071" summary="Fixed everything that got deleted, I think.">
-      <created>1454965807718</created>
-      <option name="number" value="00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1454965807718</updated>
-    </task>
-    <task id="LOCAL-00072" summary="Fixed everything that got deleted, I think.">
-      <created>1454965848233</created>
-      <option name="number" value="00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1454965848233</updated>
-    </task>
-    <task id="LOCAL-00073" summary="fixed extension for readme">
-      <created>1454966359059</created>
-      <option name="number" value="00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1454966359059</updated>
-    </task>
-    <task id="LOCAL-00074" summary="Added popup for invalid username or password">
-      <created>1454968896047</created>
-      <option name="number" value="00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1454968896049</updated>
-    </task>
-    <task id="LOCAL-00075" summary="Forgot to add this">
-      <created>1454970047799</created>
-      <option name="number" value="00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1454970047799</updated>
-    </task>
-    <task id="LOCAL-00076" summary="Not sure what this is">
-      <created>1455069763520</created>
-      <option name="number" value="00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1455069763520</updated>
-    </task>
-    <task id="LOCAL-00077" summary="fixed the routing issue for student">
-      <created>1455071332014</created>
-      <option name="number" value="00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1455071332015</updated>
-    </task>
-    <task id="LOCAL-00078" summary="published needed collections in student.js">
-      <created>1455072164782</created>
-      <option name="number" value="00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1455072164782</updated>
-    </task>
-    <task id="LOCAL-00079" summary="Turned on email">
-      <created>1455072687693</created>
-      <option name="number" value="00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1455072687693</updated>
-    </task>
-    <task id="LOCAL-00080" summary="published collections">
-      <created>1455073072181</created>
-      <option name="number" value="00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1455073072182</updated>
-    </task>
-    <task id="LOCAL-00081" summary="had to move email init to /lib">
-      <created>1455073772008</created>
-      <option name="number" value="00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1455073772008</updated>
-    </task>
-    <task id="LOCAL-00082" summary="TinyTest Stuff">
-      <created>1455077043589</created>
-      <option name="number" value="00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1455077043589</updated>
-    </task>
-    <task id="LOCAL-00083" summary="TinyTest Stuff">
-      <created>1455077131008</created>
-      <option name="number" value="00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1455077131008</updated>
-    </task>
-    <option name="localTasksCounter" value="84" />
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="Test - 2016.01.18 at 21h 18m 02s.xml">
-      <configuration name="Test" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="Test - 2016.01.18 at 21h 18m 21s.xml">
-      <configuration name="Test" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="Test - 2016.01.18 at 21h 21m 22s.xml">
-      <configuration name="Test" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="Test - 2016.01.18 at 21h 21m 30s.xml">
-      <configuration name="Test" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="Test - 2016.01.18 at 21h 32m 19s.xml">
-      <configuration name="Test" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="Test - 2016.01.18 at 21h 32m 56s.xml">
-      <configuration name="Test" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="Test - 2016.01.18 at 21h 37m 24s.xml">
-      <configuration name="Test" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="Test - 2016.01.18 at 21h 37m 28s.xml">
-      <configuration name="Test" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="Test - 2016.01.18 at 21h 37m 56s.xml">
-      <configuration name="Test" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="Test - 2016.02.01 at 07h 06m 54s.xml">
-      <configuration name="Test" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-16" y="-16" width="3232" height="1744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19765739" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953367" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32344213" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.54744524" sideWeight="0.5059571" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8961424" sideWeight="0.4940429" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24183977" sideWeight="0.4940429" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4038668" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39906833" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3271028" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.159375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32958305" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32958305" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32958305" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -859,97 +1011,98 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="SHOW_FILE_HISTORY_DETAILS" value="false" />
-    <MESSAGE value="Removed unneeded code" />
-    <MESSAGE value="added favico.ico" />
-    <MESSAGE value="forgot to add the file" />
-    <MESSAGE value="Merge branch 'master' of https://github.com/SCCapstone/pmba into jeffdd&#10;&#10;# Conflicts:&#10;#&#9;client/login/login.html&#10;#&#9;public/favicon.ico&#10;" />
-    <MESSAGE value="Added title and favico to pages&#10;" />
-    <MESSAGE value="Fixed some of the input  type warnings" />
-    <MESSAGE value="Fixed some of the input type warnings" />
-    <MESSAGE value="fixed check if admin before creating user" />
-    <MESSAGE value="added forgot password functionality" />
-    <MESSAGE value=" forgot password more user friendly" />
-    <MESSAGE value="fixed code" />
-    <MESSAGE value="fixed input type errors" />
-    <MESSAGE value="changed mupx deploy info" />
-    <MESSAGE value="Fixed everything that got deleted, I think." />
-    <MESSAGE value="fixed extension for readme" />
-    <MESSAGE value="Added popup for invalid username or password" />
-    <MESSAGE value="Forgot to add this" />
-    <MESSAGE value="Not sure what this is" />
-    <MESSAGE value="fixed the routing issue for student" />
-    <MESSAGE value="published needed collections in student.js" />
-    <MESSAGE value="Turned on email" />
-    <MESSAGE value="published collections" />
-    <MESSAGE value="had to move email init to /lib" />
-    <MESSAGE value="TinyTest Stuff" />
-    <MESSAGE value="Login and student navigation bar sizes/bolding updated." />
-    <option name="LAST_COMMIT_MESSAGE" value="Login and student navigation bar sizes/bolding updated." />
+    <MESSAGE value="Changed Punctuation" />
+    <MESSAGE value="Added Banner and Forms 1-3" />
+    <MESSAGE value="Added multiple files (statistics, help, infopage) and also edited all files to work together.&#10;" />
+    <MESSAGE value="moved login" />
+    <MESSAGE value="added code for admin_overall viewing the list of forms" />
+    <MESSAGE value="small fix" />
+    <MESSAGE value="Added addforms page. Doesn't currently work fully but looks like it" />
+    <MESSAGE value="commented" />
+    <MESSAGE value="commented out add forms javascript but not the part for displaying the forms" />
+    <MESSAGE value="fixed file structure" />
+    <MESSAGE value="fixed file structure part 3" />
+    <MESSAGE value="Merge branch 'smitht57' of https://github.com/SCCapstone/pmba&#10;&#10;# Conflicts:&#10;#&#9;client/student/student.js&#10;#&#9;client/student/updateStudentInfo.js&#10;" />
+    <MESSAGE value="I've moved the navbar to its own template (&quot;studentNavBar&quot;, &quot;loginNavBar&quot;, &quot;adminNavBar&quot;) and referenced it accordingly in each necessary file&#10;" />
+    <MESSAGE value="bug fix" />
+    <MESSAGE value="So it turns out I didn't actually fully finish the navbar. Created directory for navbar templates. Moved css code to this directory also" />
+    <MESSAGE value="deleting old dropdown menu" />
+    <MESSAGE value="adding barebones framework for notifications page" />
+    <MESSAGE value="added new banner, changed fonts. beginning of appearance changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="added new banner, changed fonts. beginning of appearance changes" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="3" />
-    </breakpoint-manager>
+    <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/packages/pmba-tinytests/README.md">
+    <entry file="file://$PROJECT_DIR$/client/login/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/NavBar Template/studentNavBar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/NavBar Template/loginNavBar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.928125">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/statistics/statistics.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61875">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/login/changePassword.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4125">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/addStudent/addStudent.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.721875">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/addForms/addForms.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.79375">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/login/login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/student/updateStudentInfo/updateStudentInfo.js">
+    <entry file="file://$PROJECT_DIR$/client/statistics/statistics.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.515625">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/pmba-tinytests/test-stubs.js">
+    <entry file="file://$PROJECT_DIR$/lib/publications.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/pmba-tinytests/pmba-tinytests-tests.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/pmba-tinytests/package.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/pmba-tinytests/README.md" />
-    <entry file="file://$PROJECT_DIR$/client/student/updateStudentInfo/updateStudentInfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/pmba-tinytests/test-stubs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.103125">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -960,327 +1113,277 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/sendNotification/sendNotification.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/sendEmail/sendEmail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/addForms/addForms.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/statistics/statistics.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.25">
-          <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/welcomePage/welcomePage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13143483">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/login/changePassword.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.80284774">
-          <caret line="82" column="21" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/statistics/statistics.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/sendEmail/sendEmail.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/addForms/addForms.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/addStudent/addStudent.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.deploy/settings.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.deploy/mup.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.458334">
-          <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/resetPassword/resetPassword.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31758958">
-          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/resetPassword/resetPassword.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.025423728">
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/login/changePassword.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08122744">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/login/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7709251">
-          <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/resetPassword/resetPassword.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21276596">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/router/route.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5531915">
-          <caret line="56" column="2" selection-start-line="56" selection-start-column="2" selection-end-line="56" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/login/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21276596">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/student/student.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3202847">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/login/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/addStudent/addStudent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/enrollEmail/enrollEmail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/publications.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/email/email.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/addForms/addForms.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.44128114">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/addStudent/addStudent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.028462999">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/mocha/client/clientTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0037950664">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/pmba-tinytests/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.034375">
+          <caret line="1" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/student/updateStudentInfo/updateStudentInfo.js">
+    <entry file="file://$PROJECT_DIR$/client/sendNotification/sendNotification.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6052632">
-          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.309375">
+          <caret line="9" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/pmba-tinytests/test-stubs.js">
+    <entry file="file://$PROJECT_DIR$/client/sendNotification/sendNotification.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34210527">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/pmba-tinytests/package.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55263156">
-          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/pmba-tinytests/pmba-tinytests-tests.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42105263">
-          <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/NavBar Template/loginNavBar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2692308">
-          <caret line="5" column="80" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/NavBar Template/studentNavBar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2692308">
-          <caret line="5" column="81" selection-start-line="5" selection-start-column="81" selection-end-line="5" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/NavBar Template/adminNavBar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9230769">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/NavBar Template/adminNavBar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.461538">
-          <caret line="21" column="124" selection-start-line="21" selection-start-column="124" selection-end-line="21" selection-end-column="124" />
-          <folding />
+        <state vertical-scroll-proportion="0.55">
+          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/NavBar Template/loginNavBar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.076923">
-          <caret line="20" column="60" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
+        <state vertical-scroll-proportion="-9.428572">
+          <caret line="15" column="102" selection-start-line="15" selection-start-column="102" selection-end-line="15" selection-end-column="102" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/NavBar Template/studentNavBar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9303483">
-          <caret line="22" column="137" selection-start-line="22" selection-start-column="137" selection-end-line="22" selection-end-column="137" />
+        <state vertical-scroll-proportion="0.5392157">
+          <caret line="15" column="108" selection-start-line="15" selection-start-column="108" selection-end-line="15" selection-end-column="108" />
           <folding />
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <entry file="file://$USER_HOME$/Dropbox/_CSCE590/sampleApps/kendo_todolist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23305085">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Dropbox/_CSCE590/sampleApps/kendostarter/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06991526">
+          <caret line="197" column="0" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/NavBar Template/adminNavBar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.928125">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/NavBar Template/adminNavBar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.642858">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#nav#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#nav#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#nav#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#nav#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#4;n#ul#0;n#div#1;n#div#0;n#nav#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#5;n#ul#0;n#div#1;n#div#0;n#nav#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/router/route.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="54" column="6" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/CSCE 590/smitht57_h1/smitht57_p1_h1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9285715">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/admin/admin_overall/admin_overall.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48125">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/admin/admin_overall/admin_overall.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-42.42857">
+          <caret line="54" column="88" selection-start-line="54" selection-start-column="88" selection-end-line="54" selection-end-column="88" />
+          <folding>
+            <element signature="n#style#0;n#small#0;n#h1#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#3;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/addForms/addForms.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.642858">
+          <caret line="11" column="114" selection-start-line="11" selection-start-column="114" selection-end-line="11" selection-end-column="114" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/addStudent/addStudent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.642858">
+          <caret line="11" column="115" selection-start-line="11" selection-start-column="115" selection-end-line="11" selection-end-column="115" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/admin/notifications/notifications.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.642858">
+          <caret line="11" column="115" selection-start-line="11" selection-start-column="115" selection-end-line="11" selection-end-column="115" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/admin/updateAdminInfo/updateAdminInfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.78571427">
+          <caret line="11" column="115" selection-start-line="11" selection-start-column="115" selection-end-line="11" selection-end-column="115" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/sendNotification/sendNotification.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21568628">
+          <caret line="6" column="74" selection-start-line="6" selection-start-column="74" selection-end-line="6" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/statistics/statistics.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39542484">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#small#0;n#h1#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/infoPage/infoPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35947713">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#small#0;n#h1#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/welcomePage/welcomePage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39542484">
+          <caret line="11" column="115" selection-start-line="11" selection-start-column="115" selection-end-line="11" selection-end-column="115" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/student/updateStudentInfo/updateStudentInfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39542484">
+          <caret line="11" column="115" selection-start-line="11" selection-start-column="115" selection-end-line="11" selection-end-column="115" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/student/dashboard/student.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39542484">
+          <caret line="11" column="115" selection-start-line="11" selection-start-column="115" selection-end-line="11" selection-end-column="115" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/resetPassword/resetPassword.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.039215688">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32352942">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/login/changePassword.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32352942">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/formsTable/formsTable.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.642858">
+          <caret line="11" column="114" selection-start-line="11" selection-start-column="114" selection-end-line="11" selection-end-column="114" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/sendEmail/sendEmail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.928572">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/helpPage/helpPage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/helpPage/helpPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.785715">
+          <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+          <folding>
+            <element signature="n#style#0;n#small#0;n#h1#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/admin/admin_student/admin_student.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="47.285713">
+          <caret line="10" column="115" selection-start-line="10" selection-start-column="115" selection-end-line="10" selection-end-column="115" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/sendEmail/sendEmail.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4125">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

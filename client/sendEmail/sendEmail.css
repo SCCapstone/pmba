@@ -1,11 +1,26 @@
 #messageInput{
     height: 150px;
-    width: 350px;
+    max-width: 350px;
 }
 
 #subjectInput {
-    width: 350px;
+    max-width: 350px;
 }
 #addressInput {
-    width: 350px;
+    max-width: 350px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #messageInput {
+        max-width: 100%
+    }
+    #subjectInput {
+        max-width: 100%;
+    }
+    #addressInput {
+        max-width: 100%;
+    }
+
+
 }

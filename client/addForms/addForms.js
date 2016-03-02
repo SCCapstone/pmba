@@ -17,8 +17,9 @@
             var formPic = "Fpic"+num;
             var name = inputName.value;
             var description = inputDescription.value;
+            var formAddress = inputFormAddress.value;
             var dueDate = date.value;
-            Meteor.call('addForm', name, description, dueDate, formNum, formPic );
+            Meteor.call('addForm', name, description, dueDate, formAddress, formNum, formPic );
 
             window.location.href = "/addForms";
         },

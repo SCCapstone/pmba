@@ -19,7 +19,7 @@
             var description = inputDescription.value;
             var formAddress = inputFormAddress.value;
             var dueDate = date.value;
-            Meteor.call('addForm', name, description, dueDate, formAddress, formNum, formPic );
+            Meteor.call('addForm', name, description, formAddress, dueDate, formNum, formPic );
 
             //window.location.href = "/addForms";
             sAlert.success('You added a form!',

@@ -38,7 +38,9 @@
                                 <input type="checkbox" checked ={{Done}} class="toggle-checked">
                                 <a href="infoPage" id="{{_id}}"
                                    onclick="Session.set('selectedForm', '{{form FormName}}');">
-                                    {{FormName}} </a>
+                                    {{FormName}}
+                                    {{>sAlert}}
+                                </a>
                             </label>
                         </li>
                     {{/each}}

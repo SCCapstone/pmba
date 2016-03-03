@@ -21,7 +21,16 @@
             var dueDate = date.value;
             Meteor.call('addForm', name, description, formAddress, dueDate, formNum, formPic );
 
-            window.location.href = "/addForms";
+            //window.location.href = "/addForms";
+            sAlert.success('You added a form!',
+                {
+                    onClose: function () {
+                        Router.go('/addForms');
+                    },
+                    timeout: 1500,
+                    offset: '40px',
+                    position: 'bottom'
+                });
         },
         'click .delete' : function(event) {
             var deleteID = event.target.id;

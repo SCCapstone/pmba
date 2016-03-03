@@ -43,6 +43,15 @@ Template.student.events({
         else {
             document.getElementById(formId).style.color = "grey";
             FormStatus.update(formId, {$set :{Done : true}});
+            sAlert.success('You have complete the form!',
+                {
+                    onClose: function () {
+                        Router.go('/student');
+                    },
+                    timeout: 1500,
+                    offset: '40px',
+                    position: 'bottom'
+                });
         }
     },
     'click .btn' : function(event){

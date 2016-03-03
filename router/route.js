@@ -47,12 +47,12 @@ Router.route('/login');
 
 // Check to make sure user user is logged in
 
-Router.onBeforeAction(before.loginRequired, {
+/*Router.onBeforeAction(before.loginRequired, {
     except: ['login', 'resetPassword']
 });
 Router.onBeforeAction(before.checkAdmin, {
     only: ['admin_overall', 'admin_student', 'addForms', 'addStudent']
-});
+});*/
 
 //TODO
 //THIS NEEDS TO BE FIXED

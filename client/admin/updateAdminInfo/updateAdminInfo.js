@@ -1,10 +1,4 @@
 
-if (Meteor.isServer) {
-    Meteor.publish("login", "adminInfo", function () {
-        return adminInfo.find({});
-    });
-}
-if (Meteor.isClient) {
     //Meteor.subscribe("login");
     Meteor.subscribe("adminInfo");
     Template.updateAdminInfo.events({
@@ -15,10 +9,18 @@ if (Meteor.isClient) {
                 LastName : lastName.value,
                 WorkNumber : workNumber.value,
                 Address : address.value,
-                Picture : "Upic1"}});
+                Picture : "Upic1"}
+            });
 
-            alert("Your information has been updated!");
-            window.location.href = "/adminOverall";
+            sAlert.success('Your Information Has Been Updated',
+                {
+                    onClose: function () {
+                        Router.go('/admin_Overall');
+                    },
+                    timeout: 1500,
+                    offset: '40px',
+                    position: 'bottom'
+                });
         }
     });
-}
+

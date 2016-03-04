@@ -19,14 +19,41 @@
             var description = inputDescription.value;
             var formAddress = inputFormAddress.value;
             var dueDate = date.value;
-            Meteor.call('addForm', name, description, dueDate, formAddress, formNum, formPic );
+            Meteor.call('addForm', name, description, formAddress, dueDate, formNum, formPic );
 
-            window.location.href = "/addForms";
+            //window.location.href = "/addForms";
+            sAlert.success('You added a form!',
+                {
+                    onClose: function () {
+                        Router.go('/addForms');
+                    },
+                    timeout: 1500,
+                    offset: '40px',
+                    position: 'bottom'
+                });
         },
+
         'click .delete' : function(event) {
-            var deleteID = event.target.id;
-            var holder = forms.findOne({_id: deleteID});
-            var deleteFormName = holder.Name;
-            Meteor.call('deleteForm', deleteID, deleteFormName );
+
+            var value = confirm("Are you sure you want to delete this form?");
+            if( value == true ){
+                var deleteID = event.target.id;
+                var holder = forms.findOne({_id: deleteID});
+                var deleteFormName = holder.Name;
+                Meteor.call('deleteForm', deleteID, deleteFormName );
+                sAlert.warning('You removed a form.',
+                    {
+                        onClose: function () {
+                            Router.go('/addForms');
+                        },
+                        timeout: 1500,
+                        offset: '40px',
+                        position: 'bottom'
+                    });
+                return true;
+            }
+            else{
+                return false;
+            }
         }
     });

@@ -1,6 +1,4 @@
-//if (Meteor.isServer) {
-Meteor.publish("login", "adminInfo", function () {
+Meteor.publish("adminInfo", function () {
     return adminInfo.find({});
 });
-//}
 

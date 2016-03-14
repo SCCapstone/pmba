@@ -8,6 +8,35 @@
         }
     });
 
+    //code snippet from w3 to upload files
+    function insertForm(){
+        var form = document.getElementById("form");
+        var display = "";
+        if ('files' in form) {
+            if (form.files.length == 0) {
+                display = "Select one or more files.";
+            } else {
+                for (var i = 0; i < form.files.length; i++) {
+                    display += "<br><strong>" + (i+1) + ". file</strong><br>";
+                    var file = form.files[i];
+                    if ('name' in file) {
+                        display += "name: " + file.name + "<br>";
+                    }
+                    if ('size' in file) {
+                        display += "size: " + file.size + " bytes <br>";
+                    }
+                }
+            }
+        }
+        else {
+            if (form.value == "") {
+                txt += "Select one or more files.";
+            }
+        }
+        document.getElementById("demo").innerHTML = txt;
+    }
+
+
     Template.addForms.events({
         'submit form' : function(event){
             event.preventDefault();

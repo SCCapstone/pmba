@@ -31,20 +31,7 @@
                 <ul class="nav nav-sidebar">
                     <li><strong>Student list</strong></li>
                     <div class="panel-body">
-                        <ul>
-                            {{#each studentInfo}}
-                                <li id="formNumber" value = "0">
-                                    <!-- add delete button and set id to target's id -->
-                                    <button class = "delete" id="{{_id}}">&times;</button>
-                                        <!--input type="checkbox" class="toggle-checked"
-                                               onclick="Session.set('selectedDelete', {{_id}})"-->
-                                    <a href="admin_student"
-                                       onclick="Session.set('selectedStudent', '{{_id}}');">
-                                        {{FirstName}} {{LastName}} </a>
-                                </li>
-                            {{/each}}
-                            <!--button class="delete"> Delete </button-->
-                        </ul>
+                        {{>searchBox}}
                     </div>
                 </ul>
             </div>

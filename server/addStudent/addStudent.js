@@ -37,7 +37,8 @@ Meteor.methods({
                 CellNumber: "",
                 HomeNumber: "",
                 WorkNumber: "",
-                FinishDate: date
+                FinishDate: date,
+                FullName: firstName + " " + lastName
             });
         }
         // Insert info in adminInfo if they are Student
@@ -51,7 +52,8 @@ Meteor.methods({
                 CellNumber: "",
                 HomeNumber: "",
                 WorkNumber: "",
-                FinishDate: date
+                FinishDate: date,
+                FullName: firstName + " " + lastName
             });
 
             var cursor = forms.find();

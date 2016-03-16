@@ -5,11 +5,11 @@
         {{#EasySearch.Each index=studentIndex }}
             <li id="formNumber" value = "0">
                 <!-- add delete button and set id to target's id -->
-                <button class = "delete" id="{{_id}}">&times;</button>
+                <button class = "delete" id="{{__originalId}}">&times;</button>
                 <!--input type="checkbox" class="toggle-checked"
                                                onclick="Session.set('selectedDelete', {{_id}})"-->
                 <a href="admin_student"
-                   onclick="Session.set('selectedStudent', '{{_id}}');">
+                   onclick="Session.set('selectedStudent', '{{__originalId}}');">
                     {{FirstName}} {{LastName}} </a>
             </li>
         {{/EasySearch.Each}}

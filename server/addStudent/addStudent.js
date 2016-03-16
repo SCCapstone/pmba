@@ -74,7 +74,7 @@ Meteor.methods({
             });
 			
 			//create the initial entry for this student
-			var fullname = firstName + lastName;
+			var fullname = firstName + " " + lastName;
 			formTableInfo.insert({
                    Name: fullname
 			});

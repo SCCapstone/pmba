@@ -1,3 +1,8 @@
+<!--
+Purpose: displays the home page for when the admin logs into
+         his or her account.
+-->
+
 <head>
     <title>PMBA</title>
     <link rel="icon" sizes="16x16 32x32" href="/favicon.ico?v=2">
@@ -24,6 +29,8 @@
         </div>
     </div>
 
+    <!-- displays all students under the admin's account and provide the ability
+         to add a new account as well -->
     <div class="row-fluid row-offcanvas row-offcanvas-left">
         <div class="col-sm-3 col-md-3 sidebar-offcanvas" id="sidebar" role="navigation">
             <div class="well sidebar-nav">
@@ -39,6 +46,7 @@
         {{>sAlert}}
     </div>
 
+    <!-- displays the various forms and each form's progress in percentage based on student completion  -->
     <div class="row-fluid">
         <div class=" col-md-6 col-md-offset-1 panel panel-default" style="max-width: 100%">
             <div class="panel-heading">

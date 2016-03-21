@@ -24,3 +24,9 @@
         }
     });
 
+    Template.updateAdminInfo.helpers({
+        students: function () {
+            return studentInfo.find(Session.get('selectedStudent'));
+        }
+    });
+

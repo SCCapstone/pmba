@@ -11,10 +11,10 @@ Purpose: allows the admin to update an account's information
     <div class = "page-header" id="header">
         <h1>
             <img src="img/logo.svg" class="img-responsive" style="position:absolute;">
-            <img src="/img/solidBanner.png" style="height: 23vh">
+            <img src="/img/solidBanner.png" style="height: 13vh">
 
-            <small style="color:white; font-family: Adobe, Garamond, Pro, serif; font-size: 1em; position: relative;
-            margin-top: -7vh; margin-left: 3vh;">Update Information</small>
+            <small style="color:white; font-family: Adobe, Garamond, Pro, serif; font-size: 23px; position: relative;
+            margin-top: 60px; line-height: 0px; float: right; margin-right: 49px; ">Update Information</small>
             {{>adminNavBar}}
         </h1>
     </div>
@@ -22,26 +22,27 @@ Purpose: allows the admin to update an account's information
     <form id="updateInfo" action="student" class="form-horizontal">
         <div class="row-fluid col-md-6 col-md-offset-4">
 
+            {{#each students}}
             <div class="firstName">
                 <label class="firstName" for="firstName">First Name:</label><span class="tabName"> </span>
-                <input type="text" id="firstName" placeholder="First Name">
+                <input type="text" id="firstName" placeholder="First Name" value="{{FirstName}}">
             </div>
             <br>
             <div class="lastName">
                 <label class="lastName" for="lastName">Last Name:</label><span class="tabLastName"> </span>
-                <input type="text" id="lastName" placeholder="Last Name">
+                <input type="text" id="lastName" placeholder="Last Name" value="{{LastName}}">
             </div>
             <br>
             <!-- need to work on lining this text box up with the first two, it's a little to far to the left -->
             <div class="workPhone">
                 <label class="workNumber" for="workPhone">Work Phone: </label><span class="tabWorkPhone"> </span>
-                <input type="tel" id="workNumber" placeholder="Work Number">
+                <input type="tel" id="workNumber" placeholder="Work Number" value="{{WorkNumber}}">
             </div>
             <br>
             <!-- need to work on lining up this text box with the others. -->
             <div class="address">
-                <label class="address" for="address">Address: </label><span class="tabName"> </span>
-                <input type="text" id="address" placeholder="Address">
+                <label class="address" for="address">Address: </label><span class="tabEmail"> </span>
+                <input type="text" id="address" placeholder="Address" value="{{Email}}">
             </div>
             <br>
             <div class="updateButton">
@@ -50,6 +51,8 @@ Purpose: allows the admin to update an account's information
                 </div>
             </div>
             {{>sAlert}}
+
+            {{/each}}
         </div>
     </form>
 

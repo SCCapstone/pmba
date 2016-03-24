@@ -39,11 +39,7 @@ Template.student.events({
         if (checkValue == true){
             document.getElementById(formId).style.color = "blue";
             FormStatus.update(formId, {$set :{Done : false}});
-        }
-        else {
-            document.getElementById(formId).style.color = "grey";
-            FormStatus.update(formId, {$set :{Done : true}});
-            sAlert.success('You have complete the form!',
+            sAlert.warning('You have not completed the form.',
                 {
                     onClose: function () {
                         Router.go('/student');
@@ -51,6 +47,20 @@ Template.student.events({
                     timeout: 1500,
                     offset: '40px',
                     position: 'bottom'
+                });
+        }
+        else {
+            document.getElementById(formId).style.color = "green";
+            FormStatus.update(formId, {$set :{Done : true}});
+            sAlert.success('You have completed the form!',
+                {
+                    onClose: function () {
+                        Router.go('/student');
+                    },
+                    timeout: 1500,
+                    offset: '40px',
+                    position: 'bottom'
+
                 });
         }
     },

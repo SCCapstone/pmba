@@ -2,45 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eba2f6bf-1855-4ecf-953b-4c80780a50fa" name="Default" comment="Login and student navigation bar sizes/bolding updated.">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/packages" afterPath="$PROJECT_DIR$/.meteor/packages" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/versions" afterPath="$PROJECT_DIR$/.meteor/versions" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/NavBar Template/adminNavBar.html" afterPath="$PROJECT_DIR$/client/NavBar Template/adminNavBar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/NavBar Template/studentNavBar.html" afterPath="$PROJECT_DIR$/client/NavBar Template/studentNavBar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/addForms/addForms.css" afterPath="$PROJECT_DIR$/client/addForms/addForms.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/addForms/addForms.html" afterPath="$PROJECT_DIR$/client/addForms/addForms.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/addForms/addForms.js" afterPath="$PROJECT_DIR$/client/addForms/addForms.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/addStudent/addStudent.html" afterPath="$PROJECT_DIR$/client/addStudent/addStudent.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/addStudent/addStudent.js" afterPath="$PROJECT_DIR$/client/addStudent/addStudent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/admin/admin_overall/admin_overall.css" afterPath="$PROJECT_DIR$/client/admin/admin_overall/admin_overall.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/admin/admin_overall/admin_overall.html" afterPath="$PROJECT_DIR$/client/admin/admin_overall/admin_overall.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/admin/admin_overall/admin_overall.js" afterPath="$PROJECT_DIR$/client/admin/admin_overall/admin_overall.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/admin/admin_student/admin_student.css" afterPath="$PROJECT_DIR$/client/admin/admin_student/admin_student.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/admin/admin_student/admin_student.html" afterPath="$PROJECT_DIR$/client/admin/admin_student/admin_student.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/admin/admin_student/admin_student.js" afterPath="$PROJECT_DIR$/client/admin/admin_student/admin_student.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/admin/notifications/notifications.html" afterPath="$PROJECT_DIR$/client/admin/notifications/notifications.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/admin/updateAdminInfo/updateAdminInfo.html" afterPath="$PROJECT_DIR$/client/admin/updateAdminInfo/updateAdminInfo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/admin/updateAdminInfo/updateAdminInfo.js" afterPath="$PROJECT_DIR$/client/admin/updateAdminInfo/updateAdminInfo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/formsTable/formsTable.html" afterPath="$PROJECT_DIR$/client/formsTable/formsTable.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/formsTable/formsTable.js" afterPath="$PROJECT_DIR$/client/formsTable/formsTable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/helpPage/helpPage.css" afterPath="$PROJECT_DIR$/client/helpPage/helpPage.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/helpPage/helpPage.html" afterPath="$PROJECT_DIR$/client/helpPage/helpPage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/infoPage/infoPage.html" afterPath="$PROJECT_DIR$/client/infoPage/infoPage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/login/changePassword.html" afterPath="$PROJECT_DIR$/client/login/changePassword.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/login/login.html" afterPath="$PROJECT_DIR$/client/login/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/resetPassword/resetPassword.html" afterPath="$PROJECT_DIR$/client/resetPassword/resetPassword.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/sendEmail/sendEmail.css" afterPath="$PROJECT_DIR$/client/sendEmail/sendEmail.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/statistics/statistics.html" afterPath="$PROJECT_DIR$/client/statistics/statistics.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/student/dashboard/student.html" afterPath="$PROJECT_DIR$/client/student/dashboard/student.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/solidBanner.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/searchBox/searchBox.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/searchBox/searchBox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/searchIndex.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/common.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/pmba.iml" afterPath="$PROJECT_DIR$/.idea/pmba.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/student/dashboard/student.js" afterPath="$PROJECT_DIR$/client/student/dashboard/student.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/student/updateStudentInfo/updateStudentInfo.html" afterPath="$PROJECT_DIR$/client/student/updateStudentInfo/updateStudentInfo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/welcomePage/welcomePage.html" afterPath="$PROJECT_DIR$/client/welcomePage/welcomePage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/publications.js" afterPath="$PROJECT_DIR$/lib/publications.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/router/route.js" afterPath="$PROJECT_DIR$/router/route.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/addForms/addForms.js" afterPath="$PROJECT_DIR$/server/addForms/addForms.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/sendEmail/sendEmail.js" afterPath="$PROJECT_DIR$/server/sendEmail/sendEmail.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/addStudent/addStudent.js" afterPath="$PROJECT_DIR$/server/addStudent/addStudent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/updateAdminInfo.js" afterPath="$PROJECT_DIR$/server/admin/updateAdminInfo.js" />
     </list>
     <ignored path="pmba.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,28 +30,7 @@
     <favorites_list name="pmba" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="route.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/router/route.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
-              <caret line="57" column="2" selection-start-line="57" selection-start-column="2" selection-end-line="57" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin_overall.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/admin/admin_overall/admin_overall.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-34">
-              <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -203,26 +152,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pmba" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pmba" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pmba" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Problems" />
         <subPane subId="Changed Files">
@@ -235,6 +164,16 @@
         </subPane>
         <subPane subId="Project Files" />
         <subPane subId="Tests" />
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
       <pane id="Scratches" />
     </panes>
@@ -437,6 +376,7 @@
       <workItem from="1458831651404" duration="47000" />
       <workItem from="1458834065471" duration="2513000" />
       <workItem from="1458836979217" duration="607000" />
+      <workItem from="1458840197600" duration="101000" />
     </task>
     <task id="LOCAL-00035" summary="students can't go to admin pages">
       <created>1449076310164</created>
@@ -817,7 +757,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3226000" />
+    <option name="totallyTimeSpent" value="3327000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -829,7 +769,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19765739" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1067,13 +1007,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/common/common.js" />
     <entry file="file://$PROJECT_DIR$/client/login/login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1232,22 +1166,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-408">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/admin/admin_overall/admin_overall.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/router/route.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
+        <state relative-caret-position="572">
           <caret line="57" column="2" selection-start-line="57" selection-start-column="2" selection-end-line="57" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/admin/admin_overall/admin_overall.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
           <folding />
         </state>
       </provider>

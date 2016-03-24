@@ -4,6 +4,10 @@ Meteor.publish("studentInfo", function () {
 Meteor.publish("FormStatus", function () {
     return FormStatus.find();
 });
+Meteor.publish("formTableInfo", function () {
+    return formTableInfo.find();
+});
+
 Meteor.publish("forms", function () {
     return forms.find();
 });
@@ -37,7 +41,8 @@ Meteor.methods({
                 CellNumber: "",
                 HomeNumber: "",
                 WorkNumber: "",
-                FinishDate: date
+                FinishDate: date,
+                FullName: firstName + " " + lastName
             });
         }
         // Insert info in adminInfo if they are Student
@@ -51,9 +56,11 @@ Meteor.methods({
                 CellNumber: "",
                 HomeNumber: "",
                 WorkNumber: "",
-                FinishDate: date
+                FinishDate: date,
+                FullName: firstName + " " + lastName
             });
-
+			
+			
             var cursor = forms.find();
             cursor.forEach(function (doc) {
                 var name = doc.Name;
@@ -65,10 +72,25 @@ Meteor.methods({
                     Done: false
                 })
             });
-        }
+			
+			//create the initial entry for this student
+			var fullname = firstName + " " + lastName;
+			formTableInfo.insert({
+                   Name: fullname
+			});
+			var cursor = forms.find();
+            cursor.forEach(function (doc) {
+                formTableInfo.update({Name: fullname}, {
+					//creates set o to insert into the collection
+					$set:(o = {}, o[doc.Name] = "Incomplete", o)
+				})				
+				});
             // Send Enrollment Email to the new user
-            Accounts.sendEnrollmentEmail(userId);
-         } else {
+           // Accounts.sendEnrollmentEmail(userId);
+		   console.log("Student Added.")
+		}
+		}		
+		 else {
          console.log("not logged in or not an admin");
          }
     }

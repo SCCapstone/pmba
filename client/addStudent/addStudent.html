@@ -1,3 +1,8 @@
+<!--
+Purpose: provides the admin all the necessary fields to
+                  add a new account into the database.
+-->
+
 <head>
     <title>PMBA</title>
     <link rel="icon" sizes="16x16 32x32" href="/favicon.ico?v=2">
@@ -7,9 +12,9 @@
     <div class = "page-header" id="header">
         <h1>
             <img src="img/logo.svg" class="img-responsive" style="position:absolute;">
-            <img src="/img/banner.png" style="height: 23vh">
+            <img src="/img/solidBanner.png" style="height: 23vh">
 
-            <small style="color:white; font-family: Adobe, Garamond, Pro, serif; font-size: 1em; position: absolute;
+            <small style="color:white; font-family: Adobe, Garamond, Pro, serif; font-size: 1em; position: relative;
             margin-top: -7vh; margin-left: 3vh;">Administrator Page</small>
             {{>adminNavBar}}
         </h1>
@@ -21,35 +26,39 @@
         </div>
     </div>
 	</div>
-	
+
+    <!-- provides the necessary fields the admin should complete to create a new student -->
 	<form id="addStudent" class="form-horizontal">
         <div class="row-fluid col-md-6 col-md-offset-4">
 
-                <!-- added first and last name fields. NK. 1/31-->
+                <!-- asks for student's name -->
 
                 <div class="firstName">
                     <label class="firstName" for="firstName">First Name:</label><span class="tabName"> </span>
                     <input type="text" id="firstName" name="firstName" placeholder="First Name">
                 </div>
+
                 <br>
                 <div class="lastName">
                     <label class="lastName" for="lastName">Last Name:</label><span class="tabLastName"> </span>
                     <input type="text" id="lastName" name="lastName" placeholder="Last Name">
                 </div>
 
+                <!-- asks for student's email  -->
                 <br>
                 <div class="email">
                     <label class="email" for="inputEmail">Email:</label><span class="tabEmail"> </span>
                         <input type="email" id="inputEmail" name="inputEmail" placeholder="Email">
                 </div>
 
-                <!-- added email field. NK. 1/31-->
+                <!-- asks for the date the student was added into the system -->
                 <br>
                 <div class="date">
                     <label class="date" for="date">Date: </label><span class="tabDate"> </span>
                     <input type="Date" id="date" name="date" placeholder="Date">
                 </div>
 
+                <!-- allows admin to choose whether the new account is provided student or admin rights  -->
                 <div class="btn-group">
                     <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" id="Account" value='S'>
                         Account Type
@@ -74,6 +83,8 @@
                         <span class="tabButton"></span><button type="submit">Add Account</button>
                     </div>
                 </div>
+            {{>sAlert}}
+
         </div>
     </form>
 	<script>
@@ -83,4 +94,4 @@
         }
     </script>
 
-    </template>
+</template>

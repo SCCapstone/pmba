@@ -7,11 +7,11 @@
     <div class = "page-header" id="header">
         <h1>
             <img src="img/logo.svg" class="img-responsive" style="position:absolute;">
-            <img src="/img/banner.png" style="height: 23vh">
+            <img src="/img/solidBanner.png" style="height: 13vh">
 
             {{#each profile}}
-                <small style="color:white; font-family: Adobe, Garamond, Pro, serif; font-size: 1em; position: absolute;
-            margin-top: -7vh; margin-left: 3vh;">{{Name}} Additional Information</small>
+                <small style="color:white; font-family: Adobe, Garamond, Pro, serif; font-size: 23px; position: relative;
+            margin-top: 60px; line-height: 0px; float: right; margin-right: 49px; ">{{Name}} Additional Information</small>
             {{/each}}
             {{#if AccountType}}
                 {{>studentNavBar}}
@@ -68,6 +68,23 @@
                     {{#each profile}}
                         <li>
                             {{Description}}
+                        </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row-fluid">
+        <div class=" col-md-6 col-md-offset-1 panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Form Address</h3>
+            </div>
+            <div class="panel-body">
+                <ul>
+                    {{#each profile}}
+                        <li>
+                            {{FormAddress}}
                         </li>
                     {{/each}}
                 </ul>

@@ -1,15 +1,22 @@
+<!--
+Purpose: displays the home page for when the admin logs into
+         his or her account.
+-->
+
 <head>
     <title>PMBA</title>
     <link rel="icon" sizes="16x16 32x32" href="/favicon.ico?v=2">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 
 <template name="adminOverall">
     <div class = "page-header" id="header">
         <h1>
             <img src="/img/logo.svg" class="img-responsive" style="position:absolute;">
-            <img src="/img/banner.png" style="height: 23vh">
-            <small style="color:white; font-family: Adobe, Garamond, Pro, serif; font-size: 1em; position: absolute;
-            margin-top: -7vh; margin-left: 3vh;">Administrator Page</small>
+            <img src="/img/solidBanner.png" style="height: 13vh">
+            <small style="color:white; font-family: Adobe, Garamond, Pro, serif; font-size: 23px; position: relative;
+            margin-top: 60px; line-height: 0px; float: right; margin-right: 49px; ">Administrator Page</small>
             {{>adminNavBar}}
         </h1>
     </div>
@@ -22,6 +29,8 @@
         </div>
     </div>
 
+    <!-- displays all students under the admin's account and provide the ability
+         to add a new account as well -->
     <div class="row-fluid row-offcanvas row-offcanvas-left">
         <div class="col-sm-3 col-md-3 sidebar-offcanvas" id="sidebar" role="navigation">
             <div class="well sidebar-nav">
@@ -29,28 +38,17 @@
                 <ul class="nav nav-sidebar">
                     <li><strong>Student list</strong></li>
                     <div class="panel-body">
-                        <ul>
-                            {{#each studentInfo}}
-                                <li id="formNumber" value = "0">
-                                    <!-- add delete button and set id to target's id -->
-                                    <button class = "delete" id="{{_id}}">&times;</button>
-                                        <!--input type="checkbox" class="toggle-checked"
-                                               onclick="Session.set('selectedDelete', {{_id}})"-->
-                                    <a href="admin_student"
-                                       onclick="Session.set('selectedStudent', '{{_id}}');">
-                                        {{FirstName}} {{LastName}} </a>
-                                </li>
-                            {{/each}}
-                            <!--button class="delete"> Delete </button-->
-                        </ul>
+                        {{>searchBox}}
                     </div>
                 </ul>
             </div>
         </div>
+        {{>sAlert}}
     </div>
 
+    <!-- displays the various forms and each form's progress in percentage based on student completion  -->
     <div class="row-fluid">
-        <div class=" col-md-6 col-md-offset-1 panel panel-default">
+        <div class=" col-md-6 col-md-offset-1 panel panel-default" style="max-width: 100%">
             <div class="panel-heading">
                 <h3 class="panel-title">Form Status</h3>
             </div>

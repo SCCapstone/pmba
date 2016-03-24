@@ -1,3 +1,8 @@
+<!--
+Purpose: provides the admin all the necessary fields to
+                  add a new form for the students.
+-->
+
 <head>
     <title>PMBA</title>
     <link rel="icon" sizes="16x16 32x32" href="/favicon.ico?v=2">
@@ -7,10 +12,10 @@
     <div class = "page-header" id="header">
        <h1>
             <img src="img/logo.svg" class="img-responsive" style="position:absolute">
-           <img src="/img/banner.png" style="height: 23vh">
+           <img src="/img/solidBanner.png" style="height: 13vh">
 
-           <small style="color:white; font-family: Adobe, Garamond, Pro, serif; font-size: 1em; position: absolute;
-            margin-top: -7vh; margin-left: 3vh;">Add Forms</small>
+           <small style="color:white; font-family: Adobe, Garamond, Pro, serif; font-size: 23px; position: relative;
+            margin-top: 60px; line-height: 0px; float: right; margin-right: 49px; ">Add Forms</small>
            {{>adminNavBar}}
         </h1>
     </div>
@@ -22,6 +27,8 @@
         </div>
     </div>
 
+    <!--displays the current forms the admin has already created with the
+        ability to delete any form -->
     <div class="row-fluid">
         <div class=" col-md-6 col-md-offset-3 panel panel-default">
             <div class="panel-heading">
@@ -40,26 +47,44 @@
                 </ul>
             </div>
         </div>
+        {{>sAlert}}
     </div>
 
+    <!-- provides the necessary fields the admin should complete to create a new form -->
     <form id="addform" class="form-horizontal">
         <div class="row-fluid col-md-6 col-md-offset-4">
 
+            <!-- asks for the name of the form -->
             <div class="name">
                 <label class="name" for="inputName">Name:</label><span class="tabName"></span>
                 <input type="text" name="inputName" id="inputName" placeholder="Name">
             </div>
             <br>
+
+            <!--asks for a description of the form-->
             <div class="description">
                 <label class="description" for="inputDescription">Description:</label><span class="tabDescription"> </span>
-                <input type="text" name="inputDescription" id="inputDescription" placeholder="">
+                <textarea class="description" name="inputDescription" id="inputDescription" placeholder="Description"></textarea>
             </div>
 
-            <!-- added date field. NK. 2/1-->
+            <!--asks for the URL of the form -->
+            <br>
+            <div class="formAddress">
+                <label class="formAddress" for="inputFormAddress">Form Address:</label><span class="tabFormAddress"> </span>
+                <input type="text" name="inputFormAddress" id="inputFormAddress" placeholder="Form Address">
+            </div>
+
+            <!--asks for when the form is due from the students -->
             <br>
             <div class="date">
                 <label class="date" for="date">Due Date: </label><span class="tabDueDate"> </span>
                 <input type="Date" id="date" placeholder="Date">
+            </div>
+
+            <!--allows admin to upload an image of the form -->
+            <br>
+            <div class="form">
+                <input type="file" id="form" multiple size="50" onchange="insertForm()">
             </div>
 
             <br>
@@ -68,6 +93,8 @@
                     <span class="tabAddForm"></span><button type="submit">Add Item</button>
                 </div>
             </div>
+            {{>sAlert}}
+
         </div>
     </form>
 

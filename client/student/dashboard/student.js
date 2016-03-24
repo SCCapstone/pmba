@@ -39,10 +39,29 @@ Template.student.events({
         if (checkValue == true){
             document.getElementById(formId).style.color = "blue";
             FormStatus.update(formId, {$set :{Done : false}});
+            sAlert.warning('You have not completed the form.',
+                {
+                    onClose: function () {
+                        Router.go('/student');
+                    },
+                    timeout: 1500,
+                    offset: '40px',
+                    position: 'bottom'
+                });
         }
         else {
-            document.getElementById(formId).style.color = "grey";
+            document.getElementById(formId).style.color = "green";
             FormStatus.update(formId, {$set :{Done : true}});
+            sAlert.success('You have completed the form!',
+                {
+                    onClose: function () {
+                        Router.go('/student');
+                    },
+                    timeout: 1500,
+                    offset: '40px',
+                    position: 'bottom'
+
+                });
         }
     },
     'click .btn' : function(event){

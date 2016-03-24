@@ -20,6 +20,9 @@ span.tabButton{
 span.tabDescription{
     padding: 0 42px;
 }
+span.tabFormAddress{
+    padding: 0 34px;
+}
 span.tabName{
     padding: 0 62px;
 }

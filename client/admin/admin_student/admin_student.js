@@ -31,3 +31,25 @@ Template.adminStudent.helpers({
         return (percentage * 100).toFixed(0);
     }
 });
+
+// When admin clicks inside the alert bubble it will mark the form done or not done
+Template.adminStudent.events({
+    'click .alert' : function(event) {
+        event.preventDefault();
+        console.log('You clicked me');
+        var name = this.Name;
+        var email = studentInfo.findOne(Session.get('selectedStudent'), {fields: {Email: 1}}).Email;
+        var formId = FormStatus.findOne({Email: email, FormName: name})._id;
+        var complete = FormStatus.find({$and: [{Email: email}, {FormName: name},{Done: true}]}).count();
+
+        // If from is Done then mark false else make it Done
+        if (complete) {
+            console.log('form complete');
+            FormStatus.update({_id: formId}, {$set: {Done:false}});
+        }
+        else {
+            console.log('form not complete');
+            FormStatus.update({_id: formId}, {$set: {Done:true}});
+        }
+    }
+});

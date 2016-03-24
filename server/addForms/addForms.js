@@ -4,7 +4,7 @@ Meteor.publish("forms", function () {
 });
 
 Meteor.methods({
-    addForm: function (name, description, dueDate, num, pic) {
+    addForm: function (name, description, formAddress, dueDate, num, pic) {
         /* if (Meteor.userId() &&
          studentInfo.findOne(Meteor.userId(), {fields: {'IDType': 1}}).IDType == 'A') {*/
         var formIsThere = forms.find({Name: name}, {limit: 1}).count() > 0;
@@ -16,6 +16,7 @@ Meteor.methods({
             forms.insert({
                 Name: name,
                 Description: description,
+                FormAddress: formAddress,
                 DueDate: dueDate,
                 FormNumber: num,
                 FormPicture: pic

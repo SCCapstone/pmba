@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eba2f6bf-1855-4ecf-953b-4c80780a50fa" name="Default" comment="Login and student navigation bar sizes/bolding updated.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/solidBanner.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/searchBox/searchBox.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/searchBox/searchBox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/searchIndex.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/common/common.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/pmba.iml" afterPath="$PROJECT_DIR$/.idea/pmba.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/student/dashboard/student.js" afterPath="$PROJECT_DIR$/client/student/dashboard/student.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/addStudent/addStudent.js" afterPath="$PROJECT_DIR$/server/addStudent/addStudent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/updateAdminInfo.js" afterPath="$PROJECT_DIR$/server/admin/updateAdminInfo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pmba.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,7 +23,7 @@
     <favorites_list name="pmba" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -152,6 +145,16 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Problems" />
         <subPane subId="Changed Files">
@@ -164,16 +167,6 @@
         </subPane>
         <subPane subId="Project Files" />
         <subPane subId="Tests" />
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pmba" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
       </pane>
       <pane id="Scratches" />
     </panes>
@@ -377,6 +370,8 @@
       <workItem from="1458834065471" duration="2513000" />
       <workItem from="1458836979217" duration="607000" />
       <workItem from="1458840197600" duration="101000" />
+      <workItem from="1458933656140" duration="47000" />
+      <workItem from="1458933799428" duration="12000" />
     </task>
     <task id="LOCAL-00035" summary="students can't go to admin pages">
       <created>1449076310164</created>
@@ -757,7 +752,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3327000" />
+    <option name="totallyTimeSpent" value="3386000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1173,7 +1168,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1181,7 +1175,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
           <caret line="57" column="2" selection-start-line="57" selection-start-column="2" selection-end-line="57" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>

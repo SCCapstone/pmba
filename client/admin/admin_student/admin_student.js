@@ -46,10 +46,31 @@ Template.adminStudent.events({
         if (complete) {
             console.log('form complete');
             FormStatus.update({_id: formId}, {$set: {Done:false}});
+
+            sAlert.warning('Form has not been completed.',
+                {
+                    onClose: function () {
+                        Router.go('/admin_student');
+                    },
+                    timeout: 1500,
+                    offset: '40px',
+                    position: 'bottom'
+
+                });
         }
         else {
             console.log('form not complete');
             FormStatus.update({_id: formId}, {$set: {Done:true}});
+
+            sAlert.success('Form has been completed!',
+                {
+                    onClose: function () {
+                        Router.go('/admin_student');
+                    },
+                    timeout: 1500,
+                    offset: '40px',
+                    position: 'bottom'
+                });
         }
     }
 });

@@ -56,6 +56,16 @@
                 </div>
                 <div class="panel-body">
                     <ul>
+                        <small style="color:#6affc1">Light green</small>
+                        <small> indicates form completion.</small>
+
+                        <br>
+
+                        <small style="color:#ff8471">Light red</small>
+                        <small> indicates form incompletion.</small>
+
+                        <br>
+                        <br>
                         {{#each forms}}
                             <li>
                                 {{#if formComplete Name}}
@@ -76,6 +86,7 @@
                                     </div>
                                 {{/if}}
                             </li>
+                        {{>sAlert}}
                         {{/each}}
                     </ul>
                 </div>

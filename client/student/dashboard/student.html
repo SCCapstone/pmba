@@ -18,22 +18,49 @@
     <div class="row-fluid">
         <div class=" col-md-6 col-md-offset-1 panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">Form Status</h3>
-            </div>
+            <h3 class="panel-title">Form Status
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="{{studentFormPercent}}"
+                         aria-valuemin="0" aria-valuemax="100" style="width: {{studentFormPercent}}%;">
+                        {{studentFormPercent}}%
+                    </div>
+                </div>
+            </h3>
+        </div>
             <div class="panel-body">
-                <small>Check the box next to each form you have completed.</small>
+                <small>Click the box to indicate that you have completed the form.</small>
                 <ul>
-                    {{#each Student}}
-                        <li class="{{#if Done}}checked{{/if}}">
-                            <label class ="checkbox">
-                                <input type="checkbox" checked ={{Done}} class="toggle-checked">
-                                <a href="infoPage" id="{{_id}}"
-                                   onclick="Session.set('selectedForm', '{{form FormName}}');">
-                                    {{FormName}}
-                                    {{>sAlert}}
-                                </a>
-                            </label>
+                    <small style="color:#6affc1">Light green</small>
+                    <small> indicates form completion.</small>
+
+                    <br>
+
+                    <small style="color:#ff8471">Light red</small>
+                    <small> indicates form incompletion.</small>
+
+                    <br>
+                    <br>
+                    {{#each forms}}
+                        <li>
+                            {{#if formComplete FormName}}
+                                <div class="alert alert-success" role="alert">
+                                    <a href="#" class="alert-link">
+                                        <a href="infoPage" onclick="Session.set('selectedForm', '{{_id}}');">
+                                            {{FormName}}
+                                        </a>
+                                    </a>
+                                </div>
+                            {{else}}
+                                <div class="alert alert-danger" role="alert">
+                                    <a href="#" class="alert-link">
+                                        <a href="infoPage" onclick="Session.set('selectedForm', '{{_id}}');">
+                                            {{FormName}}
+                                        </a>
+                                    </a>
+                                </div>
+                            {{/if}}
                         </li>
+                        {{>sAlert}}
                     {{/each}}
                 </ul>
                 <script>

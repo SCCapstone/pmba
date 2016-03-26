@@ -34,7 +34,8 @@ Template.student.helpers({
         return result;
     },
     forms: function () {
-        return FormStatus.find();
+        var email = studentInfo.findOne(Meteor.userId()).Email;
+        return FormStatus.find({Email: email});
     },
     studentFormPercent: function () {
         var email = studentInfo.findOne(Meteor.userId(), {fields: {Email: 1}}).Email;

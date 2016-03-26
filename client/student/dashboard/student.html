@@ -45,7 +45,10 @@
                             {{#if formComplete FormName}}
                                 <div class="alert alert-success" role="alert">
                                     <a href="#" class="alert-link">
-                                        <a href="infoPage" onclick="Session.set('selectedForm', '{{_id}}');">
+                                        <a href="infoPage"
+                                           onclick="Session.set('selectedForm', '{{getFormId _id}}');
+                                                   Router.go('/infoPage');
+                                                   return false;">
                                             {{FormName}}
                                         </a>
                                     </a>
@@ -53,7 +56,10 @@
                             {{else}}
                                 <div class="alert alert-danger" role="alert">
                                     <a href="#" class="alert-link">
-                                        <a href="infoPage" onclick="Session.set('selectedForm', '{{_id}}');">
+                                        <a href="infoPage"
+                                           onclick="Session.set('selectedForm', '{{getFormId _id}}');
+                                                   Router.go('/infoPage');
+                                                   return false;">
                                             {{FormName}}
                                         </a>
                                     </a>

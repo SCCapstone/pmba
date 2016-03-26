@@ -57,7 +57,8 @@ Meteor.methods({
                 HomeNumber: "",
                 WorkNumber: "",
                 FinishDate: date,
-                FullName: firstName + " " + lastName
+                FullName: firstName + " " + lastName,
+                SentEmails: 0
             });
 			
 			
@@ -69,8 +70,7 @@ Meteor.methods({
                     Email: email,
                     FormNumber: num,
                     FormName: name,
-                    Done: false,
-                    SentEmails: 0
+                    Done: false
                 })
             });
 			

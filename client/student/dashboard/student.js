@@ -43,6 +43,12 @@ Template.student.helpers({
         var total = forms.find().count();
         var percentage = numCompleted / total;
         return (percentage * 100).toFixed(0);
+    },
+    getFormId: function(FormStatusId) {
+        var FormName = FormStatus.findOne(FormStatusId).FormName;
+        var formId = forms.findOne({Name: FormName})._id;
+        return formId;
+
     }
 });
 /*
@@ -126,6 +132,18 @@ Template.student.events({
                     offset: '40px',
                     position: 'bottom'
                 });
+        }
+    },
+    "click .hide-completed": function (event) {
+        event.preventDefault();
+        var text = document.getElementById('hide').value;
+        if (text === "Hide Completed Forms") {
+            Session.set('hideCompleted', true);
+            document.getElementById('hide').value = "Show Completed Forms";
+        }
+        else {
+            Session.set('hideCompleted', false);
+            document.getElementById('hide').value = "Hide Completed Forms";
         }
     }
 });

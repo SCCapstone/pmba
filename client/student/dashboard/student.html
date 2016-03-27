@@ -4,6 +4,7 @@
 </head>
 
 <template name="student">
+    <div class="container-fluid">
     <div class = "page-header" id="header">
         <h1>
             <img src="img/logo.svg" class="img-responsive" style="position:absolute;">
@@ -28,6 +29,7 @@
             </h3>
         </div>
             <div class="panel-body">
+                <row>
                 <small>Click the box to indicate that you have completed the form.</small>
                 <ul>
                     <small style="color:#6affc1">Light green</small>
@@ -40,37 +42,40 @@
 
                     <br>
                     <br>
+                    </ul>
+                </row>
+                <row>
+                <ul>
                     {{#each forms}}
                         <li>
                             {{#if formComplete FormName}}
-                                <div class="alert alert-success" role="alert">
-                                    <a href="#" class="alert-link">
-                                        <a href="infoPage"
-                                           onclick="Session.set('selectedForm', '{{getFormId _id}}');
-                                                   Router.go('/infoPage');
-                                                   return false;">
-                                            {{FormName}}
-                                        </a>
-                                    </a>
-                                <p> Due: {{getFormDueDate _id}} </p>
-                                </div>
+                                <a href="#" class="btn btn-primary btn-success">
+                                    <span class="glyphicon glyphicon-ok"></span>
+                                </a>
+                                <a href="infoPage"
+                                   onclick="Session.set('selectedForm', '{{getFormId _id}}');
+                                           Router.go('/infoPage');
+                                           return false;">
+                                    {{FormName}}
+                                    Due: {{getFormDueDate _id}}
+                                </a>
                             {{else}}
-                                <div class="alert alert-danger" role="alert">
-                                    <a href="#" class="alert-link">
-                                        <a href="infoPage"
-                                           onclick="Session.set('selectedForm', '{{getFormId _id}}');
-                                                   Router.go('/infoPage');
-                                                   return false;">
-                                            {{FormName}}
-                                        </a>
-                                    </a>
-                                    <p> Due: {{getFormDueDate _id}} </p>
-                                </div>
+                                <a href="#" class="btn btn-primary btn-danger">
+                                    <span class="glyphicon glyphicon-unchecked"></span>
+                                </a>
+                                <a href="infoPage"
+                                   onclick="Session.set('selectedForm', '{{getFormId _id}}');
+                                           Router.go('/infoPage');
+                                           return false;">
+                                    {{FormName}}
+                                    Due: {{getFormDueDate _id}}
+                                </a>
                             {{/if}}
                         </li>
                         {{>sAlert}}
                     {{/each}}
                 </ul>
+                </row>
                 <script>
                     if (Session.get("hideCompleted")){
                         document.getElementById('hide').value="Show";
@@ -84,5 +89,6 @@
                 </label>
             </div>
         </div>
+    </div>
     </div>
 </template>

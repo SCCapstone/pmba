@@ -1,11 +1,18 @@
 /* CSS declarations go here */
 html, body { height: 100%; }
 
+.formInfo {
+    float: left;
+}
 .alert {
-    min-width:  300px;
-    min-height: 100px;
+    min-width:  70px;
+    min-height: 70px;
 }
 
+.btn {
+    padding: 20px;
+    margin: 10px;
+}
 .container {
     mon-height: 100%;
     overflow : hidden;

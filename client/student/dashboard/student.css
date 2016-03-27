@@ -1,8 +1,14 @@
 /* CSS declarations go here */
 html, body { height: 100%; }
 
+.alert {
+    min-width:  300px;
+    min-height: 100px;
+}
+
 .container {
-    mon-height: 100% overflow : hidden;
+    mon-height: 100%;
+    overflow : hidden;
 }
 
 #col1, #col2 {
@@ -18,7 +24,6 @@ html, body { height: 100%; }
 li.checked {
     color: #888;
 }
-
 /*
 Code snippet by maridlcrmn for Bootsnipp.com
 Follow me on Twitter @maridlcrmn

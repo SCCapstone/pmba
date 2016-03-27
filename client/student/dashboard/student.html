@@ -45,18 +45,26 @@
                             {{#if formComplete FormName}}
                                 <div class="alert alert-success" role="alert">
                                     <a href="#" class="alert-link">
-                                        <a href="infoPage" onclick="Session.set('selectedForm', '{{_id}}');">
+                                        <a href="infoPage"
+                                           onclick="Session.set('selectedForm', '{{getFormId _id}}');
+                                                   Router.go('/infoPage');
+                                                   return false;">
                                             {{FormName}}
                                         </a>
                                     </a>
+                                <p> Due: {{getFormDueDate _id}} </p>
                                 </div>
                             {{else}}
                                 <div class="alert alert-danger" role="alert">
                                     <a href="#" class="alert-link">
-                                        <a href="infoPage" onclick="Session.set('selectedForm', '{{_id}}');">
+                                        <a href="infoPage"
+                                           onclick="Session.set('selectedForm', '{{getFormId _id}}');
+                                                   Router.go('/infoPage');
+                                                   return false;">
                                             {{FormName}}
                                         </a>
                                     </a>
+                                    <p> Due: {{getFormDueDate _id}} </p>
                                 </div>
                             {{/if}}
                         </li>
@@ -70,7 +78,6 @@
                     else {
                         document.getElementById('hide').value="Hide";
                     }
-
                 </script>
                 <label class="hide-completed">
                     <input type="button" id="hide" value="Hide"/>

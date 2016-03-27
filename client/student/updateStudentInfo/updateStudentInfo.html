@@ -18,31 +18,32 @@
  <form id="updateInfo" action="student" class="form-horizontal">
         <div class="row-fluid col-md-6 col-md-offset-4">
 
+                {{#each students}}
+
                 <div class="firstName">
                     <label class="firstName" for="firstName">First Name:</label><span class="tabName"> </span>
-                        <input type="text" id="firstName" placeholder="First Name">
+                        <input type="text" id="firstName" placeholder="First Name" value="{{FirstName}}">
                 </div>
 				<br>
 				<div class="lastName">
                     <label class="lastName" for="lastName">Last Name:</label><span class="tabLastName"> </span>
-                        <input type="text" id="lastName" placeholder="Last Name">
+                        <input type="text" id="lastName" placeholder="Last Name" value="{{LastName}}">
                 </div>
 				<br>
 				<div class="cellPhone">
                     <label class="cellPhone" for="cellPhone">Cell Phone: </label><span class="tabName"> </span>
-                        <input type="tel" id="cellNumber" placeholder="Cell Number">
+                        <input type="tel" id="cellNumber" placeholder="Cell Number" value="{{CellNumber}}">
                 </div>
 				<br>
 				<div class="workPhone">
                     <label class="workNumber" for="workPhone">Work Phone: </label><span class="tabWorkPhone"> </span>
-                        <input type="tel" id="workNumber" placeholder="Work Number">
+                        <input type="tel" id="workNumber" placeholder="Work Number" value="{{WorkNumber}}">
                 </div>
 				<br>
 				<div class="homePhone">
                     <label class="homeNumber" for="homeNumber">Home Phone: </label><span class="tabHomePhone"> </span>
-                        <input type="tel" id="homeNumber" placeholder="Home Number">
+                        <input type="tel" id="homeNumber" placeholder="Home Number" value="{{HomeNumber}}">
                 </div>
-
 
 				<br>
                 <div class="updateButton">
@@ -51,6 +52,9 @@
                     </div>
                 </div>
                 {{>sAlert}}
+
+            {{/each}}
+
         </div>
     </form>
 

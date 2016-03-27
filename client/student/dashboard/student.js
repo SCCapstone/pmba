@@ -46,9 +46,11 @@ Template.student.helpers({
     },
     getFormId: function(FormStatusId) {
         var FormName = FormStatus.findOne(FormStatusId).FormName;
-        var formId = forms.findOne({Name: FormName})._id;
-        return formId;
-
+        return forms.findOne({Name: FormName})._id;
+    },
+    getFormDueDate: function(FormStatusId) {
+        var FormName = FormStatus.findOne(FormStatusId).FormName;
+        return forms.findOne({Name: FormName}).DueDate;
     }
 });
 /*

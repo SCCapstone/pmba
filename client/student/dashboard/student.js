@@ -109,7 +109,7 @@ Template.student.events({
 });*/
 
 Template.student.events({
-    'click .alert' : function(event) {
+    'click .btn' : function(event) {
         event.preventDefault();
         var name = this.FormName;
         var email = studentInfo.findOne(Meteor.userId(), {fields: {Email: 1}}).Email;

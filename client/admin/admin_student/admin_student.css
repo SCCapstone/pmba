@@ -2,7 +2,8 @@
 html, body { height: 100%; }
 
 .container {
-    min-height: 100% overflow : hidden;
+    min-height: 100%;
+    overflow : hidden;
 }
 
 #col1, #col2 {

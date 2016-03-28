@@ -19,7 +19,7 @@ Template.infoPage.helpers({
         }
 
     },
-    studnets: function () {
+    students: function () {
         return studentInfo.find({});
-    },
+    }
 });

@@ -4,6 +4,7 @@
 </head>
 
 <template name="student">
+    <div class="container-fluid">
     <div class = "page-header" id="header">
         <h1>
             <img src="img/logo.svg" class="img-responsive" style="position:absolute;">
@@ -18,24 +19,63 @@
     <div class="row-fluid">
         <div class=" col-md-6 col-md-offset-1 panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">Form Status</h3>
-            </div>
+            <h3 class="panel-title">Form Status
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="{{studentFormPercent}}"
+                         aria-valuemin="0" aria-valuemax="100" style="width: {{studentFormPercent}}%;">
+                        {{studentFormPercent}}%
+                    </div>
+                </div>
+            </h3>
+        </div>
             <div class="panel-body">
-                <small>Check the box next to each form you have completed.</small>
+                <row>
+                <small>Click the box to indicate that you have completed the form.</small>
                 <ul>
-                    {{#each Student}}
-                        <li class="{{#if Done}}checked{{/if}}">
-                            <label class ="checkbox">
-                                <input type="checkbox" checked ={{Done}} class="toggle-checked">
-                                <a href="infoPage" id="{{_id}}"
-                                   onclick="Session.set('selectedForm', '{{form FormName}}');">
-                                    {{FormName}}
-                                    {{>sAlert}}
+                    <small style="color:#00d95b">Green</small>
+                    <small> indicates form completion.</small>
+
+                    <br>
+
+                    <small style="color:#f85540">Red</small>
+                    <small> indicates form incompletion.</small>
+
+                    <br>
+                    <br>
+                    </ul>
+                </row>
+                <row>
+                <ul>
+                    {{#each forms}}
+                        <li>
+                            {{#if formComplete FormName}}
+                                <a href="#" class="btn btn-primary btn-success">
+                                    <span class="glyphicon glyphicon-ok"></span>
                                 </a>
-                            </label>
+                                <a href="infoPage"
+                                   onclick="Session.set('selectedForm', '{{getFormId _id}}');
+                                           Router.go('/infoPage');
+                                           return false;">
+                                    {{FormName}}
+                                    Due: {{getFormDueDate _id}}
+                                </a>
+                            {{else}}
+                                <a href="#" class="btn btn-primary btn-danger">
+                                    <span class="glyphicon glyphicon-unchecked"></span>
+                                </a>
+                                <a href="infoPage"
+                                   onclick="Session.set('selectedForm', '{{getFormId _id}}');
+                                           Router.go('/infoPage');
+                                           return false;">
+                                    {{FormName}}
+                                    Due: {{getFormDueDate _id}}
+                                </a>
+                            {{/if}}
                         </li>
+                        {{>sAlert}}
                     {{/each}}
                 </ul>
+                </row>
                 <script>
                     if (Session.get("hideCompleted")){
                         document.getElementById('hide').value="Show";
@@ -43,12 +83,12 @@
                     else {
                         document.getElementById('hide').value="Hide";
                     }
-
                 </script>
                 <label class="hide-completed">
                     <input type="button" id="hide" value="Hide"/>
                 </label>
             </div>
         </div>
+    </div>
     </div>
 </template>

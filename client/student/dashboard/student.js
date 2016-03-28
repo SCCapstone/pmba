@@ -27,8 +27,33 @@ Template.student.helpers({
     },
     selectedForm: function () {
         return Session.get("selectedForm");
+    },
+    formComplete: function(name) {
+        var email = studentInfo.findOne(Meteor.userId(), {fields: {Email: 1}}).Email;
+        var result = FormStatus.find({$and: [{Email: email}, {FormName: name},{Done: true}]}).count();
+        return result;
+    },
+    forms: function () {
+        var email = studentInfo.findOne(Meteor.userId()).Email;
+        return FormStatus.find({Email: email});
+    },
+    studentFormPercent: function () {
+        var email = studentInfo.findOne(Meteor.userId(), {fields: {Email: 1}}).Email;
+        var numCompleted = FormStatus.find({$and: [{Email: email},{Done: true}]}).count();
+        var total = forms.find().count();
+        var percentage = numCompleted / total;
+        return (percentage * 100).toFixed(0);
+    },
+    getFormId: function(FormStatusId) {
+        var FormName = FormStatus.findOne(FormStatusId).FormName;
+        return forms.findOne({Name: FormName})._id;
+    },
+    getFormDueDate: function(FormStatusId) {
+        var FormName = FormStatus.findOne(FormStatusId).FormName;
+        return forms.findOne({Name: FormName}).DueDate;
     }
 });
+/*
 Template.student.events({
     'click .toggle-checked' : function(event){
         event.preventDefault();
@@ -81,4 +106,46 @@ Template.student.events({
 
     }
 
+});*/
+
+Template.student.events({
+    'click .btn' : function(event) {
+        event.preventDefault();
+        var name = this.FormName;
+        var email = studentInfo.findOne(Meteor.userId(), {fields: {Email: 1}}).Email;
+        var formId = FormStatus.findOne({Email: email, FormName: name})._id;
+        var complete = FormStatus.find({$and: [{Email: email}, {FormName: name},{Done: true}]}).count();
+
+        // If form is Done then mark false else make it Done
+        if (complete) {
+            FormStatus.update({_id: formId}, {$set: {Done:false}});
+            sAlert.warning('Form has not been completed.',
+                {
+                    timeout: 1500,
+                    offset: '40px',
+                    position: 'bottom'
+                });
+        }
+        else {
+            FormStatus.update({_id: formId}, {$set: {Done:true}});
+            sAlert.success('Form has been completed!',
+                {
+                    timeout: 1500,
+                    offset: '40px',
+                    position: 'bottom'
+                });
+        }
+    },
+    "click .hide-completed": function (event) {
+        event.preventDefault();
+        var text = document.getElementById('hide').value;
+        if (text === "Hide Completed Forms") {
+            Session.set('hideCompleted', true);
+            document.getElementById('hide').value = "Show Completed Forms";
+        }
+        else {
+            Session.set('hideCompleted', false);
+            document.getElementById('hide').value = "Hide Completed Forms";
+        }
+    }
 });

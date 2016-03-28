@@ -57,7 +57,8 @@ Meteor.methods({
                 HomeNumber: "",
                 WorkNumber: "",
                 FinishDate: date,
-                FullName: firstName + " " + lastName
+                FullName: firstName + " " + lastName,
+                SentEmails: 0
             });
 			
 			

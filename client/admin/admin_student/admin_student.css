@@ -31,3 +31,8 @@ ul{
 .alert {
     min-width: 200px;
 }
+
+.btn {
+    padding: 20px;
+    margin: 10px;
+}

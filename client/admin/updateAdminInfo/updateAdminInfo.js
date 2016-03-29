@@ -11,6 +11,8 @@ Template.updateAdminInfo.events({
                 FirstName : firstName.value,
                 LastName : lastName.value,
                 WorkNumber : workNumber.value,
+                CellNumber : cellNumber.value,
+                HomeNumber : homeNumber.value,
                 Address : address.value,
                 Picture : "Upic1"}
             });

@@ -24,7 +24,6 @@
         <div class="row-fluid row-offcanvas row-offcanvas-left">
             <div class="col-sm-3 col-md-3 sidebar-offcanvas" id="sidebar" role="navigation">
                 <div class="well sidebar-nav">
-                    <img src="..." class="img-polaroid">
                     <strong>Student Info</strong>
                     <ul id="studentData">
                         {{#each profile}}
@@ -34,6 +33,7 @@
                             <li><strong>Cell: </strong> {{CellNumber}}</li>
                             <li><strong>Home: </strong> {{HomeNumber}}</li>
                             <li><strong>Work: </strong> {{WorkNumber}}</li>
+                            <li><strong>Number of Emails Sent: </strong> {{SentEmails}}</li>
 
                         {{/each}}
                         <a href="updateAdminInfo">Update Information</a><br><br>

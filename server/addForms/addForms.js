@@ -33,7 +33,8 @@ Meteor.methods({
                     Email: email,
                     FormNumber: num,
                     FormName: name,
-                    Done: false
+                    Done: false,
+					Finished: ""
                 });
             });
             //}

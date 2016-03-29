@@ -34,7 +34,7 @@ Template.adminStudent.helpers({
 
 // When admin clicks inside the alert bubble it will mark the form done or not done
 Template.adminStudent.events({
-    'click .alert' : function(event) {
+    'click .btn' : function(event) {
         event.preventDefault();
         console.log('You clicked me');
         var name = this.Name;

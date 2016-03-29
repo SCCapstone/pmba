@@ -54,7 +54,9 @@
             sAlert.success('You added a form!',
                 {
                     onClose: function () {
-                        Router.go('/addForms');
+						//This is a temp fix, the notation may need to changed later
+						location.reload()
+                        //Router.go('/addForms');
                     },
                     timeout: 1500,
                     offset: '40px',

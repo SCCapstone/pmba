@@ -52,17 +52,16 @@ Template.student.helpers({
         var FormName = FormStatus.findOne(FormStatusId).FormName;
         return forms.findOne({Name: FormName}).DueDate;
     },
-	getFinishedStatus: function(formStatusId){
+	getFinishedStatus: function(FormStatusId){
 		var formFinishedStatus = FormStatus.findOne(FormStatusId).Finished;
+		alert(formFinishedStatus);
 		var returnString;
-		if(formFinishedStatus == ""){
+		if(formFinishedStatus === ""){
 			returnString = "Form has not been completed";
-			alert(returnString);
 			return returnString;
 		}
 		else{
 			returnString = "Form was completed at " + formFinishedStatus;
-			alert(returnString);
 			return returnString;
 		}
 	}
@@ -141,7 +140,9 @@ Template.student.events({
                 });
         }
         else {
-            FormStatus.update({_id: formId}, {$set: {Done:true, Finished: new Date()}});
+			var timeStamp = new Date();
+			var dateStamp = timeStamp.toLocaleString();
+            FormStatus.update({_id: formId}, {$set: {Done:true, Finished: dateStamp}});
             sAlert.success('Form has been completed!',
                 {
                     timeout: 1500,

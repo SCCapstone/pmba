@@ -54,7 +54,6 @@ Template.student.helpers({
     },
 	getFinishedStatus: function(FormStatusId){
 		var formFinishedStatus = FormStatus.findOne(FormStatusId).Finished;
-		alert(formFinishedStatus);
 		var returnString;
 		if(formFinishedStatus === ""){
 			returnString = "Form has not been completed";

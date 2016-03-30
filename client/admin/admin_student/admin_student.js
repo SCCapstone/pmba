@@ -29,7 +29,21 @@ Template.adminStudent.helpers({
         var total = forms.find().count();
         var percentage = numCompleted / total;
         return (percentage * 100).toFixed(0);
-    }
+    },
+	getFinishedStatus: function(){
+		var name = this.Name;
+		var email = studentInfo.findOne(Session.get('selectedStudent'), {fields: {Email: 1}}).Email;
+		var formFinishedStatus = FormStatus.findOne({Email: email, FormName: name}).Finished;
+		var returnString;
+		if(formFinishedStatus === ""){
+			returnString = "Form has not been completed";
+			return returnString;
+		}
+		else{
+			returnString = "Form was completed at " + formFinishedStatus;
+			return returnString;
+		}
+	}
 });
 
 // When admin clicks inside the alert bubble it will mark the form done or not done
@@ -45,8 +59,7 @@ Template.adminStudent.events({
         // If from is Done then mark false else make it Done
         if (complete) {
             console.log('form complete');
-            FormStatus.update({_id: formId}, {$set: {Done:false}});
-
+            FormStatus.update({_id: formId}, {$set: {Done:false, Finished: ""}});
             sAlert.warning('Form has not been completed.',
                 {
                     onClose: function () {
@@ -60,8 +73,9 @@ Template.adminStudent.events({
         }
         else {
             console.log('form not complete');
-            FormStatus.update({_id: formId}, {$set: {Done:true}});
-
+			var timeStamp = new Date();
+			var dateStamp = timeStamp.toLocaleString();
+            FormStatus.update({_id: formId}, {$set: {Done:true, Finished: dateStamp}});
             sAlert.success('Form has been completed!',
                 {
                     onClose: function () {

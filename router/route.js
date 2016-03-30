@@ -120,7 +120,6 @@ Router.route('/resetPassword', function () {
     this.render('resetPassword')
 });
 
-
 Router.route('/home', function () {
     if (Meteor.userId() != null &&
         studentInfo.findOne(Meteor.userId(), {fields: {'IDType': 1}}).IDType == 'S') {

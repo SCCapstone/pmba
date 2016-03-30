@@ -53,13 +53,30 @@ Template.adminStudent.events({
         console.log('You clicked me');
         var name = this.Name;
         var email = studentInfo.findOne(Session.get('selectedStudent'), {fields: {Email: 1}}).Email;
+		var firstName = studentInfo.findOne(Session.get('selectedStudent'), {fields: {FirstName: 1}}).FirstName;
+		var lastName = studentInfo.findOne(Session.get('selectedStudent'), {fields: {LastName: 1}}).LastName;
+		var fullName = firstName + " " + lastName;
         var formId = FormStatus.findOne({Email: email, FormName: name})._id;
+		var formTableInfoStudentID = formTableInfo.findOne({Name: fullName})._id;
         var complete = FormStatus.find({$and: [{Email: email}, {FormName: name},{Done: true}]}).count();
 
         // If from is Done then mark false else make it Done
         if (complete) {
             console.log('form complete');
             FormStatus.update({_id: formId}, {$set: {Done:false, Finished: ""}});
+			
+			var cursor = forms.find();
+			cursor.forEach(function (doc) {
+				if(doc.Name == name)
+					{
+						var o = {};
+						o[doc.Name] = "Incomplete";
+						formTableInfo.update({_id: formTableInfoStudentID}, {
+							$set:(o)
+						})		
+					}	
+			});
+			
             sAlert.warning('Form has not been completed.',
                 {
                     onClose: function () {
@@ -76,6 +93,20 @@ Template.adminStudent.events({
 			var timeStamp = new Date();
 			var dateStamp = timeStamp.toLocaleString();
             FormStatus.update({_id: formId}, {$set: {Done:true, Finished: dateStamp}});
+			
+			var cursor = forms.find();
+			cursor.forEach(function (doc) {
+				if(doc.Name == name)
+					{
+						var o = {};
+						o[doc.Name] = "Complete";
+						formTableInfo.update({_id: formTableInfoStudentID}, {
+							$set:(o)
+						})		
+					}	
+			});
+			
+			
             sAlert.success('Form has been completed!',
                 {
                     onClose: function () {

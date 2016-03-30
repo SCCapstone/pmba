@@ -1,3 +1,8 @@
+/*
+ Purpose: provides the backbone for the admin to
+ add forms for the students to complete.
+
+ */
 
     Meteor.subscribe("forms");
     Meteor.subscribe("FormStatus");
@@ -8,7 +13,8 @@
         }
     });
 
-    //code snippet from w3 to upload files
+    //code snippet from w3 that allows the admin to upload the forms
+    //so students can view them
     function insertForm(){
         var form = document.getElementById("form");
         var display = "";
@@ -36,21 +42,26 @@
         document.getElementById("demo").innerHTML = txt;
     }
 
-
+    //provides the submit form and delete form actions
     Template.addForms.events({
+
         'submit form' : function(event){
             event.preventDefault();
             var num = forms.find({}).count() + 1;
             //This is temp and not the final way to handle the form number and form picture
             var formNum = "Form"+num;
             var formPic = "Fpic"+num;
+
+            //establishes the different input values for the form
             var name = inputName.value;
             var description = inputDescription.value;
             var formAddress = inputFormAddress.value;
             var dueDate = date.value;
+
+            //meteor adds the form fields into the system
             Meteor.call('addForm', name, description, formAddress, dueDate, formNum, formPic );
 
-            //window.location.href = "/addForms";
+            //shows a success message when the form is added
             sAlert.success('You added a form!',
                 {
                     onClose: function () {
@@ -66,12 +77,20 @@
 
         'click .delete' : function(event) {
 
+            //confirm message that appears before deleting a form
             var value = confirm("Are you sure you want to delete this form?");
+
+            //if the user says okay, the different portions of the form to be
+            //deleted are targeted
             if( value == true ){
                 var deleteID = event.target.id;
                 var holder = forms.findOne({_id: deleteID});
                 var deleteFormName = holder.Name;
+
+                //meteor deletes teh form from the system
                 Meteor.call('deleteForm', deleteID, deleteFormName );
+
+                //shows a warning message that a form has been removed
                 sAlert.warning('You removed a form.',
                     {
                         onClose: function () {

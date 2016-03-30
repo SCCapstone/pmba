@@ -51,7 +51,21 @@ Template.student.helpers({
     getFormDueDate: function(FormStatusId) {
         var FormName = FormStatus.findOne(FormStatusId).FormName;
         return forms.findOne({Name: FormName}).DueDate;
-    }
+    },
+	getFinishedStatus: function(formStatusId){
+		var formFinishedStatus = FormStatus.findOne(FormStatusId).Finished;
+		var returnString;
+		if(formFinishedStatus == ""){
+			returnString = "Form has not been completed";
+			alert(returnString);
+			return returnString;
+		}
+		else{
+			returnString = "Form was completed at " + formFinishedStatus;
+			alert(returnString);
+			return returnString;
+		}
+	}
 });
 /*
 Template.student.events({
@@ -110,20 +124,15 @@ Template.student.events({
 
 Template.student.events({
     'click .btn' : function(event) {
-		/**
-		working on adding a finished date to that admin and users can see when they finidhed a given item.
-		the Finished value is not updating at the moment
-		**/
         event.preventDefault();
         var name = this.FormName;
         var email = studentInfo.findOne(Meteor.userId(), {fields: {Email: 1}}).Email;
         var formId = FormStatus.findOne({Email: email, FormName: name})._id;
         var complete = FormStatus.find({$and: [{Email: email}, {FormName: name},{Done: true}]}).count();
 		
-        // If form is Done then mark false else make it Done
+        // If form is Done then mark false else make it Done and adds the time it was marked Done
         if (complete) {
-            FormStatus.update({_id: formId}, {$set: {Done:false}});
-			//FormStatus.update({_id: formId}, {$set: {Done:false}}, {$set: {Finished: ""}});
+            FormStatus.update({_id: formId}, {$set: {Done:false, Finished: ""}});
             sAlert.warning('Form has not been completed.',
                 {
                     timeout: 1500,
@@ -132,8 +141,7 @@ Template.student.events({
                 });
         }
         else {
-            FormStatus.update({_id: formId}, {$set: {Done:true}});
-			//FormStatus.update({_id: formId}, {$set: {Done:true}}, {$set: {Finished: new Date()}});
+            FormStatus.update({_id: formId}, {$set: {Done:true, Finished: new Date()}});
             sAlert.success('Form has been completed!',
                 {
                     timeout: 1500,

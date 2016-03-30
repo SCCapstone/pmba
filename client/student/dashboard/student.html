@@ -49,6 +49,7 @@
                     {{#each forms}}
                         <li>
                             {{#if formComplete FormName}}
+							<!-- need to a Session onclick for adding to hide completed and show completed -->
                                 <a href="#" class="btn btn-primary btn-success">
                                     <span class="glyphicon glyphicon-ok"></span>
                                 </a>
@@ -58,6 +59,7 @@
                                            return false;">
                                     {{FormName}}
                                     Due: {{getFormDueDate _id}}
+									{{getFinishedStatus _id}}
                                 </a>
                             {{else}}
                                 <a href="#" class="btn btn-primary btn-danger">
@@ -69,6 +71,7 @@
                                            return false;">
                                     {{FormName}}
                                     Due: {{getFormDueDate _id}}
+									{{getFinishedStatus _id}}
                                 </a>
                             {{/if}}
                         </li>

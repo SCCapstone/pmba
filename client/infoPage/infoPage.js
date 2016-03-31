@@ -10,7 +10,6 @@ Template.infoPage.helpers({
     },
     AccountType: function () {
         var student = studentInfo.findOne({_id: Meteor.userId()});
-        //var admin = adminInfo.findOne({_id: Meteor.userId()});
         if (student.IDType === 'S') {
             return true;
         }
@@ -20,6 +19,16 @@ Template.infoPage.helpers({
 
     },
     students: function () {
+		//var name = forms.find(Session.get('selectedForm')).fetch();
+		/**
+		1)need to get the form name then seach through formstatus collection
+		to get a list of students related to the form.
+		2)set up a if ifelse else statement with the ocnditions
+			if : selected all, return all students found.
+			if else : selected done, return done students
+			else : selected not done, return not done students.
+		**/
+		
         return studentInfo.find({});
     }
 });

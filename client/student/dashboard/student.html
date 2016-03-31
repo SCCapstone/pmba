@@ -49,8 +49,9 @@
                     {{#each forms}}
                         <li>
                             {{#if formComplete FormName}}
-							<!-- need to a Session onclick for adding to hide completed and show completed -->
-                                <a href="#" class="btn btn-primary btn-success">
+							<!-- need to a Session onclick for adding to hide completed and show completed, this is a work in progress -->
+                                <a href="#" class="btn btn-primary btn-success"
+									onclick="Session.set('hideCompleted', '{{getFormId _id}}')">
                                     <span class="glyphicon glyphicon-ok"></span>
                                 </a>
                                 <a href="infoPage"
@@ -62,7 +63,8 @@
 									{{getFinishedStatus _id}}
                                 </a>
                             {{else}}
-                                <a href="#" class="btn btn-primary btn-danger">
+                                <a href="#" class="btn btn-primary btn-danger"
+									onclick="Session.set('hideCompleted', '{{getFormId _id}}')">
                                     <span class="glyphicon glyphicon-unchecked"></span>
                                 </a>
                                 <a href="infoPage"

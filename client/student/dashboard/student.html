@@ -58,9 +58,11 @@
                                            Router.go('/infoPage');
                                            return false;">
                                     {{FormName}}
-                                    Due: {{getFormDueDate _id}}
-									{{getFinishedStatus _id}}
                                 </a>
+
+                                <li><strong>Due Date: </strong> {{getFormDueDate _id}}</li>
+                                <li><strong>Submission Date: </strong> {{getFinishedStatus _id}}</li>
+
                             {{else}}
                                 <a href="#" class="btn btn-primary btn-danger">
                                     <span class="glyphicon glyphicon-unchecked"></span>
@@ -70,11 +72,15 @@
                                            Router.go('/infoPage');
                                            return false;">
                                     {{FormName}}
-                                    Due: {{getFormDueDate _id}}
-									{{getFinishedStatus _id}}
                                 </a>
+
+                                <li><strong>Due Date: </strong> {{getFormDueDate _id}}</li>
+                                <li><strong>Submission Date: </strong> {{getFinishedStatus _id}}</li>
                             {{/if}}
                         </li>
+
+                        <br>
+
                         {{>sAlert}}
                     {{/each}}
                 </ul>

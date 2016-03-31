@@ -10,12 +10,16 @@ Meteor.subscribe('studentInfo');
             Meteor.loginWithPassword(emailVar, passwordVar, function(err){
                 if (err) {
                     // Login failed
+
+                    swal("Invalid Login","Your email or password is invalid.","error");
+
+                    /*
                     sAlert.error('Invalid Email or Password',
                         {
                             timeout: 1500,
                             offset: '140px',
                             position: 'bottom'
-                        });
+                        });*/
                 }
                 else {
                     // login succeeded

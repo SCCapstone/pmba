@@ -62,6 +62,22 @@
             Meteor.call('addForm', name, description, formAddress, dueDate, formNum, formPic );
 
             //shows a success message when the form is added
+
+            swal({
+                    title: "Success",
+                    text: "You added a form!",
+                    type: "success",
+                    confirmButtonText: "Okay",
+                    closeOnConfirm: true},
+
+                function(isConfirm)
+                {
+                    if (isConfirm)
+                    {
+                        location.reload();
+                    }
+                });
+            /*
             sAlert.success('You added a form!',
                 {
                     onClose: function () {
@@ -72,16 +88,57 @@
                     timeout: 1500,
                     offset: '40px',
                     position: 'bottom'
-                });
+                });*/
         },
 
         'click .delete' : function(event) {
 
             //confirm message that appears before deleting a form
-            var value = confirm("Are you sure you want to delete this form?");
+            var value = swal({
+                    title: "Are you sure?",
+                    text: "You will permanently delete this form!",
+                    type: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#DD6B55",
+                    confirmButtonText: "Yes, delete it!",
+                    cancelButtonText: "Cancel",
+                    closeOnConfirm: false },
+
+                function(isConfirm)
+                {
+                    if (isConfirm)
+                    {
+                        var deleteID = event.target.id;
+                        var holder = forms.findOne({_id: deleteID});
+                        var deleteFormName = holder.Name;
+
+                        //meteor deletes teh form from the system
+                        Meteor.call('deleteForm', deleteID, deleteFormName );
+
+                        //shows a warning message that a form has been removed
+                        swal("Deleted!", "The form has been deleted.", "success");
+                        Router.go('/addForms');
+                        /*
+                         sAlert.warning('You removed a form.',
+                         {
+                         onClose: function () {
+                         Router.go('/addForms');
+                         },
+                         timeout: 1500,
+                         offset: '40px',
+                         position: 'bottom'
+                         });*/
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                });
 
             //if the user says okay, the different portions of the form to be
             //deleted are targeted
+            /*
             if( value == true ){
                 var deleteID = event.target.id;
                 var holder = forms.findOne({_id: deleteID});
@@ -91,6 +148,9 @@
                 Meteor.call('deleteForm', deleteID, deleteFormName );
 
                 //shows a warning message that a form has been removed
+                swal("Deleted!", "The form has been deleted.", "success");
+                Router.go('/addForms');
+                /*
                 sAlert.warning('You removed a form.',
                     {
                         onClose: function () {
@@ -99,11 +159,11 @@
                         timeout: 1500,
                         offset: '40px',
                         position: 'bottom'
-                    });
-                return true;
+                    });*/
+                /*return true;
             }
             else{
                 return false;
-            }
+            }*/
         }
     });

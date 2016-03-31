@@ -17,7 +17,9 @@ Template.updateAdminInfo.events({
                 Picture : "Upic1"}
             });
 
-        sAlert.success('Your Information Has Been Updated',
+        swal("Information Updated!","Your information has been successfully saved.");
+
+        /*sAlert.success('Your Information Has Been Updated',
             {
                 onClose: function () {
                     Router.go('/admin_Overall');
@@ -25,7 +27,7 @@ Template.updateAdminInfo.events({
                 timeout: 1500,
                 offset: '40px',
                 position: 'bottom'
-            });
+            });*/
     }
 });
 

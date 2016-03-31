@@ -60,23 +60,6 @@ Template.adminStudent.events({
         if (complete) {
             console.log('form complete');
             FormStatus.update({_id: formId}, {$set: {Done:false, Finished: ""}});
-
-            swal({
-                title: "Wait!",
-                text: "The form has not been completed!",
-                type: "warning",
-                confirmButtonColor: "#DD6B55",
-                confirmButtonText: "Okay",
-                closeOnConfirm: true},
-
-                function(isConfirm)
-                {
-                    if (isConfirm)
-                    {
-                        Router.go('/admin_student');
-                    }
-            });
-            /*
             sAlert.warning('Form has not been completed.',
                 {
                     onClose: function () {
@@ -86,30 +69,13 @@ Template.adminStudent.events({
                     offset: '40px',
                     position: 'bottom'
 
-                });*/
+                });
         }
         else {
             console.log('form not complete');
 			var timeStamp = new Date();
 			var dateStamp = timeStamp.toLocaleString();
             FormStatus.update({_id: formId}, {$set: {Done:true, Finished: dateStamp}});
-
-            swal({
-                    title: "Hey!",
-                    text: "The form has been completed!",
-                    type: "success",
-                    confirmButtonColor: "#DD6B55",
-                    confirmButtonText: "Okay",
-                    closeOnConfirm: true},
-
-                function(isConfirm)
-                {
-                    if (isConfirm)
-                    {
-                        Router.go('/admin_student');
-                    }
-                });
-            /*
             sAlert.success('Form has been completed!',
                 {
                     onClose: function () {
@@ -118,7 +84,7 @@ Template.adminStudent.events({
                     timeout: 1500,
                     offset: '40px',
                     position: 'bottom'
-                });*/
+                });
         }
     }
 });

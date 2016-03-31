@@ -131,29 +131,23 @@ Template.student.events({
         // If form is Done then mark false else make it Done and adds the time it was marked Done
         if (complete) {
             FormStatus.update({_id: formId}, {$set: {Done:false, Finished: ""}});
-
-            swal("Form has not been completed.");
-            /*
             sAlert.warning('Form has not been completed.',
                 {
                     timeout: 1500,
                     offset: '40px',
                     position: 'bottom'
-                });*/
+                });
         }
         else {
 			var timeStamp = new Date();
 			var dateStamp = timeStamp.toLocaleString();
             FormStatus.update({_id: formId}, {$set: {Done:true, Finished: dateStamp}});
-
-            swal("Form has been completed!");
-            /*
             sAlert.success('Form has been completed!',
                 {
                     timeout: 1500,
                     offset: '40px',
                     position: 'bottom'
-                });*/
+                });
         }
     },
     "click .hide-completed": function (event) {

@@ -56,12 +56,12 @@
                 </div>
                 <div class="panel-body">
                     <ul>
-                        <small style="color:#00d95b">Green</small>
+                        <small style="color:#6affc1">Light green</small>
                         <small> indicates form completion.</small>
 
                         <br>
 
-                        <small style="color:#f85540">Red</small>
+                        <small style="color:#ff8471">Light red</small>
                         <small> indicates form incompletion.</small>
 
                         <br>
@@ -77,12 +77,9 @@
                                                Router.go('/infoPage');
                                                return false;">
                                         {{Name}}
-
+                                        Due: {{DueDate}}
+										{{getFinishedStatus}}
                                     </a>
-
-                                    <li><strong>Due Date: </strong> {{DueDate}}</li>
-                                    <li><strong>Submission Date: </strong> {{getFinishedStatus}}</li>
-
                                 {{else}}
                                     <a href="#" class="btn btn-primary btn-danger">
                                         <span class="glyphicon glyphicon-unchecked"></span>
@@ -92,17 +89,11 @@
                                                Router.go('/infoPage');
                                                return false;">
                                         {{Name}}
-
+                                        Due: {{DueDate}}
+										{{getFinishedStatus}}
                                     </a>
-
-                                    <li><strong>Due Date: </strong> {{DueDate}}</li>
-                                    <li><strong>Submission Date: </strong> {{getFinishedStatus}}</li>
-
                                 {{/if}}
                             </li>
-
-                            <br>
-
                         {{>sAlert}}
                         {{/each}}
                     </ul>

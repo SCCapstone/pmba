@@ -47,6 +47,7 @@ Router.route('/login');
 
 // Check to make sure user user is logged in
 
+
 Router.onBeforeAction(before.loginRequired, {
     except: ['login', 'resetPassword']
 });

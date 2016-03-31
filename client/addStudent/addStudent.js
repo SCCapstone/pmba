@@ -26,6 +26,23 @@
 			Meteor.call('createStudent', emailVar, passwordVar, accountType, FirstName, LastName, Date );
 
 			//the success message that appears when a student has been added into the system
+
+			swal({
+					title: "Success",
+					text: "The student has been added.",
+					type: "success",
+					confirmButtonColor: "#DD6B55",
+					confirmButtonText: "Okay",
+					closeOnConfirm: true},
+
+				function(isConfirm)
+				{
+					if (isConfirm)
+					{
+						Router.go('/admin_Overall');
+					}
+				});
+			/*
   			sAlert.success('The student has been added!',
 	  		{
 		  		onClose: function () {
@@ -34,7 +51,7 @@
 		  		timeout: 1500,
 		  		offset: '40px',
 		  		position: 'bottom'
-	  		});
+	  		});*/
 
   		}
   });

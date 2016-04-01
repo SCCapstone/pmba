@@ -63,9 +63,19 @@ Found from stack overflow
 
 
 @media screen and (max-width: 767px) and (min-width: 500px) {
-    .navbar .navbar-collapse .navbar-right > li:last-child { padding-left: 15px; padding-right: 15px; }
+    .navbar .navbar-collapse .navbar-right > li:last-child {
+        padding-left: 15px; padding-right: 15px;
+    }
 
-    .navbar .nav-collapse { margin: 7.5px auto; padding: 0; }
-    .navbar .nav-collapse .navbar-form { margin: 0; }
-    .nav-collapse>li { float: none; }
+    .navbar .nav-collapse {
+        margin: 7.5px auto; padding: 0;
+    }
+
+    .navbar .nav-collapse .navbar-form {
+        margin: 0;
+    }
+
+    .nav-collapse>li {
+        float: none;
+    }
 }

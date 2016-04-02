@@ -13,16 +13,12 @@ Template.adminOverall.helpers({
 
 Template.notifications.events({
     'click .btn-success' : function(event){
-        console.log("Button clicked");
         //prevent defaults keeps the page from refreshing before we want it to
         event.preventDefault();
         var subject = subjectInput.value;
         var message = messageInput.value;
-        console.log("???");
         var cursor = studentInfo.find();
         cursor.forEach(function (student) {
-            console.log("test:");
-            console.log("sending email to " + student.FullName);
             var address = student.Email;
             Meteor.call('sendEmail', address, subject, message);
 

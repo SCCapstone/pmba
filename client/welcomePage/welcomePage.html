@@ -4,7 +4,7 @@
 </head>
 
 <template name="welcomePage">
-    {{#each contactInfo}}
+
     <div class = "page-header" id="header">
         <h1>
             <img src="img/logo.svg" class="img-responsive" style="position:absolute;">
@@ -30,8 +30,11 @@
                 <h3 class="panel-title">Welcome!</h3>
             </div>
             <div class="panel-body">
+            {{#each contactInfo}}
                     <p id="welcome">{{welcomeMessage}}</p>
+            {{/each}}
             </div>
+
         </div>
         {{#if AccountType}}
         {{else}}
@@ -52,8 +55,10 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="address">To:</label>
                             <div class="col-md-4">
+                                 {{#each contactInfo}}
                                 <!-- <textarea class="form-control" id="addressInput" name="addressInput" placeholder="Email Address"></textarea> -->
                                 <input id="addressInput" name="addressInput" value="{{contactEmail}}" type="text" placeholder="Email Address" class="form-control input-md" required readonly>
+                                 {{/each}}
                             </div>
                         </div>
 
@@ -90,9 +95,12 @@
                         </div>
                     </fieldset>
                 </form>
+                {{#each contactInfo}}
+                <p>Or give us a call at: {{contactPhone}}</p>
+                {{/each}}
             {{/each}}
         </div>
     </div>
-{{/each}}
+
 </template>
 

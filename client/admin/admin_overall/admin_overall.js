@@ -16,6 +16,9 @@
             var percentage = numCompleted / total;
             return (percentage * 100).toFixed(0);
 
+        },
+        studentCount: function () {
+            return studentInfo.find().count();
         }
     });
 

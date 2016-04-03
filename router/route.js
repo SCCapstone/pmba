@@ -52,7 +52,7 @@ Router.onBeforeAction(before.loginRequired, {
     except: ['login', 'resetPassword']
 });
 Router.onBeforeAction(before.checkAdmin, {
-    only: ['admin_overall', 'admin_student', 'addForms', 'addStudent']
+    only: ['admin_overall', 'admin_student', 'addForms', 'addStudent', 'updateInformation']
 });
 
 //TODO
@@ -119,6 +119,10 @@ Router.route('/updateAdminInfo', function () {
 
 Router.route('/resetPassword', function () {
     this.render('resetPassword')
+});
+
+Router.route('/updateInformation', function () {
+    this.render('updateInformation')
 });
 
 Router.route('/home', function () {

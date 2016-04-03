@@ -1,0 +1,48 @@
+<head>
+<title>PMBA</title>
+<link rel="icon" sizes="16x16 32x32" href="/favicon.ico?v=2">
+</head>
+
+<template name="updateInformation">
+    <div class = "page-header" id="header">
+        <h1>
+            <img src="img/logo.svg" class="img-responsive" style="position:absolute;">
+            <img src="/img/solidBanner.png" style="height: 13vh">
+
+            <div id="container">
+                <small style="color:white; font-family: Adobe, Garamond, Pro, serif; font-size: 23px; position: relative;
+                margin-top: -20px; line-height: 0px; float: right; margin-right: 49px; z-index: 1;">Update Information</small>
+            </div>
+            {{>adminNavBar}}
+        </h1>
+    </div>
+
+    <form id="updateInfo" action="information " class="form-horizontal">
+        <div class="row-fluid col-md-6 col-md-offset-4">
+
+            {{#each contactInfo}}
+                <div class="email">
+                    <label class="email" for="email">Email: </label><span class="tabEmail"> </span>
+                    <input type="text" id="email" placeholder="Email" value="{{contactEmail}}" readonly>
+                </div>
+                <br>
+                <div class="phone">
+                    <label class="phone" for="phone">Phone: </label><span class="tabContactPhone"> </span>
+                    <input type="tel" id="phone" placeholder="phone" value="{{contactPhone}}" readonly>
+                </div>
+                <br>
+                <label class="welcomeMessage" for="welcomeMessage">Welcome Message:</label><span class="tabWelcomeMessage"></span>
+                <div class="welcomeMessage">
+                    <textarea id="welcomeMessage" rows="10" cols="50" wrap="hard" placeholder="{{welcomeMessage}}"></textarea>
+                </div>
+                <div class="updateButton">
+                    <div class="controls">
+                        <span class="tabUpdateInfo"></span><button type="submit">Update Information</button>
+                    </div>
+                </div>
+
+            {{/each}}
+        </div>
+    </form>
+
+</template>

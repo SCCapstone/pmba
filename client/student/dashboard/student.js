@@ -56,11 +56,11 @@ Template.student.helpers({
 		var formFinishedStatus = FormStatus.findOne(FormStatusId).Finished;
 		var returnString;
 		if(formFinishedStatus === ""){
-			returnString = "Form has not been completed";
+			returnString = "form has not been completed";
 			return returnString;
 		}
 		else{
-			returnString = "Form was completed at " + formFinishedStatus;
+			returnString = formFinishedStatus;
 			return returnString;
 		}
 	}

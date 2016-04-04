@@ -1,9 +1,9 @@
 <head>
-<title>PMBA</title>
-<link rel="icon" sizes="16x16 32x32" href="/favicon.ico?v=2">
+    <title>PMBA</title>
+    <link rel="icon" sizes="16x16 32x32" href="/favicon.ico?v=2">
 </head>
 
-<template name="updateInformation">
+<template name="updateHelpInfo">
     <div class = "page-header" id="header">
         <h1>
             <img src="img/logo.svg" class="img-responsive" style="position:absolute;">
@@ -31,18 +31,12 @@
                     <input type="tel" id="phone" placeholder="phone" value="{{contactPhone}}">
                 </div>
                 <br>
-                <label class="welcomeMessage" for="welcomeMessage">Welcome Message:</label><span class="tabWelcomeMessage"></span>
-                <div class="welcomeMessage">
-                    <textarea id="welcomeMessage" rows="10" cols="50" wrap="hard" placeholder="{{welcomeMessage}}"></textarea>
-                </div>
                 <div class="updateButton">
                     <div class="controls">
                         <span class="tabUpdateInfo"></span><button type="submit">Update Information</button>
                     </div>
                 </div>
-
             {{/each}}
         </div>
     </form>
-
 </template>

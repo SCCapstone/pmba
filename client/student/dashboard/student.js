@@ -65,60 +65,6 @@ Template.student.helpers({
 		}
 	}
 });
-/*
-Template.student.events({
-    'click .toggle-checked' : function(event){
-        event.preventDefault();
-        var formId = this._id;
-        var form = FormStatus.findOne({_id: formId});
-        var checkValue = form.Done;
-
-        if (checkValue == true){
-            document.getElementById(formId).style.color = "blue";
-            FormStatus.update(formId, {$set :{Done : false}});
-            sAlert.warning('You have not completed the form.',
-                {
-                    onClose: function () {
-                        Router.go('/student');
-                    },
-                    timeout: 1500,
-                    offset: '40px',
-                    position: 'bottom'
-                });
-        }
-        else {
-            document.getElementById(formId).style.color = "green";
-            FormStatus.update(formId, {$set :{Done : true}});
-            sAlert.success('You have completed the form!',
-                {
-                    onClose: function () {
-                        Router.go('/student');
-                    },
-                    timeout: 1500,
-                    offset: '40px',
-                    position: 'bottom'
-
-                });
-        }
-    },
-    'click .btn' : function(event){
-        event.preventDefault();
-    },
-    "click .hide-completed": function (event) {
-        event.preventDefault();
-        var text = document.getElementById('hide').value;
-        if (text === "Hide") {
-            Session.set('hideCompleted', true);
-            document.getElementById('hide').value = "Show";
-        }
-        else {
-            Session.set('hideCompleted', false);
-            document.getElementById('hide').value = "Hide";
-        }
-
-    }
-
-});*/
 
 Template.student.events({
     'click .btn' : function(event) {
@@ -131,6 +77,17 @@ Template.student.events({
         // If form is Done then mark false else make it Done and adds the time it was marked Done
         if (complete) {
             FormStatus.update({_id: formId}, {$set: {Done:false, Finished: ""}});
+			var cursor = forms.find();
+			cursor.forEach(function (doc) {
+				if(doc.Name == name)
+					{
+						var o = {};
+						o[doc.Name] = "Incomplete";
+						formTableInfo.update({_id: formTableInfoStudentID}, {
+							$set:(o)
+						})		
+					}	
+			});
             sAlert.warning('Form has not been completed.',
                 {
                     timeout: 1500,
@@ -142,6 +99,17 @@ Template.student.events({
 			var timeStamp = new Date();
 			var dateStamp = timeStamp.toLocaleString();
             FormStatus.update({_id: formId}, {$set: {Done:true, Finished: dateStamp}});
+			var cursor = forms.find();
+			cursor.forEach(function (doc) {
+				if(doc.Name == name)
+					{
+						var o = {};
+						o[doc.Name] = "Complete";
+						formTableInfo.update({_id: formTableInfoStudentID}, {
+							$set:(o)
+						})		
+					}	
+			});
             sAlert.success('Form has been completed!',
                 {
                     timeout: 1500,

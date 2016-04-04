@@ -15,7 +15,7 @@ Template.helpPage.events({
     },
     'click .btn-info' : function(event){
         event.preventDefault();
-        Router.go('/updateInformation');
+        Router.go('/updateHelpInfo');
 
     }
 });
@@ -32,11 +32,12 @@ Template.helpPage.helpers({
         }
     },
     profile: function () {
-        if(studentInfo.find(Meteor.userId())) {
+        if(studentInfo.findOne(Meteor.userId())) {
             return studentInfo.find(Meteor.userId());
         }
-        if(adminInfo.find(Meteor.userId())) {
+        if(adminInfo.findOne(Meteor.userId())) {
             return adminInfo.find(Meteor.userId());
+
         }
     },
     contactInfo: function () {

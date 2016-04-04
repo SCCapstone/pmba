@@ -42,10 +42,10 @@ Template.welcomePage.helpers({
         }
     },
     profile: function () {
-        if(studentInfo.find(Meteor.userId())) {
+        if(studentInfo.findOne(Meteor.userId())) {
             return studentInfo.find(Meteor.userId());
         }
-        if(adminInfo.find(Meteor.userId())) {
+        if(adminInfo.findOne(Meteor.userId())) {
             return adminInfo.find(Meteor.userId());
         }
     },

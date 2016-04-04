@@ -60,9 +60,10 @@
                                            Router.go('/infoPage');
                                            return false;">
                                     {{FormName}}
-                                    Due: {{getFormDueDate _id}}
-									{{getFinishedStatus _id}}
+
                                 </a>
+                                    <li><strong>Due Date: </strong> {{getFormDueDate _id}}</li>
+                                    <li><strong>Submission Date: </strong> {{getFinishedStatus _id}}</li>
                             {{else}}
                                 <a href="#" class="btn btn-primary btn-danger">
                                     <span class="glyphicon glyphicon-unchecked"></span>
@@ -72,15 +73,16 @@
                                            Router.go('/infoPage');
                                            return false;">
                                     {{FormName}}
-                                    Due: {{getFormDueDate _id}}
-									{{getFinishedStatus _id}}
                                 </a>
+                                    <li><strong>Due Date: </strong> {{getFormDueDate _id}}</li>
+                                    <li><strong>Submission Date: </strong> {{getFinishedStatus _id}}</li>
                             {{/if}}
                         </li>
                         {{>sAlert}}
                     {{/each}}
                 </ul>
                 </row>
+
                 <script>
                     if (Session.get("hideCompleted")){
                         document.getElementById('hide').value="Show Completed Forms";
@@ -89,9 +91,11 @@
                         document.getElementById('hide').value="Hide Completed Forms";
                     }
                 </script>
+
                 <label class="hide-completed">
                     <input type="button" id="hide" value="Hide Completed Forms"/>
                 </label>
+
             </div>
         </div>
     </div>

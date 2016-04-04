@@ -25,7 +25,7 @@ Template.welcomePage.events({
     },
     'click .btn-info' : function(event){
         event.preventDefault();
-        Router.go('/updateInformation');
+        Router.go('/updateWelcomeInfo');
         
     }
 });

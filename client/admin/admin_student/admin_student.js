@@ -60,6 +60,9 @@ Template.adminStudent.events({
         if (complete) {
             console.log('form complete');
             FormStatus.update({_id: formId}, {$set: {Done:false, Finished: ""}});
+            swal("Form has not been completed.");
+            Router.go('/admin_student');
+            /*
             sAlert.warning('Form has not been completed.',
                 {
                     onClose: function () {
@@ -69,13 +72,16 @@ Template.adminStudent.events({
                     offset: '40px',
                     position: 'bottom'
 
-                });
+                });*/
         }
         else {
             console.log('form not complete');
 			var timeStamp = new Date();
 			var dateStamp = timeStamp.toLocaleString();
             FormStatus.update({_id: formId}, {$set: {Done:true, Finished: dateStamp}});
+            swal("Form has been completed!");
+            Router.go('/admin_student');
+            /*
             sAlert.success('Form has been completed!',
                 {
                     onClose: function () {
@@ -84,7 +90,7 @@ Template.adminStudent.events({
                     timeout: 1500,
                     offset: '40px',
                     position: 'bottom'
-                });
+                });*/
         }
     }
 });

@@ -1,11 +1,7 @@
-This is the readme for PMBA. Once the project gets underway more information about the project will go here.
+This is the readme for PMBA.
 
-Instructions for preparing GITHub for the project on your local machine (If you don't want to watch youtube videos)
-
-Open GitHub
-Click on the plus sign in the top left corner
-Choose clone
-Find pmba in the SCCapstone group
-Choose a local directory to house the files
-
-Once this is done you can add files to your local folder, sync, and the whole group can have access to it.
+### Instructions for the team that is testing
+* You can login as an administrator using "admin@email.sc.edu" and "password" as the password
+* You can login as a student using "ACarrico@email.com" and "password" as the password
+* Every student's password is "password"
+* The email functions don't actually send emails, because it is disabled. Normally it would send out registration, help, etc.. emails but that doesn't make sense because the email addresses we are using are fake.

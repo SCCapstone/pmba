@@ -19,16 +19,32 @@ Template.infoPage.helpers({
 
     },
     students: function () {
-		//var name = forms.find(Session.get('selectedForm')).fetch();
+		var name = forms.findOne(Session.get('selectedForm')).Name;
+		var cursor = FormStatus.find({FormName: name, Done: false});
+		cursor.forEach(function (doc) {
+			var email = doc.Email;
+			var studentID = studentInfo.findOne({Email: email})._id;
+			Session.set('incompletedStudents', studentID);
+			alert(email);
+		});
+		/**var selected = document.getElementById("SelectedStudents").value;
+		if(selected === "completed"){
+			alert("done");
+		}
+		else if(selected === "incompleted"){
+			alert("not");
+		}
+		else{
+			alert("all");
+		}
+		//var cursor = formstatus.find({FormName: name});
 		/**
-		1)need to get the form name then seach through formstatus collection
-		to get a list of students related to the form.
-		2)set up a if ifelse else statement with the ocnditions
+		set up a if ifelse else statement with the ocnditions
 			if : selected all, return all students found.
 			if else : selected done, return done students
 			else : selected not done, return not done students.
 		**/
 		
-        return studentInfo.find({});
+        return studentInfo.find(Session.get('incompletedStudents')).fetch();
     }
 });

@@ -47,11 +47,12 @@ Router.route('/login');
 
 // Check to make sure user user is logged in
 
+
 Router.onBeforeAction(before.loginRequired, {
     except: ['login', 'resetPassword']
 });
 Router.onBeforeAction(before.checkAdmin, {
-    only: ['admin_overall', 'admin_student', 'addForms', 'addStudent']
+    only: ['admin_overall', 'admin_student', 'addForms', 'addStudent', 'updateInformation']
 });
 
 //TODO
@@ -88,8 +89,8 @@ Router.route('/statistics', function () {
     this.render('statistics')
 });
 
-Router.route('/help', function () {
-    this.render('help')
+Router.route('/helpPage', function () {
+    this.render('helpPage')
 });
 
 Router.route('/infoPage', function () {
@@ -118,6 +119,14 @@ Router.route('/updateAdminInfo', function () {
 
 Router.route('/resetPassword', function () {
     this.render('resetPassword')
+});
+
+Router.route('/updateWelcomeInfo', function () {
+    this.render('updateWelcomeInfo')
+});
+
+Router.route('/updateHelpInfo', function () {
+    this.render('updateHelpInfo')
 });
 
 Router.route('/home', function () {

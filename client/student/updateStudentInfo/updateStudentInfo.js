@@ -12,6 +12,23 @@ Template.updateStudentInfo.events({
 				HomeNumber: homeNumber.value
 			}
 		});
+
+		swal({
+				title: "Success",
+				text: "Your information has been updated!",
+				type: "success",
+				confirmButtonColor: "#DD6B55",
+				confirmButtonText: "Okay",
+				closeOnConfirm: true},
+
+			function(isConfirm)
+			{
+				if (isConfirm)
+				{
+					Router.go('/student');
+				}
+			});
+		/*
 		sAlert.success('Your Information Has Been Updated',
 			{
 				onClose: function () {
@@ -20,7 +37,7 @@ Template.updateStudentInfo.events({
 				timeout: 1500,
 				offset: '40px',
 				position: 'bottom'
-			});
+			});*/
 	}
 });
 

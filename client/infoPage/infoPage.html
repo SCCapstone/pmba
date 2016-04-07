@@ -10,8 +10,10 @@
             <img src="/img/solidBanner.png" style="height: 13vh">
 
             {{#each profile}}
+            <div id="container">
                 <small style="color:white; font-family: Adobe, Garamond, Pro, serif; font-size: 23px; position: relative;
-            margin-top: 60px; line-height: 0px; float: right; margin-right: 49px; ">{{Name}} Additional Information</small>
+                margin-top: -20px; line-height: 0px; float: right; margin-right: 49px; z-index: 1;">Additional Information</small>
+            </div>
             {{/each}}
             {{#if AccountType}}
                 {{>studentNavBar}}
@@ -25,7 +27,6 @@
             <div class="col-sm-3 col-md-2 sidebar-offcanvas" id="sidebar" role="navigation">
                 <div class="well sidebar-nav">
                     <ul class="nav nav-sidebar">
-                        <img src="..." class="img-polaroid">
                         {{#each profile}}
                         <li>Due Date:  <strong>{{DueDate}}</strong></li>
                         {{/each}}
@@ -39,7 +40,6 @@
             <div class="col-sm-3 col-md-2 sidebar-offcanvas" id="sidebar" role="navigation">
                 <div class="well sidebar-nav">
                     <ul class="nav nav-sidebar">
-                        <img src="..." class="img-polaroid">
                         {{#each profile}}
                             <li>Due Date:  <strong>{{DueDate}}</strong></li>
                         {{/each}}

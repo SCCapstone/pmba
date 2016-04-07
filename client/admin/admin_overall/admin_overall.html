@@ -8,15 +8,20 @@ Purpose: displays the home page for when the admin logs into
     <link rel="icon" sizes="16x16 32x32" href="/favicon.ico?v=2">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <script src="/sweetAlert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/sweetAlert/dist/sweetalert.css">
+
 </head>
 
 <template name="adminOverall">
     <div class = "page-header" id="header">
         <h1>
             <img src="/img/logo.svg" class="img-responsive" style="position:absolute;">
-            <img src="/img/solidBanner.png" style="height: 13vh">
-            <small style="color:white; font-family: Adobe, Garamond, Pro, serif; font-size: 23px; position: relative;
-            margin-top: 60px; line-height: 0px; float: right; margin-right: 49px; ">Administrator Page</small>
+            <img src="/img/solidBanner.png" style="height: 13vh; ">
+            <div id="container">
+                <small style="color:white; font-family: Adobe, Garamond, Pro, serif; font-size: 23px; position: relative;
+                margin-top: -20px; line-height: 0px; float: right; margin-right: 49px; z-index: 1;">Administrator Page</small>
+            </div>
             {{>adminNavBar}}
         </h1>
     </div>
@@ -37,13 +42,13 @@ Purpose: displays the home page for when the admin logs into
                 <a href="addStudent">Add Account</a><br><br>
                 <ul class="nav nav-sidebar">
                     <li><strong>Student list</strong></li>
+                    <li>Number of Students: {{studentCount}}</li>
                     <div class="panel-body">
                         {{>searchBox}}
                     </div>
                 </ul>
             </div>
         </div>
-        {{>sAlert}}
     </div>
 
     <!-- displays the various forms and each form's progress in percentage based on student completion  -->

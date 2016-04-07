@@ -1,28 +1,81 @@
 /*
-Code snippet by maridlcrmn for Bootsnipp.com
-Follow me on Twitter @maridlcrmn
+Found from stack overflow
 */
 
-.navbar-brand { position: relative; z-index: 2; width: 130px; text-align: center}
 
-.navbar-nav.navbar-right .btn { position: relative; z-index: 2; padding: 4px 20px; margin: 10px auto; }
+@media (max-width: 1000px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
 
-.navbar .navbar-collapse { position: relative; }
-.navbar .navbar-collapse .navbar-right > li:last-child { padding-left: 22px; }
+    .navbar-toggle {
+        display: block;
+    }
 
-.navbar .nav-collapse { position: absolute; z-index: 1; top: 0; left: 0; right: 0; bottom: 0; margin: 0; padding-right: 120px; padding-left: 80px; width: 100%; }
-.navbar.navbar-default .nav-collapse { background-color: #f8f8f8; }
-.navbar.navbar-inverse .nav-collapse { background-color: #222; }
-.navbar .nav-collapse .navbar-form { border-width: 0; box-shadow: none; }
-.nav-collapse>li { float: right; }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
 
-.btn.btn-circle { border-radius: 50px; }
-.btn.btn-outline { background-color: transparent; }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
 
-@media screen and (max-width: 767px) {
-    .navbar .navbar-collapse .navbar-right > li:last-child { padding-left: 15px; padding-right: 15px; }
+    .collapse.in{
+        display:block !important;
+    }
 
-    .navbar .nav-collapse { margin: 7.5px auto; padding: 0; }
-    .navbar .nav-collapse .navbar-form { margin: 0; }
-    .nav-collapse>li { float: none; }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+
+    .navbar-nav>li {
+        float: none;
+    }
+
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .navbar-nav .open .dropdown-menu {
+        position: static;
+        float: left;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+
+
+
+@media screen and (max-width: 767px) and (min-width: 500px) {
+    .navbar .navbar-collapse .navbar-right > li:last-child {
+        padding-left: 15px; padding-right: 15px;
+    }
+
+    .navbar .nav-collapse {
+        margin: 7.5px auto; padding: 0;
+    }
+
+    .navbar .nav-collapse .navbar-form {
+        margin: 0;
+    }
+
+    .nav-collapse>li {
+        float: none;
+    }
 }

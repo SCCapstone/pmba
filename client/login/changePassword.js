@@ -10,6 +10,9 @@
 			
 			if(oldPassword.value == user.Password && newPassword.value !== user.Password && confirmNewPassword.value==newPassword.value){
 				login.update({_id: id},{$set:{Password: newPassword.value, TempPassword: "N"}});
+
+				swal("Password Updated!","Your password has been successfully changed.","success");
+
 				if(user.IDType=="S"){
 					window.location.href = "/student"+ "#" + student._id;
 				}

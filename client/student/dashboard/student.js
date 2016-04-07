@@ -1,14 +1,7 @@
 Meteor.subscribe("studentInfo");
 Meteor.subscribe("forms");
 Meteor.subscribe("FormStatus");
-
-
-Template.student.rendered = function(){
-		page = router.current();
-		alert(page);
-		$(page).addClass('active');
-}
-Template.student.helpers({	
+Template.student.helpers({
     Student: function () {
         var student = studentInfo.findOne({_id: Meteor.userId()});
         var studentEmail = student.Email;
@@ -63,69 +56,15 @@ Template.student.helpers({
 		var formFinishedStatus = FormStatus.findOne(FormStatusId).Finished;
 		var returnString;
 		if(formFinishedStatus === ""){
-			returnString = "Form has not been completed";
+			returnString = "form has not been completed";
 			return returnString;
 		}
 		else{
-			returnString = "Form was completed at " + formFinishedStatus;
+			returnString = formFinishedStatus;
 			return returnString;
 		}
 	}
 });
-/*
-Template.student.events({
-    'click .toggle-checked' : function(event){
-        event.preventDefault();
-        var formId = this._id;
-        var form = FormStatus.findOne({_id: formId});
-        var checkValue = form.Done;
-
-        if (checkValue == true){
-            document.getElementById(formId).style.color = "blue";
-            FormStatus.update(formId, {$set :{Done : false}});
-            sAlert.warning('You have not completed the form.',
-                {
-                    onClose: function () {
-                        Router.go('/student');
-                    },
-                    timeout: 1500,
-                    offset: '40px',
-                    position: 'bottom'
-                });
-        }
-        else {
-            document.getElementById(formId).style.color = "green";
-            FormStatus.update(formId, {$set :{Done : true}});
-            sAlert.success('You have completed the form!',
-                {
-                    onClose: function () {
-                        Router.go('/student');
-                    },
-                    timeout: 1500,
-                    offset: '40px',
-                    position: 'bottom'
-
-                });
-        }
-    },
-    'click .btn' : function(event){
-        event.preventDefault();
-    },
-    "click .hide-completed": function (event) {
-        event.preventDefault();
-        var text = document.getElementById('hide').value;
-        if (text === "Hide") {
-            Session.set('hideCompleted', true);
-            document.getElementById('hide').value = "Show";
-        }
-        else {
-            Session.set('hideCompleted', false);
-            document.getElementById('hide').value = "Hide";
-        }
-
-    }
-
-});*/
 
 Template.student.events({
     'click .btn' : function(event) {
@@ -134,10 +73,6 @@ Template.student.events({
         var email = studentInfo.findOne(Meteor.userId(), {fields: {Email: 1}}).Email;
         var formId = FormStatus.findOne({Email: email, FormName: name})._id;
         var complete = FormStatus.find({$and: [{Email: email}, {FormName: name},{Done: true}]}).count();
-		var firstName = studentInfo.findOne(Meteor.userId(), {fields: {FirstName: 1}}).FirstName;
-		var lastName = studentInfo.findOne(Meteor.userId(), {fields: {LastName: 1}}).LastName;
-		var fullName = firstName + " " + lastName;
-		var formTableInfoStudentID = formTableInfo.findOne({Name: fullName})._id;
 		
         // If form is Done then mark false else make it Done and adds the time it was marked Done
         if (complete) {

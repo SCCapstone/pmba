@@ -8,8 +8,10 @@
         <h1>
             <img src="img/logo.svg" class="img-responsive" style="position:absolute;">
             <img src="/img/solidBanner.png" style="height: 13vh">
-            <small style="color:white; font-family: Adobe, Garamond, Pro, serif; font-size: 23px; position: relative;
-            margin-top: 60px; line-height: 0px; float: right; margin-right: 49px; ">Administrator Page</small>
+            <div id="container">
+                <small style="color:white; font-family: Adobe, Garamond, Pro, serif; font-size: 23px; position: relative;
+                margin-top: -20px; line-height: 0px; float: right; margin-right: 49px; z-index: 1;">Administrator Page</small>
+            </div>
             {{>adminNavBar}}
         </h1>
     </div>
@@ -56,12 +58,12 @@
                 </div>
                 <div class="panel-body">
                     <ul>
-                        <small style="color:#6affc1">Light green</small>
+                        <small style="color:#00d95b">Green</small>
                         <small> indicates form completion.</small>
 
                         <br>
 
-                        <small style="color:#ff8471">Light red</small>
+                        <small style="color:#f85540">Red</small>
                         <small> indicates form incompletion.</small>
 
                         <br>
@@ -76,10 +78,12 @@
                                        onclick="Session.set('selectedForm', '{{_id}}');
                                                Router.go('/infoPage');
                                                return false;">
+
                                         {{Name}}
-                                        Due: {{DueDate}}
-										{{getFinishedStatus}}
+
                                     </a>
+                                        <li><strong>Due Date: </strong> {{DueDate}}</li>
+                                        <li><strong>Submission Date: </strong> {{getFinishedStatus}}</li>
                                 {{else}}
                                     <a href="#" class="btn btn-primary btn-danger">
                                         <span class="glyphicon glyphicon-unchecked"></span>
@@ -88,13 +92,14 @@
                                        onclick="Session.set('selectedForm', '{{_id}}');
                                                Router.go('/infoPage');
                                                return false;">
+
                                         {{Name}}
-                                        Due: {{DueDate}}
-										{{getFinishedStatus}}
+
                                     </a>
+                                        <li><strong>Due Date: </strong> {{DueDate}}</li>
+                                        <li><strong>Submission Date: </strong> {{getFinishedStatus}}</li>
                                 {{/if}}
                             </li>
-                        {{>sAlert}}
                         {{/each}}
                     </ul>
                 </div>

@@ -4,12 +4,12 @@
  */
 
 // This File contains the unit tests for the client side
-var assert = require('assert');
+/*var assert = require('assert');
 var should = require('chai').should();
 var sinon = require('sinon');
 var chai = require('chai');
-
-
+*/
+/*
 //Meteor Stubs
 Meteor = sinon.stub({
     startup: function() {},
@@ -19,7 +19,7 @@ Meteor = sinon.stub({
     methods: function() {},
     subscribe: function() {}
 
-});
+});*/
 
 //addStudent = require('../../../client/addStudent/addStudent.js');
 
@@ -31,7 +31,7 @@ describe('Page setTitle', function () {
     });
 });
 
-describe('Student Login', function () {
+/*describe('Student Login', function () {
     it('should login student @watch', function () {
         browser.setValue('#inputEmail', 'student4@student.com');
         browser.setValue('#inputPassword', 'password');
@@ -44,7 +44,7 @@ describe('Student Login', function () {
         //console.log(test);
     });
 });
-
+*/
 describe('This is a test test?', function() {
     it('Should test a collection or something? @watch', function() {
         /*var studentAccount = server.call(addStudent.createStudent({

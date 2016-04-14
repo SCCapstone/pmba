@@ -47,8 +47,8 @@
                             {{#each students}}
                                 <li id="formNumber" value = "0">
                                     <a href="admin_student"
-                                       onclick="Session.set('selectedStudent', '{{_id}}');">
-                                        {{FirstName}} {{LastName}} </a>
+                                       onclick="Session.set('selectedStudent', '{{studentId Email}}');">
+                                        {{StudentName}} </a>
                                 </li>
                             {{/each}}
                         </ul>

@@ -20,7 +20,17 @@ Template.infoPage.helpers({
     },
     students: function () {
 		var name = forms.findOne(Session.get('selectedForm')).Name;
-		var cursor = FormStatus.find({FormName: name, Done: false});
+		var cursor = FormStatus.find({FormName: name});
+		cursor.forEach(function(doc){
+			var email = doc.Email;
+			var studentName=studentInfo.findOne({Email: email}).FullName;
+			var formID = FormStatus.findOne({Email: email, FormName: name})._id;
+			alert(studentName);
+			FormStatus.update({_id: formId}, {$set: {fullName:studentName}});
+			alert("here");
+		});
+		
+		/**var cursor = FormStatus.find({FormName: name, Done: false});
 		cursor.forEach(function (doc) {
 			var email = doc.Email;
 			var studentID = studentInfo.findOne({Email: email})._id;

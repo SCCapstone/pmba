@@ -27,16 +27,17 @@ Meteor.methods({
             cursor.forEach(function (doc) {
                 console.log(doc.Email);
                 var email = doc.Email;
+				var fullName = doc.FullName;
 
                 console.log("INSERTING FORM INFO FOR: " + email);
                 FormStatus.insert({
                     Email: email,
-                    FormNumber: num,
                     FormName: name,
                     Done: false,
+					StudentName: fullName,
 					Finished: ""
                 });
-				
+				//is this the same thing as fullName? if so we should only have one variable for it.
 				var studentName = doc.FirstName + " " + doc.LastName;
 				//to insert a new row in a mongo document you must create an "object" then use $set to place the object in the collection
 				var o = {}

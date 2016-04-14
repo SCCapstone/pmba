@@ -37,3 +37,4 @@ meteorhacks:npm
 npm-container
 standard-minifier-css
 standard-minifier-js
+practicalmeteor:mocha

@@ -10,7 +10,6 @@ Template.infoPage.helpers({
     },
     AccountType: function () {
         var student = studentInfo.findOne({_id: Meteor.userId()});
-        //var admin = adminInfo.findOne({_id: Meteor.userId()});
         if (student.IDType === 'S') {
             return true;
         }
@@ -20,6 +19,11 @@ Template.infoPage.helpers({
 
     },
     students: function () {
-        return studentInfo.find({});
-    }
+		var name = forms.findOne(Session.get('selectedForm')).Name;
+		return FormStatus.find({FormName: name, Done:false});
+    },
+	studentId: function(email) {
+		var returnID = studentInfo.findOne({Email: email})._id;
+		return returnID;
+	}
 });

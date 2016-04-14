@@ -47,13 +47,37 @@
                             {{#each students}}
                                 <li id="formNumber" value = "0">
                                     <a href="admin_student"
-                                       onclick="Session.set('selectedStudent', '{{_id}}');">
-                                        {{FirstName}} {{LastName}} </a>
+                                       onclick="Session.set('selectedStudent', '{{studentId Email}}');">
+                                        {{StudentName}} </a>
                                 </li>
                             {{/each}}
                         </ul>
-                    </ul>
+                    </ul>					
                 </div>
+				<!--  
+					<div class="btn-group">
+						<a class="btn dropdown-toggle" data-toggle="dropdown" href="#" id="SelectedStudents" value="All">
+							Students Display
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#" onclick="StudentsDisplaed('All','All Students'), {{students}}">
+									All Student
+								</a>
+							</li>
+							<li>
+								<a href="#" onclick="StudentsDisplaed('incompleted','Not Finished Students'), '{{students}}'">
+									Not Finished Students
+								</a>                          
+                        </li>
+							<li>
+								<a href="#" onclick="StudentsDisplaed('completed','Finished Students'), {{students}}">
+									Finished Students
+								</a>                          
+							</li>
+						</ul>
+					</div>-->
             </div>
         </div>
     {{/if}}
@@ -91,6 +115,12 @@
             </div>
         </div>
     </div>
+	<!--script>
+        function StudentsDisplaed(displayType, selectedType){
+            document.getElementById("SelectedStudents").value = displayType;
+            document.getElementById("SelectedStudents").textContent = selectedType;
+        }
+    </script-->
 
 
 </template>

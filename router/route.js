@@ -97,7 +97,7 @@ Router.route('/infoPage', function () {
     this.render('infoPage')
 });
 
-Router.route('/welcomePage', function () {
+Router.route('/information', function () {
     this.render('welcomePage')
 });
 

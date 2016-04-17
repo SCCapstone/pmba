@@ -37,22 +37,21 @@ Purpose: provides the admin all the necessary fields to
 
                 <div class="firstName">
                     <label class="firstName" for="firstName">First Name:</label><span class="tabName"> </span>
-                    <input type="text" id="firstName" name="firstName" placeholder="First Name">
+                    <input type="text" id="firstName" maxlength="20" name="firstName" placeholder="First Name">
                 </div>
 
                 <br>
                 <div class="lastName">
                     <label class="lastName" for="lastName">Last Name:</label><span class="tabLastName"> </span>
-                    <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+                    <input type="text" id="lastName" maxlength="20" name="lastName" placeholder="Last Name">
                 </div>
 
                 <!-- asks for student's email  -->
                 <br>
                 <div class="email">
-                    <label class="email" for="inputEmail">Email:</label><span class="tabEmail"> </span>
-                        <input type="email" id="inputEmail" name="inputEmail" placeholder="Email">
+                    <label class="email" for="inputEmail">Email:</label><span class="tabMail"> </span>
+                        <input type="email" id="inputEmail" maxlength="30" name="inputEmail" placeholder="Email">
                 </div>
-
                 <!-- asks for the date the student was added into the system -->
                 <br>
                 <div class="date">
@@ -62,7 +61,7 @@ Purpose: provides the admin all the necessary fields to
 
                 <!-- allows admin to choose whether the new account is provided student or admin rights  -->
                 <div class="btn-group">
-                    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" id="Account" value='S'>
+                    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" id="Account" value='NA'>
                         Account Type
                         <span class="caret"></span>
                     </a>

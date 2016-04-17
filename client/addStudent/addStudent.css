@@ -19,8 +19,11 @@ span.tabButton{
     padding: 0 56px; 
 }
 
+span.tabMail {
+    padding: 0 80px;
+}
+
 span.tabDate {
     padding: 0 83px;
 }
-
 

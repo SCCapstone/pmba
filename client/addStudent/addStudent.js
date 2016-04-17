@@ -21,13 +21,15 @@
 			//currently password is hardcoded for testing purposes
 			var passwordVar = 'password';
 			var accountType = document.getElementById("Account").value;
+			console.log(accountType);
+			if(accountType == 'S' || accountType == 'A')
+			{
+				//meteor creates a new account
+				Meteor.call('createStudent', emailVar, passwordVar, accountType, FirstName, LastName, Date );
 
-			//meteor creates a new account
-			Meteor.call('createStudent', emailVar, passwordVar, accountType, FirstName, LastName, Date );
+				//the success message that appears when a student has been added into the system
 
-			//the success message that appears when a student has been added into the system
-
-			swal({
+				swal({
 					title: "Success",
 					text: "The student has been added.",
 					type: "success",
@@ -42,19 +44,27 @@
 						Router.go('/admin_Overall');
 					}
 				});
-			/*
-  			sAlert.success('The student has been added!',
-	  		{
-		  		onClose: function () {
-			  		Router.go('/admin_Overall');
-		  		},
-		  		timeout: 1500,
-		  		offset: '40px',
-		  		position: 'bottom'
-	  		});*/
-
-  		}
-  });
+			}
+			else
+			{
+				swal({
+					title: "Choose Account Type",
+					text: "You must choose to add a 'Student' account or an 'Admin' account",
+					type: "warning",
+					showCancelButton: false,
+					confirmButtonClass: "btn-danger",
+					confirmButtonText: "Retry",
+					closeOnConfirm: true
+				},
+				function(isConfirm)
+				{
+					if (isConfirm)
+					{
+						Router.go('/addStudent');
+					}
+				});
+			}
+	}});
 
 
 

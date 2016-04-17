@@ -34,9 +34,9 @@ describe('Array', function() {
 });
 
 
-describe('Page setTitle', function () {
-    it('should be set to PMBA @watch', function () {
-        browser.url('localhost:3000/login');
-        expect(browser.getTitle()).to.equal('PMBA');
-    });
-});
+//describe('Page setTitle', function () {
+//    it('should be set to PMBA @watch', function () {
+//        browser.url('localhost:3000/login');
+//        expect(browser.getTitle()).to.equal('PMBA');
+//    });
+//});

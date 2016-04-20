@@ -1,12 +1,12 @@
 Meteor.subscribe("adminInfo");
 
-Template.updateWelcomeInfo.helpers({
+Template.updateInformationPage.helpers({
     contactInfo: function () {
         return adminInfo.find({_id: "contactInfo"});
     }
 });
 
-Template.updateWelcomeInfo.events({
+Template.updateInformationPage.events({
     'submit form' : function(event) {
         event.preventDefault();
 
@@ -18,6 +18,6 @@ Template.updateWelcomeInfo.events({
             });
 
         swal("Information Updated!", "The information has been successfully saved.");
-        Router.go('/welcomePage')
+        Router.go('/information')
     }
 });

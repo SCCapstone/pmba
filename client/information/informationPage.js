@@ -11,7 +11,7 @@ Meteor.startup(function () {
     })
 });
 
-Template.welcomePage.events({
+Template.informationPage.events({
     'click .btn-success' : function(event){
         event.preventDefault();
         var student = studentInfo.findOne(Meteor.userId());
@@ -25,12 +25,12 @@ Template.welcomePage.events({
     },
     'click .btn-info' : function(event){
         event.preventDefault();
-        Router.go('/updateWelcomeInfo');
+        Router.go('/updateInformationPage');
         
     }
 });
 
-Template.welcomePage.helpers({
+Template.informationPage.helpers({
     AccountType: function () {
         var student = studentInfo.findOne({_id: Meteor.userId()});
         //var admin = adminInfo.findOne({_id: Meteor.userId()});

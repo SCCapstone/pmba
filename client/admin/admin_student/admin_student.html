@@ -71,7 +71,7 @@
                         {{#each forms}}
                             <li>
                                 {{#if formComplete Name}}
-                                    <a href="#" class="btn btn-primary btn-success">
+                                    <a href="#" class="btn btn-primary btn-success" id="checkBox">
                                         <span class="glyphicon glyphicon-ok"></span>
                                     </a>
                                     <a href="infoPage"
@@ -85,7 +85,7 @@
                                         <li><strong>Due Date: </strong> {{DueDate}}</li>
                                         <li><strong>Submission Date: </strong> {{getFinishedStatus}}</li>
                                 {{else}}
-                                    <a href="#" class="btn btn-primary btn-danger">
+                                    <a href="#" class="btn btn-primary btn-danger" id="checkBox">
                                         <span class="glyphicon glyphicon-unchecked"></span>
                                     </a>
                                     <a href="infoPage"

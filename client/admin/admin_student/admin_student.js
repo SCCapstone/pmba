@@ -48,7 +48,7 @@ Template.adminStudent.helpers({
 
 // When admin clicks inside the alert bubble it will mark the form done or not done
 Template.adminStudent.events({
-    'click .btn' : function(event) {
+    'click #checkBox' : function(event) {
         event.preventDefault();
         console.log('You clicked me');
         var name = this.Name;
@@ -64,7 +64,7 @@ Template.adminStudent.events({
         if (complete) {
             console.log('form complete');
             FormStatus.update({_id: formId}, {$set: {Done:false, Finished: ""}});
-				
+
 			var cursor = forms.find();
 			cursor.forEach(function (doc) {
 				if(doc.Name == name)
@@ -73,29 +73,19 @@ Template.adminStudent.events({
 						o[doc.Name] = "Incomplete";
 						formTableInfo.update({_id: formTableInfoStudentID}, {
 							$set:(o)
-						})		
-					}	
+						})
+					}
 			});
             swal("Form has not been completed.");
             Router.go('/admin_student');
-            /*
-            sAlert.warning('Form has not been completed.',
-                {
-                    onClose: function () {
-                        Router.go('/admin_student');
-                    },
-                    timeout: 1500,
-                    offset: '40px',
-                    position: 'bottom'
 
-                });*/
         }
         else {
             console.log('form not complete');
 			var timeStamp = new Date();
 			var dateStamp = timeStamp.toLocaleString();
             FormStatus.update({_id: formId}, {$set: {Done:true, Finished: dateStamp}});
-			
+
 			var cursor = forms.find();
 			cursor.forEach(function (doc) {
 				if(doc.Name == name)
@@ -104,22 +94,12 @@ Template.adminStudent.events({
 						o[doc.Name] = "Complete";
 						formTableInfo.update({_id: formTableInfoStudentID}, {
 							$set:(o)
-						})		
-					}	
+						})
+					}
 			});
-			
+
             swal("Form has been completed!");
             Router.go('/admin_student');
-            /*
-            sAlert.success('Form has been completed!',
-                {
-                    onClose: function () {
-                        Router.go('/admin_student');
-                    },
-                    timeout: 1500,
-                    offset: '40px',
-                    position: 'bottom'
-                });*/
         }
     }
 });

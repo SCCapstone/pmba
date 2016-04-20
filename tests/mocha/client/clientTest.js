@@ -31,9 +31,9 @@ describe('Page setTitle', function () {
     });
 });
 
-/*describe('Student Login', function () {
+describe('Student Login', function () {
     it('should login student @watch', function () {
-        browser.setValue('#inputEmail', 'student4@student.com');
+        browser.setValue('#inputEmail', 'ACarrico@email.com');
         browser.setValue('#inputPassword', 'password');
         browser.click('#submit');
         browser.pause(5000);
@@ -44,7 +44,7 @@ describe('Page setTitle', function () {
         //console.log(test);
     });
 });
-*/
+
 describe('This is a test test?', function() {
     it('Should test a collection or something? @watch', function() {
         /*var studentAccount = server.call(addStudent.createStudent({

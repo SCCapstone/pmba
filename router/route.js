@@ -52,7 +52,7 @@ Router.onBeforeAction(before.loginRequired, {
     except: ['login', 'resetPassword']
 });
 Router.onBeforeAction(before.checkAdmin, {
-    only: ['admin_overall', 'admin_student', 'addForms', 'addStudent', 'updateInformation']
+    only: ['admin_overall', 'admin_student', 'addForms', 'addStudent', 'updateInformationPage']
 });
 
 //TODO
@@ -98,7 +98,7 @@ Router.route('/infoPage', function () {
 });
 
 Router.route('/information', function () {
-    this.render('welcomePage')
+    this.render('informationPage')
 });
 
 Router.route('/addForms', function () {
@@ -121,8 +121,8 @@ Router.route('/resetPassword', function () {
     this.render('resetPassword')
 });
 
-Router.route('/updateWelcomeInfo', function () {
-    this.render('updateWelcomeInfo')
+Router.route('/updateInformationPage', function () {
+    this.render('updateInformationPage')
 });
 
 Router.route('/updateHelpInfo', function () {

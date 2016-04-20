@@ -60,8 +60,8 @@ Meteor.methods({
                 FullName: firstName + " " + lastName,
                 SentEmails: 0
             });
-			
-			
+
+
             var cursor = forms.find();
             cursor.forEach(function (doc) {
                 var name = doc.Name;
@@ -73,7 +73,7 @@ Meteor.methods({
                     Done: false
                 })
             });
-			
+
 			//create the initial entry for this student
 			var fullname = firstName + " " + lastName;
 			formTableInfo.insert({
@@ -84,13 +84,13 @@ Meteor.methods({
                 formTableInfo.update({Name: fullname}, {
 					//creates set o to insert into the collection
 					$set:(o = {}, o[doc.Name] = "Incomplete", o)
-				})				
+				})
 				});
             // Send Enrollment Email to the new user
-           // Accounts.sendEnrollmentEmail(userId);
+           Accounts.sendEnrollmentEmail(userId);
 		   console.log("Student Added.")
 		}
-		}		
+		}
 		 else {
          console.log("not logged in or not an admin");
          }

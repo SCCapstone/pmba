@@ -9,6 +9,8 @@ Template.sendEmail.events({
         var message = messageInput.value;
         console.log('SENDING EMAIL');
         Meteor.call('sendEmail', address, subject, message);
+        swal("Email Sent!","The email has been successfully sent.","success");
+
 
         // Update SentEmails field for student
         studentInfo.update(Session.get('selectedStudent'), {

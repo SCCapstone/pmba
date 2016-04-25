@@ -25,5 +25,14 @@ Template.infoPage.helpers({
 	studentId: function(email) {
 		var returnID = studentInfo.findOne({Email: email})._id;
 		return returnID;
-	}
+	},
+    linkExists: function (FormId) {
+        hasLink = forms.findOne(FormId).FormAddress;
+        if (hasLink != '') {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 });

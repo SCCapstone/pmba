@@ -81,7 +81,7 @@
             </div>
         </div>
     {{/if}}
-
+{{#each profile}}
     <div class="row-fluid">
         <div class=" col-md-6 col-md-offset-1 panel panel-default">
             <div class="panel-heading">
@@ -89,38 +89,22 @@
             </div>
             <div class="panel-body">
                 <ul>
-                    {{#each profile}}
+
                         <li>
                             {{Description}}
                         </li>
-                    {{/each}}
+
                 </ul>
             </div>
+            {{#if linkExists _id}}
+            <div class="panel-footer">
+                <a href = "{{FormAddress}}" class = "btn btn-xs btn-default" role = "button">
+                    Link to Additional Information
+                </a>
+            </div>
+            {{/if}}
         </div>
     </div>
-
-    <div class="row-fluid">
-        <div class=" col-md-6 col-md-offset-1 panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title">Form Address</h3>
-            </div>
-            <div class="panel-body">
-                <ul>
-                    {{#each profile}}
-                        <li>
-                            <a href>{{FormAddress}} </a>
-                        </li>
-                    {{/each}}
-                </ul>
-            </div>
-        </div>
-    </div>
-	<!--script>
-        function StudentsDisplaed(displayType, selectedType){
-            document.getElementById("SelectedStudents").value = displayType;
-            document.getElementById("SelectedStudents").textContent = selectedType;
-        }
-    </script-->
-
+{{/each}}
 
 </template>
